@@ -6,8 +6,8 @@ import localFont from 'next/font/local';
 const figtree = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IBSMART INNOVATION",
-  description: "Passionate about bringing quality tech gadgets to your household",
+  title: "QUALES",
+  description: "Engage the best talent around the globe",
 };
 
 export const viewport: Viewport = {
