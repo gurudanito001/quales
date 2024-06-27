@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/damiadeh/Desktop/Projects/quales/src/app/layout":["static/media/192e369fd43210ef-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/damiadeh/Desktop/Projects/quales/src/app/layout\":[\"static/media/192e369fd43210ef-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

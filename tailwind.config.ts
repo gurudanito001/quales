@@ -28,7 +28,8 @@ const config: Config = {
       maxWidth: {
         "550": "550px",
         "600": "600px",
-        "800": "800px"
+        "800": "800px",
+        "1000": "1000px"
       }
     },
     keyframes: {
