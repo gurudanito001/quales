@@ -4,10 +4,12 @@ import Image from "next/image"
 const OurCommunity = ()=>{
 
   return(
-    <section className=" bg-neutral px-5 lg:px-28 py-28 flex flex-col-reverse md:flex-row items-center">
+    <section className=" w- bg-neutral px-5 lg:px-28 py-28 flex flex-col-reverse md:flex-row items-center">
       <article className="text-base-content md:w-1/2">
         <header >
-          <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-800 to-indigo-700 inline text-transparent bg-clip-text ">Leverage our Community <br /> of Top Technology Mavericks</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text"> Leverage our Community </h3> <br/>
+          <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">
+            of Top Technology Mavericks</h3>
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg">

@@ -13,46 +13,14 @@ const TalentNetwork = ()=>{
         <div className="flex flex-col mb-5 items-end ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
-            <article className=" flex flex-col items-center relative -mt-8">
-              <span className=" rounded-full h-16 w-16 bg-gray-200 flex items-center content-center mb-3">
+            <article className=" flex flex-col items-center relative -mt-12">
+              <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary">TALENT NAME</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Abati Adeotan Senayon</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
-                <span className="text-primary text-xs font-light ml-1">Software Developer</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="flex flex-col mb-5 items-start">
-          <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
-            <article className=" flex flex-col items-center relative -mt-8">
-              <span className=" rounded-full h-16 w-16 bg-gray-200 flex items-center content-center mb-3">
-                <UserIcon className="text-gray-500 w-10 mx-auto" />
-              </span>
-              <h6 className="text-primary">TALENT NAME</h6>
-              <div className="flex items-center"> 
-                <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
-                <span className="text-primary text-xs font-light ml-1">Software Developer</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="flex flex-col mb-5 items-end">
-          <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
-            <article className=" flex flex-col items-center relative -mt-8">
-              <span className=" rounded-full h-16 w-16 bg-gray-200 flex items-center content-center mb-3">
-                <UserIcon className="text-gray-500 w-10 mx-auto" />
-              </span>
-              <h6 className="text-primary">TALENT NAME</h6>
-              <div className="flex items-center"> 
-                <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
-                <span className="text-primary text-xs font-light ml-1">Software Developer</span>
+                <span className="text-primary text-xs font-light ml-1">Software Test Engineer</span>
               </div>
             </article>
           </div>
@@ -61,14 +29,46 @@ const TalentNetwork = ()=>{
         <div className="flex flex-col mb-5 items-start ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
-            <article className=" flex flex-col items-center relative -mt-8">
-              <span className=" rounded-full h-16 w-16 bg-gray-200 flex items-center content-center mb-3">
+            <article className=" flex flex-col items-center relative -mt-12">
+              <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary">TALENT NAME</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">JENNIFER ANYANWU</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
-                <span className="text-primary text-xs font-light ml-1">Software Developer</span>
+                <span className="text-primary text-xs font-light ml-1">Automation Engineer</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div className="flex flex-col mb-5 items-end ">
+          <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+            <article className=" flex flex-col items-center relative -mt-12">
+              <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
+                <UserIcon className="text-gray-500 w-10 mx-auto" />
+              </span>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Mfonma Monday Uko</h6>
+              <div className="flex items-center"> 
+                <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
+                <span className="text-primary text-xs font-light ml-1">QA and Test Engineer</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div className="flex flex-col mb-5 items-start ">
+          <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+            <article className=" flex flex-col items-center relative -mt-12">
+              <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
+                <UserIcon className="text-gray-500 w-10 mx-auto" />
+              </span>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase px-2">ABOH ENAYI SARAH</h6>
+              <div className="flex items-center"> 
+                <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
+                <span className="text-primary text-xs font-light ml-1">Software QA Analyst</span>
               </div>
             </article>
           </div>
@@ -78,7 +78,7 @@ const TalentNetwork = ()=>{
 
       <article className="text-base-content flex flex-col">
         <header className="mt-auto">
-          <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-800 to-indigo-700 inline text-transparent bg-clip-text ">Talents Within our Network</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550  from-slate-700 to-purple-400 inline text-transparent bg-clip-text ">Talents Within our Network</h3>
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg">

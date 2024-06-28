@@ -8,8 +8,8 @@ const HiringProcess =()=>{
       <h3 className="text-center text-xl font-semibold mb-3 text-primary">Our Hiring Process</h3>
       <p className="text-xs md:text-sm text-center text-primary">We have gone full circle so you can get to your needs in a simple, straight line</p>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 mt-12 md:mt-20 gap-5">
-        <div className=" flex flex-col items-center md:px-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 mt-12 md:mt-20 gap-5 overflow-x-hidden">
+        <div className="flex flex-col items-center md:px-5">
           <div className="w-44 sm:w-56 ml-auto xl:w-64 h-full flex flex-col items-center bg-base p-4 xl:p-12 rounded-3xl mb-5 shadow">
             <span className="w-20 h-20 md:w-28 md:h-28 flex items-center bg-white rounded-full">
               <Image src="/images/calendar-icon.png" className="mx-auto w-10 h-10 md:w-14 md:h-14" width={50} height={50} objectFit="contain" alt="Calendar Icon" />

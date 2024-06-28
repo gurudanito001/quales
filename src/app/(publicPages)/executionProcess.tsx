@@ -38,7 +38,7 @@ const ExecutionProcess = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ml-auto">
           <div className="w-44 sm:w-60 lg:w-64 xl:w-96 h-full flex flex-col items-center bg-neutral p-4 sm:p-12 rounded-3xl mb-5 shadow mr-auto md:ml-auto md:mr-0">
             <Image src="/images/support-icon.png" className="mx-auto w-8 h-8" width={40} height={40} objectFit="contain" alt="Calendar Icon" />
             <h6 className="text-primary text-md md:text-xl mt-4 text-center font-semibold">Strong Support Community </h6>
@@ -46,7 +46,7 @@ const ExecutionProcess = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mr-auto">
           <div className="w-44 sm:w-60 lg:w-64 xl:w-96 h-full flex flex-col items-center bg-neutral p-4 sm:p-12 rounded-3xl mb-5 shadow ml-auto md:mx-auto">
             <Image src="/images/performance-icon.png" className="mx-auto w-8 h-8" width={40} height={40} objectFit="contain" alt="Calendar Icon" />
             <h6 className="text-primary text-md md:text-xl mt-4 text-center font-semibold">Performance  Management </h6>

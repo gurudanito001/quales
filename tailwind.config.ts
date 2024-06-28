@@ -13,7 +13,7 @@ const config: Config = {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        "primary": "#2B586B",
+        "primary": "rgba(55, 92, 113, 0.75)",
         "secondary": "#375C71",
         "accent": "#BA69D7",
         "neutral": "#EBEBEB",
