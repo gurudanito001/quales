@@ -42,11 +42,11 @@ const Footer = ()=>{
           </div>
         </div>
         <div className="flex items-start gap-6">
-          <Image src="/images/instagram-icon.png" width={40} height={40} alt="Instagram Icon" className="ml-auto" />
-          <Image src="/images/linkedIn-icon.png" width={40} height={40} alt="Instagram Icon" />
-          <Image src="/images/facebook-icon.png" width={40} height={40} alt="Instagram Icon" />
-          <Image src="/images/x-icon.png" width={40} height={40} alt="Instagram Icon" />
-          <Image src="/images/thread-icon.png" width={35} height={35} alt="Instagram Icon" className="mr-auto lg:mr-0" />
+          <Image src="/images/instagram.svg" width={40} height={40} alt="Instagram Icon" className="ml-auto" />
+          <Image src="/images/linkedIn.svg" width={40} height={40} alt="LinkedIn Icon" />
+          <Image src="/images/facebook.svg" width={40} height={40} alt="Facebook Icon" />
+          <Image src="/images/x.svg" width={40} height={40} alt="X Icon" />
+          <Image src="/images/thread.svg" width={35} height={35} alt="Thread Icon" className="mr-auto lg:mr-0" />
         </div>
       </div>
 

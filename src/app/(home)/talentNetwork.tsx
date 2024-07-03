@@ -84,7 +84,7 @@ const TalentNetwork = ()=>{
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg">
           Our network boasts a diverse group of highly skilled professionals specializing in QA Engineering, Scrum Mastery, Data Science, and Software Development. Each talent is meticulously vetted and trained to ensure they bring unparalleled expertise and value to your organization. Discover the power of a workforce dedicated to excellence and innovation.
         </p>
-        <button className="btn bg-primary text-white text-sm md:text-xl font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</button>
+        <button className="btn md:btn-lg bg-primary text-white text-sm md:text-lg font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</button>
       </article>
     </section>
   )
