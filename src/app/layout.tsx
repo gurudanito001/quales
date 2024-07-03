@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import localFont from 'next/font/local';
+import Link from "next/link";
+import Head from "next/head";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -24,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={figtree.className}>{children}</body>
+      <Head>
+        <link rel="stylesheet" href="/styles/styles.css" />
+      </Head>
+      <body >{children}</body>
     </html>
   );
 }

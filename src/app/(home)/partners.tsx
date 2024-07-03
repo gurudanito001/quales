@@ -23,8 +23,8 @@ const Partners = () =>{
 
 
   return(
-    <section className="bg-white py-20 px-5 lg:px-20 overflow-x-hidden">
-      <h6 className="text-center text-primary font-bold mb-5 md:mb-8">Quales is Trusted By:</h6>
+    <section className="bg-white py-16 px-5 lg:px-20 overflow-x-hidden border shadow-inner mt-20">
+      <h6 className="text-center text-primary text-2xl mb-5 md:mb-8">Quales is Trusted By:</h6>
 
       <div ref={logoContainerRef} className="carousel carousel-end rounded-box">
         <div className="carousel-item">

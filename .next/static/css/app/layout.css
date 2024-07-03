@@ -963,6 +963,10 @@ html {
   border-start-end-radius: inherit;
   border-end-end-radius: inherit;
 }
+.link {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -1349,6 +1353,14 @@ details.collapse summary::-webkit-details-marker {
 }
 .input::-webkit-date-and-time-value {
   text-align: inherit;
+}
+.link:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 :where(.menu li:empty) {
   --tw-bg-opacity: 1;
@@ -1851,6 +1863,12 @@ details.collapse summary::-webkit-details-marker {
 .h-screen {
   height: 100vh;
 }
+.h-40 {
+  height: 10rem;
+}
+.h-36 {
+  height: 9rem;
+}
 .max-h-600 {
   max-height: 600px;
 }
@@ -1892,6 +1910,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-full {
   width: 100%;
+}
+.w-56 {
+  width: 14rem;
 }
 .max-w-1000 {
   max-width: 1000px;
@@ -1991,10 +2012,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -2002,6 +2019,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 .bg-neutral {
   --tw-bg-opacity: 1;
@@ -2011,19 +2032,16 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .bg-primary {
-  background-color: rgba(55, 92, 113, 0.75);
-}
-.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(43 88 107 / var(--tw-bg-opacity));
 }
 .bg-section-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(198 217 241 / var(--tw-bg-opacity));
 }
-.bg-gray-900 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/images\/hero-image\.jpg\'\)\] {
   background-image: url('/images/hero-image.jpg');
@@ -2102,6 +2120,10 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -2117,6 +2139,10 @@ details.collapse summary::-webkit-details-marker {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .pb-8 {
   padding-bottom: 2rem;
@@ -2150,10 +2176,6 @@ details.collapse summary::-webkit-details-marker {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -2162,6 +2184,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
 }
 .uppercase {
   text-transform: uppercase;
@@ -2178,7 +2206,12 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 .text-primary {
-  color: rgba(55, 92, 113, 0.75);
+  --tw-text-opacity: 1;
+  color: rgb(43 88 107 / var(--tw-text-opacity));
+}
+.text-section-red {
+  --tw-text-opacity: 1;
+  color: rgb(128 0 32 / var(--tw-text-opacity));
 }
 .text-transparent {
   color: transparent;
@@ -2187,16 +2220,17 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-section-red {
-  --tw-text-opacity: 1;
-  color: rgb(128 0 32 / var(--tw-text-opacity));
-}
 .opacity-100 {
   opacity: 1;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-md {
@@ -2209,30 +2243,13 @@ details.collapse summary::-webkit-details-marker {
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 :root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
-  )
-  rgb(var(--background-start-rgb)); */
-
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 @media (min-width: 640px) {
@@ -2460,14 +2477,19 @@ body {
     padding-bottom: 9rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

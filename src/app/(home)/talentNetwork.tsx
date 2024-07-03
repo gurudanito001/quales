@@ -12,12 +12,12 @@ const TalentNetwork = ()=>{
 
         <div className="flex flex-col mb-5 items-end ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+          <div className=" w-40 h-36 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
               <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Adewale <br/> Abdulrasaq <br/> Habeeb</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
                 <span className="text-primary text-xs font-light ml-1">Software Test Engineer</span>
@@ -28,12 +28,12 @@ const TalentNetwork = ()=>{
 
         <div className="flex flex-col mb-5 items-start ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+          <div className=" w-40 h-36 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
               <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">JENNIFER ANYANWU</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Moses <br /> Ayankoya</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
                 <span className="text-primary text-xs font-light ml-1">Automation Engineer</span>
@@ -44,12 +44,12 @@ const TalentNetwork = ()=>{
 
         <div className="flex flex-col mb-5 items-end ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+          <div className=" w-40 h-36 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
               <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Mfonma Monday Uko</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Ashu <br /> Tyagi</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
                 <span className="text-primary text-xs font-light ml-1">QA and Test Engineer</span>
@@ -60,12 +60,12 @@ const TalentNetwork = ()=>{
 
         <div className="flex flex-col mb-5 items-start ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-40 h-32 shadow-md border border-gray-200 rounded-lg">
+          <div className=" w-40 h-36 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
               <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-10 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase px-2">ABOH ENAYI SARAH</h6>
+              <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Jenny <br /> Aguilera</h6>
               <div className="flex items-center"> 
                 <Image src="/images/codeIcon.png" width={15} height={15} objectFit="contain" alt="Code Icon"/>
                 <span className="text-primary text-xs font-light ml-1">Software QA Analyst</span>
@@ -84,7 +84,7 @@ const TalentNetwork = ()=>{
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg">
           Our network boasts a diverse group of highly skilled professionals specializing in QA Engineering, Scrum Mastery, Data Science, and Software Development. Each talent is meticulously vetted and trained to ensure they bring unparalleled expertise and value to your organization. Discover the power of a workforce dedicated to excellence and innovation.
         </p>
-        <button className="btn bg-primary text-white text-xs md:text-sm rounded-full w-48 mt-8 mb-auto">Explore Talents</button>
+        <button className="btn bg-primary text-white text-sm md:text-xl font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</button>
       </article>
     </section>
   )
