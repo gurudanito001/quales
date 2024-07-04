@@ -13,9 +13,9 @@ const OurCommunity = ()=>{
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-xl font-light">
-        Unlock the potential of your projects with our elite network of tech experts. Our community of top-tier QA engineers and Scrum Masters is ready to drive innovation and deliver exceptional results. Partner with us to elevate your technology initiatives to the next level.
+          Unlock the potential of your projects with our elite network of tech experts. Our community of top-tier QA engineers and Scrum Masters is ready to drive innovation and deliver exceptional results. Partner with us to elevate your technology initiatives to the next level.
         </p>
-        <button className="btn btn-lg bg-primary text-white text-sm md:text-lg font-normal rounded-full px-9 md:ml-auto mt-8">Quales Academy</button>
+        <button className="btn bg-primary text-white text-sm md:text-lg md:font-semibold font-normal rounded-full px-9 md:ml-auto mt-8">Quales Academy</button>
       </article>
       <figure className=" md:w-1/2 mb-10 md:mb-0">
         <Image

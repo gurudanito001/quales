@@ -96,7 +96,7 @@ const Partners = () =>{
 
   return(
     <section className="bg-white py-16 px-5 lg:px-20 overflow-x-hidden border shadow-inner mt-20">
-      <h6 className="text-center text-primary text-2xl mb-5 md:mb-8">Quales is Trusted By:</h6>
+      <h6 className="text-center text-primary text-xl md:text-2xl mb-5 md:mb-8">Quales is Trusted By:</h6>
 
 
       <div className="relative h-full overflow-hidden py-12 bg-white mx-auto">
