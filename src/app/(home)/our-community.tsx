@@ -1,7 +1,42 @@
-import Image from "next/image"
+"use client"
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "@ant-design/react-slick";
+
+
 
 
 const OurCommunity = ()=>{
+
+  const images = [
+    `bg-[url('/images/adaeze.jpg')]`,
+    `bg-[url('/images/ibukunoluwa.jpg')]`,
+    `bg-[url('/images/kosisochukwu.jpg')]`,
+    `bg-[url('/images/moses.jpg')]`,
+    `bg-[url('/images/patrick.jpg')]`
+  ]
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+
+  const listImages = ()=>{
+    return images.map( (item: string, index) =>{
+      return (
+        <div key={item} className="w-full flex">
+          <div className={`carousel-item ${images[index]} bg-cover bg-center bg-no-repeat h-420 max-w-96 mx-auto`}>
+          </div>
+        </div>
+      )
+    })
+  }
 
   return(
     <section className="bg-neutral px-5 lg:px-28 py-28 flex flex-col-reverse md:flex-row items-center">
@@ -17,15 +52,13 @@ const OurCommunity = ()=>{
         </p>
         <button className="btn bg-primary text-white text-sm md:text-lg md:font-semibold font-normal rounded-full px-9 md:ml-auto mt-8">Quales Academy</button>
       </article>
-      <figure className=" md:w-1/2 mb-10 md:mb-0">
-        <Image
-          src={`/images/our-community.svg`}
-          className="w-100"
-          style={{ height: "auto", objectFit: "contain" }}
-          alt="Product Image"
-          width={700}
-          height={700}
-        />
+      
+      <figure className="w-full md:w-1/2 mb-10 md:mb-0">
+
+        <Slider {...settings}>
+          {listImages()} 
+        </Slider>
+
       </figure>
     </section>
   )
