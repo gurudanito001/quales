@@ -64,7 +64,6 @@ const HiringProcess =()=>{ //grid grid-cols-2 lg:grid-cols-4 mt-12 md:mt-20 gap-
           </div>
         </div>
       </div>
-      
     </section>
   )
 }

@@ -23,194 +23,194 @@ export default async function Page({params}: {params: {category: string}}) {
       </div>
 
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div className="flex flex-col mb-5 items-center lg:ml-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mr-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:ml-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mr-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:ml-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mr-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:ml-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mr-auto">
-          <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-12 px-5">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
+          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
+            <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-gray-200 flex items-center content-center mb-3">
                 <UserIcon className="text-gray-500 w-20 mx-auto" />
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
-                <span className="text-primary font-light ml-1">Previously worked with:</span>
+                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
+                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
               </div>
             </article>
           </div>

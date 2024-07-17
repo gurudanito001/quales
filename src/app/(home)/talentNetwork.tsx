@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image";
 import { UserIcon } from "@heroicons/react/24/solid";
+import { useRouter } from "next/navigation";
 
 
 const TalentNetwork = ()=>{
-
+  const router = useRouter();
   return(
     <section className=" bg-white px-5 lg:px-28 py-28 grid grid-cols-1 md:grid-cols-2">
 
@@ -15,7 +18,7 @@ const TalentNetwork = ()=>{
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg text-center md:text-left">
           Our network boasts a diverse group of highly skilled professionals specializing in QA Engineering, Scrum Mastery, Data Science, and Software Development. Each talent is meticulously vetted and trained to ensure they bring unparalleled expertise and value to your organization. Discover the power of a workforce dedicated to excellence and innovation.
         </p>
-        <button className="btn bg-primary hidden md:inline-block text-white text-sm md:text-lg md:font-semibold font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</button>
+        <button className="btn bg-primary hidden md:inline-block text-white text-sm md:text-lg md:font-semibold font-normal rounded-full w-48 mt-8 mb-auto" onClick={()=>router.push("/explore-talents")}>Explore Talents</button>
       </article>
       
       <div className="grid grid-cols-2 mb-5 md:mb-0 gap-5 order-2 md:order-1 mt-10 md:mt-0">
