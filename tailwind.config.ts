@@ -22,6 +22,7 @@ const config: Config = {
         "overlay": "rgba(0, 0, 0, 0.7)",
         "section-blue": "#C6D9F1",
         "section-red": "#800020",
+        "form-input-bg": "#FFFBFB"
       },
       width:{
         "336": "336px"

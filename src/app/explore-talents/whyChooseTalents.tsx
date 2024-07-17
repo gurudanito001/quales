@@ -1,10 +1,13 @@
+"use client"
+
 import Image from "next/image"
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/solid";
+import { useRouter } from "next/navigation";
 
 
 const WhyChooseTalents = () => {
-
+  const router = useRouter();
   return (
     <section className="bg-white px-5 xl:px-28 mt-20">
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -59,7 +62,7 @@ const WhyChooseTalents = () => {
 
 
       <div className="px-5 py-28 flex flex-col-reverse md:flex-row items-center">
-        <article className="text-base-content md:w-3/5">
+        <article className="flex flex-col text-base-content md:w-3/5">
           <header >
             <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text"> Why Choose Quales Talents? </h3>
           </header>
@@ -76,7 +79,7 @@ const WhyChooseTalents = () => {
             <div className=" bg-gray-200 p-5 rounded-2xl">Proven Track Record</div>
             <div className=" bg-gray-200 p-5 rounded-2xl">Dedicated Support Team</div>
           </div>
-          <button className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 md:ml-auto mt-8">Hire Talents</button>
+          <button className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 md:mr-auto mt-8" onClick={()=>router.push("/hire-talents")}>Hire Talents</button>
         </article>
         <figure className=" md:w-2/5 mb-10 md:mb-0">
           <Image
