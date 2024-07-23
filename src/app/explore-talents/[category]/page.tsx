@@ -1,13 +1,32 @@
+"use client"
+
 import Link from "next/link";
 import NavBar from "@/app/(home)/navbar";
 import { UserIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import Footer from "@/app/(home)/footer";
+import { usePathname, useRouter } from "next/navigation";
 
-export default async function Page({params}: {params: {category: string}}) {
-
-  const formatCategory = (category: string)=>{
-    let result = category.replaceAll("-", " ")
-    return result
+export default function Page({params}: {params: {category: string}}) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const formatCategory = (category: string) => {
+    switch (category) {
+      case "qa-engineers":
+        return "QA Engineers";
+      case "software-developers":
+        return "Software Developers";
+      case "product-managers":
+        return "Product Managers";
+      case "ui-ux-designers":
+        return "UI UX Designers";
+      case "business-analysts":
+        return "Business Analytics";
+      case "scrum-masters":
+        return "Scrum Masters";
+      case "data-analysts":
+        return "Data Analysts";
+      default:
+    }
   }
   return(
 
@@ -24,7 +43,7 @@ export default async function Page({params}: {params: {category: string}}) {
 
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -40,7 +59,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -56,7 +75,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -72,7 +91,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -88,7 +107,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -104,7 +123,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -120,7 +139,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -136,7 +155,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -152,7 +171,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -168,7 +187,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -184,7 +203,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
@@ -200,7 +219,7 @@ export default async function Page({params}: {params: {category: string}}) {
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto">
+        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-12 px-3 sm:px-5">
