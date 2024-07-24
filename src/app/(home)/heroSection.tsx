@@ -12,11 +12,11 @@ const HeroSection = () => {
   const router = useRouter();
 
   const images = [
-    `bg-[url('/images/adaeze.jpg')]`,
-    `bg-[url('/images/ibukunoluwa.jpg')]`,
-    `bg-[url('/images/kosisochukwu.jpg')]`,
-    `bg-[url('/images/moses.jpg')]`,
-    `bg-[url('/images/patrick.jpg')]`
+    `bg-[url('/images/adaeze.png')]`,
+    `bg-[url('/images/ibukunoluwa.png')]`,
+    `bg-[url('/images/kosisochukwu.png')]`,
+    /* `bg-[url('/images/moses.jpg')]`, */
+    `bg-[url('/images/patrick.png')]`
   ]
 
   const settings = {
