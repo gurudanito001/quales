@@ -26,6 +26,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/explore-talents/[category]/[userId]/page.js"
+    ],
+    "/hire-talents/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hire-talents/page.js"
     ]
   }
 }

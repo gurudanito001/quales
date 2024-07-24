@@ -2586,6 +2586,9 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[url\(\'\/images\/suit-design\.jpeg\'\)\] {
   background-image: url('/images/suit-design.jpeg');
 }
+.bg-\[url\(\'\/images\/moses\.png\'\)\] {
+  background-image: url('/images/moses.png');
+}
 .from-slate-700 {
   --tw-gradient-from: #334155 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(51 65 85 / 0) var(--tw-gradient-to-position);
