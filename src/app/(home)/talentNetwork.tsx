@@ -26,8 +26,7 @@ const TalentNetwork = ()=>{
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 h-36 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
-              <span className=" rounded-full h-20 w-20 bg-gray-200 flex items-center content-center mb-3">
-                <UserIcon className="text-gray-500 w-10 mx-auto" />
+              <span className=" rounded-full h-20 w-20 bg-[url('/images/habeeb.png')] bg-center bg-cover mb-3">
               </span>
               <h6 className="text-primary text-center leading-tight mb-2 font-semibold uppercase">Adewale <br/> Abdulrasaq <br/> Habeeb</h6>
               <div className="flex items-center"> 

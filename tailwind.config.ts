@@ -26,6 +26,9 @@ const config: Config = {
         "btn-blue": "#1877F2",
         "gray-black": "rgba(0, 0, 0, .8)"
       },
+      fontSize: {
+        "10px": "10px"
+      },
       width:{
         "336": "336px"
       },
