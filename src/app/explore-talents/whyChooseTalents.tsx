@@ -15,10 +15,9 @@ const WhyChooseTalents = () => {
           <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg bg-white"></header>
           <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg bg-white">
             <article className="flex flex-col items-center relative -mt-12 px-5">
-              <span className=" rounded-full h-28 w-28 bg-neutral text-primary flex items-center content-center mb-3">
-                <UserIcon className="text-gray-500 w-20 mx-auto" />
+              <span className=" rounded-full h-20 w-20 bg-[url('/images/habeeb.png')] bg-center bg-cover mb-3">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">ADEWALE ABDULRASAQ HABEEB</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
                 <span className="text-primary font-light ml-1">Previously worked with:</span>
@@ -31,12 +30,11 @@ const WhyChooseTalents = () => {
           <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg bg-white"></header>
           <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg bg-white">
             <article className="flex flex-col items-center relative -mt-12 px-5">
-              <span className=" rounded-full h-28 w-28 bg-neutral text-primary flex items-center content-center mb-3">
-                <UserIcon className="text-gray-500 w-20 mx-auto" />
+              <span className=" rounded-full h-20 w-20 bg-[url('/images/moses.jpg')] bg-center bg-cover mb-3">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">MOSES <br/> AYANKOYA</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
+                <span className="text-primary font-semibold ml-1">Automation Engineer</span> 
                 <span className="text-primary font-light ml-1">Previously worked with:</span>
               </div>
             </article>
