@@ -1,5 +1,6 @@
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = ()=>{
 
@@ -26,7 +27,7 @@ const Footer = ()=>{
           <div>
             <h6 className="text-sm font-semibold mb-5">Company</h6>
             <ul className="text-xs flex flex-col gap-2">
-              <li>About Us</li>
+              <li><Link href="/about-us">About Us</Link></li>
               <li>How It Works</li>
               <li>Reviews</li>
               <li>FAQ’s</li>
@@ -42,11 +43,11 @@ const Footer = ()=>{
           </div>
         </div>
         <div className="flex items-start gap-6">
-          <Image src="/images/instagram.svg" width={40} height={40} alt="Instagram Icon" className="ml-auto" />
-          <Image src="/images/linkedIn.svg" width={40} height={40} alt="LinkedIn Icon" />
-          <Image src="/images/facebook.svg" width={40} height={40} alt="Facebook Icon" />
-          <Image src="/images/x.svg" width={40} height={40} alt="X Icon" />
-          <Image src="/images/thread.svg" width={35} height={35} alt="Thread Icon" className="mr-auto lg:mr-0" />
+          <Link href="https://www.instagram.com/quales.tech/" target="_blank" className="ml-auto"><Image src="/images/instagram.svg" width={40} height={40} alt="Instagram Icon" /></Link>
+          <Link href="https://www.linkedin.com/company/qualestech/" target="_blank"><Image src="/images/linkedIn.svg" width={40} height={40} alt="LinkedIn Icon" /></Link>
+          <Link href="https://web.facebook.com/profile.php?id=100093641419212" target="_blank"><Image src="/images/facebook.svg" width={40} height={40} alt="Facebook Icon" /></Link>
+          <Link href="https://x.com/Qualestech_" target="_blank"><Image src="/images/x.svg" width={40} height={40} alt="X Icon" /></Link>
+          <Link href="" target="_blank" className="mr-auto lg:mr-0"><Image src="/images/thread.svg" width={35} height={35} alt="Thread Icon" /></Link>
         </div>
       </div>
 

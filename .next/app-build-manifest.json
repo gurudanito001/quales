@@ -27,10 +27,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/explore-talents/[category]/[userId]/page.js"
     ],
-    "/hire-talents/page": [
+    "/qualesacademy/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/hire-talents/page.js"
+      "static/chunks/app/qualesacademy/page.js"
+    ],
+    "/usecases/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/usecases/page.js"
+    ],
+    "/thoughtleadership/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/thoughtleadership/page.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about-us/page.js"
     ]
   }
 }

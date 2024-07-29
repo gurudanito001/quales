@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ShoppingCartIcon, Bars3BottomRightIcon, XMarkIcon, MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
-import formatAsCurrency from "../lib/formatAsCurrency";
+
 
 
 
@@ -23,22 +23,53 @@ const NavBar = () => {
 
       <div className="navbar-end w-auto ml-auto">
         <ul className="menu menu-horizontal px-1 hidden md:flex gap-8">
-          <li><a>Quales Academy</a></li>
-          <li><a>Use Cases</a></li>
-          <li><a>Thought Leadership</a></li>
-          <li><a>About Us</a></li>
+          <li><Link href="/qualesacademy">Quales Academy</Link></li>
+          <li><Link href="/usecases">Use Cases</Link></li>
+          <li><Link href="/thoughtleadership">Thought Leadership</Link></li>
+          <li><Link href="/about-us">About Us</Link></li>
         </ul>
 
         <div className="dropdown dropdown-end md:hidden">
-          <div tabIndex={0} role="button" className="btn btn-ghost px-3 lg:hidden">
+          {/* <div tabIndex={0} role="button" className="btn btn-ghost px-3 lg:hidden">
             <Bars3BottomRightIcon className="w-5" />
           </div>
+
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li><a className="py-3 text-sm">Quales Academy</a></li>
             <li><a className="py-3 text-sm" href="#products">Use Cases</a></li>
             <li><a className="py-3 text-sm">Thought Leadership</a></li>
             <li><a className="py-3 text-sm">About Us</a></li>
-          </ul>
+          </ul> */}
+
+          <div className="drawer drawer-end">
+            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer-4" className="drawer-button btn btn-ghost px-3">
+                
+                  <Bars3BottomRightIcon className="w-5" />
+              </label>
+            </div>
+            <div className="drawer-side">
+              <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+              <ul className="menu min-h-full w-80 px-0 py-0 bg-primary text-white">
+                {/* Sidebar content here */}
+                <li className="h-16 m-0 flex px-5"> 
+                  <label htmlFor="my-drawer-4" aria-label="close sidebar" className="inline-block ml-auto my-auto">
+                    <XMarkIcon className="w-6 text-white p-0" />
+                  </label>
+                  
+                </li>
+                <li><Link href="/qualesacademy" className="py-3 px-5 text-lg">Quales Academy</Link></li>
+                <li><Link href="/usecases" className="py-3 px-5 text-lg" >Use Cases</Link></li>
+                <li><Link href="/thoughtleadership" className="py-3 px-5 text-lg">Thought Leadership</Link></li>
+                <li><Link href="/about-us" className="py-3 px-5 text-lg">About Us</Link></li>
+              </ul>
+            </div>
+          </div>
+
+
+          
         </div>
       </div>
     </nav>
