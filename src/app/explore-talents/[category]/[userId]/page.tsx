@@ -185,10 +185,10 @@ export default async function Page({ params }: { params: { category: string, use
 
       <section className=" bg-gray-black text-white px-5 lg:px-28 py-20 lg:py-36 flex flex-col md:flex-row mb-10">
         <article>
-          <h3 className="font-bold text-2xl lg:text-4xl">Looking for something more specific?</h3>
-          <p className="font-light text-lg mt-5">Sometimes you need a developer with a more specific set of skills to fit your project needs. Let’s see if we can help</p>
+          <h3 className="font-bold text-2xl lg:text-4xl">Want to connect with the talent?</h3>
+          <p className="font-light text-lg mt-5">Sometimes you need an engineer with a more specific set of skills to fit your project needs. Let’s see if we can help</p>
         </article>
-        <button className="btn bg-btn-blue border-btn-blue text-white rounded-full px-8 my-auto mr-auto md:mr-0 md:ml-auto">Schedule a Meeting</button>
+        <button className="btn bg-btn-blue border-btn-blue text-white rounded-full px-8 my-auto mr-auto md:mr-0 md:ml-auto mt-10 md:mt-0">Schedule a Meeting</button>
       </section>
 
       <Footer />
