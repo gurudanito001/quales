@@ -5,7 +5,7 @@ import { ArrowLongRightIcon, ArrowLongDownIcon } from "@heroicons/react/24/outli
 const HiringProcess =()=>{ //grid grid-cols-2 lg:grid-cols-4 mt-12 md:mt-20 gap-5
 
   return(
-    <section className="py-14 bg-neutral px-5 xl:px-28">
+    <section className="py-28 bg-neutral px-5 xl:px-28">
       <h3 className="text-center text-xl font-semibold mb-3 text-primary">Our Hiring Process</h3>
       <p className="text-xs md:text-sm text-center text-primary">We have gone full circle so you can get to your needs in a simple, straight line</p>
 
