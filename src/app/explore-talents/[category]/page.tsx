@@ -238,16 +238,16 @@ export default function Page({params}: {params: {category: string}}) {
 
       </div>
 
-      <div className="join mx-auto mt-8 mb-12 gap-3">
-        <button className=" btn btn-sm bg-primary text-white border-none shadow-none px-2 mr-5"> <ChevronLeftIcon className="w-4" /> </button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white border-b-primary border-b-2 px-2">1</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">2</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">3</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">4</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">5</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">......</button>
-        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-2">10</button>
-        <button className=" btn btn-sm bg-primary text-white border-none shadow-none px-2 ml-5"> <ChevronRightIcon className="w-4" /> </button>
+      <div className="join items-center mx-auto mt-8 mb-12 gap-3">
+        <button className=" btn btn-xs bg-primary text-white border-none shadow-none px-1 mr-5"> <ChevronLeftIcon className="w-4" /> </button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white border-b-primary border-b-2 px-1">1</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">2</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">3</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">4</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">5</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">......</button>
+        <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">10</button>
+        <button className=" btn btn-xs bg-primary text-white border-none shadow-none px-1 ml-5"> <ChevronRightIcon className="w-4" /> </button>
       </div>
     </section>
 

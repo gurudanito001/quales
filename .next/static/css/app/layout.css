@@ -1027,6 +1027,12 @@ html {
     }
   }
 
+  .btn-link:hover {
+    border-color: transparent;
+    background-color: transparent;
+    text-decoration-line: underline;
+  }
+
   .btn-disabled:hover,
     .btn[disabled]:hover,
     .btn:disabled:hover {
@@ -1122,6 +1128,11 @@ html {
   margin-top: -1rem;
   margin-bottom: -1rem;
   margin-inline-end: -1rem;
+}
+.input-sm[type="number"]::-webkit-inner-spin-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: -0px;
 }
 .join {
   display: inline-flex;
@@ -1503,6 +1514,22 @@ html {
 .btn-ghost.btn-active {
   border-color: transparent;
   background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+.btn-link {
+  border-color: transparent;
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+  text-decoration-line: underline;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline-color: currentColor;
+}
+.btn-link.btn-active {
+  border-color: transparent;
+  background-color: transparent;
+  text-decoration-line: underline;
 }
 .btn.btn-disabled,
   .btn[disabled],
@@ -2256,6 +2283,13 @@ details.collapse summary::-webkit-details-marker {
     text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
   }
 }
+.btn-xs {
+  height: 1.5rem;
+  min-height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
+}
 .btn-sm {
   height: 2rem;
   min-height: 2rem;
@@ -2263,9 +2297,20 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 0.75rem;
   font-size: 0.875rem;
 }
+.btn-square:where(.btn-xs) {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0px;
+}
 .btn-square:where(.btn-sm) {
   height: 2rem;
   width: 2rem;
+  padding: 0px;
+}
+.btn-circle:where(.btn-xs) {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
   padding: 0px;
 }
 .btn-circle:where(.btn-sm) {
@@ -2301,6 +2346,13 @@ details.collapse summary::-webkit-details-marker {
 html:has(.drawer-toggle:checked) {
   overflow-y: hidden;
   scrollbar-gutter: stable;
+}
+.input-sm {
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 2rem;
 }
 .join.join-vertical {
   flex-direction: column;
@@ -2818,6 +2870,15 @@ html:has(.drawer-toggle:checked) {
 .h-96 {
   height: 24rem;
 }
+.h-60 {
+  height: 15rem;
+}
+.h-52 {
+  height: 13rem;
+}
+.h-48 {
+  height: 12rem;
+}
 .max-h-600 {
   max-height: 600px;
 }
@@ -2896,6 +2957,15 @@ html:has(.drawer-toggle:checked) {
 .w-max {
   width: max-content;
 }
+.w-fit {
+  width: fit-content;
+}
+.w-96 {
+  width: 24rem;
+}
+.w-3 {
+  width: 0.75rem;
+}
 .min-w-40 {
   min-width: 10rem;
 }
@@ -2907,6 +2977,9 @@ html:has(.drawer-toggle:checked) {
 }
 .min-w-96 {
   min-width: 24rem;
+}
+.min-w-full {
+  min-width: 100%;
 }
 .max-w-1000 {
   max-width: 1000px;
@@ -2943,6 +3016,15 @@ html:has(.drawer-toggle:checked) {
 }
 .max-w-80 {
   max-width: 20rem;
+}
+.max-w-5xl {
+  max-width: 64rem;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -3015,6 +3097,9 @@ html:has(.drawer-toggle:checked) {
 }
 .gap-14 {
   gap: 3.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -3208,6 +3293,9 @@ html:has(.drawer-toggle:checked) {
 }
 .bg-\[url\(\'\/images\/abati-1\.jpg\'\)\] {
   background-image: url('/images/abati-1.jpg');
+}
+.bg-\[url\(\'\/images\/article-img\.png\'\)\] {
+  background-image: url('/images/article-img.png');
 }
 .from-slate-700 {
   --tw-gradient-from: #334155 var(--tw-gradient-from-position);
@@ -3417,6 +3505,15 @@ html:has(.drawer-toggle:checked) {
 .leading-tight {
   line-height: 1.25;
 }
+.leading-3 {
+  line-height: .75rem;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-5 {
+  line-height: 1.25rem;
+}
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
@@ -3448,8 +3545,18 @@ html:has(.drawer-toggle:checked) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.no-underline {
+  text-decoration-line: none;
+}
 .opacity-100 {
   opacity: 1;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -3800,6 +3907,10 @@ body {
     width: 16rem;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3899,6 +4010,10 @@ body {
     margin-top: auto;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3913,6 +4028,10 @@ body {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:inline-flex {
+    display: inline-flex;
   }
 
   .md\:hidden {
@@ -4027,6 +4146,11 @@ body {
     padding-bottom: 2.5rem;
   }
 
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -4132,6 +4256,10 @@ body {
     width: 24rem;
   }
 
+  .lg\:w-max {
+    width: max-content;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -4150,6 +4278,10 @@ body {
 
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:p-10 {
@@ -4231,6 +4363,14 @@ body {
 
   .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
   }
 
   .xl\:p-12 {
