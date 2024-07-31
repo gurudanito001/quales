@@ -16,41 +16,60 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 5000,
+  arrows: false
 };
 
 const WhyChooseTalents = () => {
   const router = useRouter();
   return (
     <section className="bg-white pb-16">
-      <div className="xl:px-72 bg-neutral2 py-32">
-        <Slider {...settings} >
+      <div className=" flex sm:px-12 xl:px-72 bg-neutral2 py-32">
+        <Slider {...settings}  className="mx-auto md:mx-0 w-full">
           <div>
-            <div className="flex gap-8">
-              <figure className="h-96 min-w-96 bg-[url('/images/habeeb.png')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg">
+            <div className="flex flex-col md:flex-row gap-8">
+              <h3 className="text-xl md:text-3xl mx-auto md:mx-0 mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text inline md:hidden">Adewale Abdulrasaq Habeeb</h3>
+              <figure className="h-80 w-80 lg:h-96 lg:w-96 border shadow-md bg-[url('/images/habeeb.png')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg mx-auto md:mx-0">
               </figure>
-              <article className="flex flex-col w-full my-auto gap-3">
-                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Adewale Abdulrasaq Habeeb</h3>
-                <h6 className="text-primary font-semibold text-xl">PowerBI Specialist</h6>
-                <p className="text-lg text-primary"> <strong>Experience:</strong> 7 years</p>
-                <Image alt="continent image" src="/images/africa.svg" width={150} height={150} />
+              <article className="flex flex-col md:w-max my-auto">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Adewale Abdulrasaq Habeeb</h3>
+                <h6 className="text-primary font-semibold text-lg text-center md:text-left">PowerBI Specialist</h6>
+                <p className="text-lg text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 7 years</p>
+                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/africa.svg" width={150} height={150} />
+              </article>
+            </div>
+          </div>
+
+
+          <div>
+            <div className="flex flex-col md:flex-row gap-8">
+              <h3 className="text-xl md:text-3xl mx-auto md:mx-0 mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text inline md:hidden">Moses Ayankoya</h3>
+              <figure className="h-80 w-80 lg:h-96 lg:w-96 border shadow-md bg-[url('/images/moses.jpg')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg mx-auto md:mx-0">
+              </figure>
+              <article className="flex flex-col md:w-max my-auto">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Moses Ayankoya</h3>
+                <h6 className="text-primary font-semibold text-lg text-center md:text-left">Senior iOS Developer</h6>
+                <p className="text-lg text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 9+ years</p>
+                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/africa.svg" width={150} height={150} />
               </article>
             </div>
           </div>
 
           <div>
-            <div className="flex gap-8">
-              <figure className="h-96 min-w-96 bg-[url('/images/moses.jpg')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg">
+            <div className="flex flex-col md:flex-row gap-8">
+              <h3 className="text-xl md:text-3xl mx-auto md:mx-0 mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text inline md:hidden">Ashu Tyagi</h3>
+              <figure className="h-80 w-80 lg:h-96 lg:w-96 bg-white shadow-md flex items-center content-center rounded-lg mx-auto md:mx-0">
+                <UserIcon className="text-gray-500 w-52 mx-auto" />
               </figure>
-              <article className="flex flex-col w-full my-auto gap-3">
-                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Moses Ayankoya</h3>
-                <h6 className="text-primary font-semibold text-xl">Senior iOS Developer</h6>
-                <p className="text-lg text-primary"> <strong>Experience:</strong> 9+ years</p>
-                <Image alt="continent image" src="/images/africa.svg" width={150} height={150} />
+              <article className="flex flex-col md:w-max my-auto">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Ashu Tyagi</h3>
+                <h6 className="text-primary font-semibold text-lg text-center md:text-left">Senior Android Engineer</h6>
+                <p className="text-lg text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 6+ years</p>
+                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/asia.svg" width={150} height={150} />
               </article>
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <div className="flex gap-8">
               <figure className="h-96 min-w-96 bg-white flex items-center content-center rounded-lg">
                 <UserIcon className="text-gray-500 w-52 mx-auto" />
@@ -62,7 +81,7 @@ const WhyChooseTalents = () => {
                 <Image alt="continent image" src="/images/asia.svg" width={150} height={150} />
               </article>
             </div>
-          </div>
+          </div> */} 
         </Slider>
       </div>
       
