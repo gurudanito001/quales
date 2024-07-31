@@ -25,7 +25,7 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1 hidden md:flex gap-8">
           <li><Link href="/qualesacademy">Quales Academy</Link></li>
           <li><Link href="/usecases">Use Cases</Link></li>
-          <li><Link href="/thoughtleadership">Thought Leadership</Link></li>
+          <li><Link href="/thought-leadership">Thought Leadership</Link></li>
           <li><Link href="/about-us">About Us</Link></li>
         </ul>
 
@@ -62,7 +62,7 @@ const NavBar = () => {
                 </li>
                 <li><Link href="/qualesacademy" className="py-3 px-5 text-lg">Quales Academy</Link></li>
                 <li><Link href="/usecases" className="py-3 px-5 text-lg" >Use Cases</Link></li>
-                <li><Link href="/thoughtleadership" className="py-3 px-5 text-lg">Thought Leadership</Link></li>
+                <li><Link href="/thought-leadership" className="py-3 px-5 text-lg">Thought Leadership</Link></li>
                 <li><Link href="/about-us" className="py-3 px-5 text-lg">About Us</Link></li>
               </ul>
             </div>

@@ -4,13 +4,75 @@ import Image from "next/image"
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
+import Slider from "@ant-design/react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 900,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+};
 
 const WhyChooseTalents = () => {
   const router = useRouter();
   return (
-    <section className="bg-white py-16 xl:px-28">
-      <div className="grid grid-cols-1 md:grid-cols-3 bg-neutral md:bg-white py-10">
+    <section className="bg-white pb-16">
+      <div className="xl:px-72 bg-neutral2 py-32">
+        <Slider {...settings} >
+          <div>
+            <div className="flex gap-8">
+              <figure className="h-96 min-w-96 bg-[url('/images/habeeb.png')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg">
+              </figure>
+              <article className="flex flex-col w-full my-auto gap-3">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Adewale Abdulrasaq Habeeb</h3>
+                <h6 className="text-primary font-semibold text-xl">PowerBI Specialist</h6>
+                <p className="text-lg text-primary"> <strong>Experience:</strong> 7 years</p>
+                <Image alt="continent image" src="/images/africa.svg" width={150} height={150} />
+              </article>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex gap-8">
+              <figure className="h-96 min-w-96 bg-[url('/images/moses.jpg')] bg-no-repeat bg-cover bg-center flex items-center content-center rounded-lg">
+              </figure>
+              <article className="flex flex-col w-full my-auto gap-3">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Moses Ayankoya</h3>
+                <h6 className="text-primary font-semibold text-xl">Senior iOS Developer</h6>
+                <p className="text-lg text-primary"> <strong>Experience:</strong> 9+ years</p>
+                <Image alt="continent image" src="/images/africa.svg" width={150} height={150} />
+              </article>
+            </div>
+          </div>
+
+          <div>
+            <div className="flex gap-8">
+              <figure className="h-96 min-w-96 bg-white flex items-center content-center rounded-lg">
+                <UserIcon className="text-gray-500 w-52 mx-auto" />
+              </figure>
+              <article className="flex flex-col w-full my-auto gap-3">
+                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Ashu Tyagi</h3>
+                <h6 className="text-primary font-semibold text-xl">Senior Android Engineer</h6>
+                <p className="text-lg text-primary"> <strong>Tech Stack:</strong> 6+ years</p>
+                <Image alt="continent image" src="/images/asia.svg" width={150} height={150} />
+              </article>
+            </div>
+          </div>
+        </Slider>
+      </div>
+      
+
+
+
+
+
+
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 bg-neutral md:bg-white py-10">
         <div className="flex flex-col mb-5 items-center">
           <header className=" w-64 h-24 shadow-md border border-gray-200 rounded-lg bg-white"></header>
           <div className=" w-64 h-56 shadow-md border border-gray-200 rounded-lg bg-white">
@@ -19,7 +81,7 @@ const WhyChooseTalents = () => {
               </span>
               <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-lg">ADEWALE ABDULRASAQ HABEEB</h6>
               <div className="flex flex-col items-center">
-                <span className="text-primary font-semibold ml-1">Software Test Engineer</span> 
+                <span className="text-primary font-semibold ml-1">PowerBI Specialist</span> 
                 <span className="text-primary font-light ml-1">Previously worked with:</span>
               </div>
             </article>
@@ -57,10 +119,10 @@ const WhyChooseTalents = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
-      <div className="px-5 md:py-10 flex flex-col-reverse md:flex-row items-center mt-14 lg:mt-0">
+      <div className="px-5 md:py-10 flex flex-col-reverse md:flex-row items-center mt-14 lg:mt-0 xl:px-28">
         <article className="flex flex-col text-base-content lg:w-1/2 mx-auto">
           <header className="flex">
             <h3 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto lg:mx-0"> Why Choose Quales Talents? </h3>

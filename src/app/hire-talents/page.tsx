@@ -1,7 +1,18 @@
+"use client"
+
 import { UserIcon } from "@heroicons/react/24/solid";
 import NavBar from "../(home)/navbar";
+import Image from "next/image";
+import { useState } from "react";
 
 const HireTalents = ()=>{
+  /* const [formData, setFormData] = useState({
+    companyName: "",
+    email: "",
+    talentsRequired: [],
+    skillSet: "",
+    resumptionWindow: ""
+  }) */
 
 
   return(
@@ -71,7 +82,25 @@ const HireTalents = ()=>{
           </select>
         </label>
 
-        <button className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-16">Link me up with the Talent </button>
+        {/* <button className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-16">Link me up with the Talent </button> */}
+          <button className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-16" onClick={(e) => {
+            e.preventDefault()
+            let el: any = document?.getElementById('hire_talent_modal');
+            if(!el){return;}
+            el.showModal()
+          }}>Link me up with the Talent</button>
+          <dialog id="hire_talent_modal" className="modal modal-bottom sm:modal-middle border">
+            <div className="modal-box flex flex-col rounded-xl py-8 px-5">
+              <Image src="/images/success-avatar.svg" alt="success avatar" width={200} height={200} className="mx-auto" />
+              <p className="py-4 text-primary text-center">Thanks for indicating your interest in our talents, we shall connect you with them soon.</p>
+              <div className="modal-action flex">
+                <form method="dialog" className=" mx-auto">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button className="btn bg-primary text-white rounded-full px-8">Done</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
       </form>
     </section>
     </>
