@@ -6,13 +6,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const HireTalents = ()=>{
-  const [formData, setFormData] = useState({
+  /* const [formData, setFormData] = useState({
     companyName: "",
     email: "",
     talentsRequired: [],
     skillSet: "",
     resumptionWindow: ""
-  })
+  }) */
 
 
   return(

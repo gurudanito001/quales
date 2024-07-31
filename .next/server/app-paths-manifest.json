@@ -1,5 +1,5 @@
 {
-  "/explore-talents/page": "app/explore-talents/page.js",
+  "/hire-talents/page": "app/hire-talents/page.js",
   "/(home)/page": "app/(home)/page.js",
-  "/hire-talents/page": "app/hire-talents/page.js"
+  "/explore-talents/page": "app/explore-talents/page.js"
 }
