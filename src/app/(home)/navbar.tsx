@@ -30,16 +30,6 @@ const NavBar = () => {
         </ul>
 
         <div className="dropdown dropdown-end md:hidden">
-          {/* <div tabIndex={0} role="button" className="btn btn-ghost px-3 lg:hidden">
-            <Bars3BottomRightIcon className="w-5" />
-          </div>
-
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a className="py-3 text-sm">Quales Academy</a></li>
-            <li><a className="py-3 text-sm" href="#products">Use Cases</a></li>
-            <li><a className="py-3 text-sm">Thought Leadership</a></li>
-            <li><a className="py-3 text-sm">About Us</a></li>
-          </ul> */}
 
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />

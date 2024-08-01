@@ -6,7 +6,7 @@ import Image from "next/image"
 const ExecutionProcess = () => {
 
   return (
-    <section className="bg-white px-5 lg:px-28 pt-8">
+    <section className="bg-white px-5 lg:px-28 py-8">
       <h3 className="text-center text-xl font-semibold mb-3 text-primary">Our Execution Process</h3>
       <p className="text-xs md:text-sm text-center text-primary max-w-550 mx-auto">
         With 8 years plus in the industry and experience supporting multiple tech companies,

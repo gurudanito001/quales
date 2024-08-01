@@ -37,6 +37,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/thought-leadership/page.js"
+    ],
+    "/usecases/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/usecases/page.js"
     ]
   }
 }

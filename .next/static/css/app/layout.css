@@ -3026,6 +3026,12 @@ html:has(.drawer-toggle:checked) {
 .max-w-2xl {
   max-width: 42rem;
 }
+.max-w-24 {
+  max-width: 6rem;
+}
+.max-w-48 {
+  max-width: 12rem;
+}
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -3151,6 +3157,9 @@ html:has(.drawer-toggle:checked) {
 }
 .border-t-0 {
   border-top-width: 0px;
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 .border-dashed {
   border-style: dashed;
@@ -3438,6 +3447,18 @@ html:has(.drawer-toggle:checked) {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -4151,6 +4172,11 @@ body {
     padding-bottom: 3.5rem;
   }
 
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -4345,6 +4371,10 @@ body {
 
 @media (min-width: 1280px) {
 
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -4402,9 +4432,24 @@ body {
     padding-right: 13rem;
   }
 
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
