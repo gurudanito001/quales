@@ -13,8 +13,6 @@ const UseCasesSection = ()=>{
           <p className="text-primary max-w-5xl mt-6 text-sm lg:text-lg text-center mx-auto font-light px-5 lg:px-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. Aliquam vitae mi nec nibh interdum commodo eu vitae quam. </p>
         </header>
 
-
-
         <section className="px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">
 
 
@@ -50,8 +48,6 @@ const UseCasesSection = ()=>{
 
         </section>
 
-
-
         <section className="px-5 lg:px-28 py-10 flex flex-col-reverse md:flex-row items-center">
 
           <figure className=" md:w-1/2 mb-10 md:mb-0 flex flex-col ">
@@ -83,9 +79,6 @@ const UseCasesSection = ()=>{
             <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8 max-w-48 hidden md:inline-flex">Read More</Link>
           </article>
         </section>
-
-
-
 
         <section className="px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">
           <article className="md:w-1/2 flex flex-col text-primary">
