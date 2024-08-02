@@ -68,20 +68,6 @@ const WhyChooseTalents = () => {
               </article>
             </div>
           </div>
-
-          {/* <div>
-            <div className="flex gap-8">
-              <figure className="h-96 min-w-96 bg-white flex items-center content-center rounded-lg">
-                <UserIcon className="text-gray-500 w-52 mx-auto" />
-              </figure>
-              <article className="flex flex-col w-full my-auto gap-3">
-                <h3 className="text-xl md:text-3xl mr-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text">Ashu Tyagi</h3>
-                <h6 className="text-primary font-semibold text-xl">Senior Android Engineer</h6>
-                <p className="text-lg text-primary"> <strong>Tech Stack:</strong> 6+ years</p>
-                <Image alt="continent image" src="/images/asia.svg" width={150} height={150} />
-              </article>
-            </div>
-          </div> */} 
         </Slider>
       </div>
       
