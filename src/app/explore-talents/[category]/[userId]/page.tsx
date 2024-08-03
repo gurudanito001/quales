@@ -233,7 +233,7 @@ export default async function Page({ params }: { params: { category: string, use
                     </li>
 
                     <li className=" font-light mb-4">
-                      Worked on User Stories to understand the user&#39;s flow of the application to give the user a seamless experience  while using the application. Worked on user stories to understand the user&#39;s flow of the application to give the  user a seamless experience while using the application. This helped to ensure that the app was intuitive and  easy to use. 
+                      Worked on User Stories to understand the user&apos;s flow of the application to give the user a seamless experience  while using the application. Worked on user stories to understand the user&apos;s flow of the application to give the  user a seamless experience while using the application. This helped to ensure that the app was intuitive and  easy to use. 
                     </li>
 
                     <li className=" font-light mb-4">
