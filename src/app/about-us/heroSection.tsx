@@ -21,7 +21,7 @@ const HeroSection = ()=>{
           </header>
 
           <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg text-center md:text-left">
-            At Quales Consulting, we cultivate exceptional tech talent ready to tackle the challenges of today&#34;s digital world. With a focus on quality and continuous learning, we ensure our experts deliver outstanding results and drive business success.
+            At Quales Consulting, we cultivate exceptional tech talent ready to tackle the challenges of today&apos;s digital world. With a focus on quality and continuous learning, we ensure our experts deliver outstanding results and drive business success.
           </p>
         </article>
 
