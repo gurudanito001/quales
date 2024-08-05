@@ -10,7 +10,7 @@ const UseCasesSection = ()=>{
 
         <header className="flex flex-col">
           <h3 className="text-center text-primary text-xl xl:text-2xl font-semibold">How we Supported:</h3>
-          <p className="text-primary max-w-5xl mt-6 text-sm lg:text-lg text-center mx-auto font-light px-5 lg:px-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. Aliquam vitae mi nec nibh interdum commodo eu vitae quam. </p>
+          <p className="text-primary max-w-7xl mt-6 text-sm lg:text-lg text-center mx-auto font-light px-5 lg:px-28">Discover how Quales Consulting has empowered clients with cutting-edge solutions through our detailed use cases. Explore the success stories that highlight our expertise in quality assurance and software testing. </p>
         </header>
 
         <section className="px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">

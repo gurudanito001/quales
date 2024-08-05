@@ -19,7 +19,7 @@ const HeroSection = ()=>{
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg text-center md:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. 
+          Explore real-world success stories where Quales Consulting has driven innovation and efficiency. See how we&apos;ve transformed our clients&apos; projects and businesses with our expertise.
         </p>
       </article>
 
