@@ -2585,6 +2585,9 @@ html:has(.drawer-toggle:checked) {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+.invisible {
+  visibility: hidden;
+}
 .collapse {
   visibility: collapse;
 }
@@ -2617,9 +2620,6 @@ html:has(.drawer-toggle:checked) {
 }
 .z-50 {
   z-index: 50;
-}
-.z-40 {
-  z-index: 40;
 }
 .order-1 {
   order: 1;
@@ -2775,6 +2775,9 @@ html:has(.drawer-toggle:checked) {
 .mt-auto {
   margin-top: auto;
 }
+.mt-7 {
+  margin-top: 1.75rem;
+}
 .inline-block {
   display: inline-block;
 }
@@ -2840,6 +2843,15 @@ html:has(.drawer-toggle:checked) {
 }
 .max-h-850 {
   max-height: 850px;
+}
+.max-h-20 {
+  max-height: 5rem;
+}
+.max-h-10 {
+  max-height: 2.5rem;
+}
+.max-h-14 {
+  max-height: 3.5rem;
 }
 .min-h-40 {
   min-height: 10rem;
@@ -2928,14 +2940,14 @@ html:has(.drawer-toggle:checked) {
 .max-w-56 {
   max-width: 14rem;
 }
-.max-w-5xl {
-  max-width: 64rem;
-}
 .max-w-600 {
   max-width: 600px;
 }
 .max-w-72 {
   max-width: 18rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
 }
 .max-w-800 {
   max-width: 800px;
@@ -2949,11 +2961,11 @@ html:has(.drawer-toggle:checked) {
 .max-w-xl {
   max-width: 36rem;
 }
-.max-w-6xl {
-  max-width: 72rem;
+.max-w-60 {
+  max-width: 15rem;
 }
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-40 {
+  max-width: 10rem;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
@@ -3091,10 +3103,6 @@ html:has(.drawer-toggle:checked) {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
 .border-b-primary {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(43 88 107 / var(--tw-border-opacity));
@@ -3159,10 +3167,6 @@ html:has(.drawer-toggle:checked) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
 .bg-\[url\(\'\/images\/abati-1\.jpg\'\)\] {
   background-image: url('/images/abati-1.jpg');
 }
@@ -3171,6 +3175,12 @@ html:has(.drawer-toggle:checked) {
 }
 .bg-\[url\(\'\/images\/article-img\.png\'\)\] {
   background-image: url('/images/article-img.png');
+}
+.bg-\[url\(\'\/images\/ayo-avatar\.png\'\)\] {
+  background-image: url('/images/ayo-avatar.png');
+}
+.bg-\[url\(\'\/images\/bob-avatar\.png\'\)\] {
+  background-image: url('/images/bob-avatar.png');
 }
 .bg-\[url\(\'\/images\/habeeb\.png\'\)\] {
   background-image: url('/images/habeeb.png');
@@ -3189,12 +3199,6 @@ html:has(.drawer-toggle:checked) {
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.bg-\[url\(\'\/images\/ayo-avatar\.png\'\)\] {
-  background-image: url('/images/ayo-avatar.png');
-}
-.bg-\[url\(\'\/images\/bob-avatar\.png\'\)\] {
-  background-image: url('/images/bob-avatar.png');
 }
 .from-slate-700 {
   --tw-gradient-from: #334155 var(--tw-gradient-from-position);
@@ -3342,6 +3346,12 @@ html:has(.drawer-toggle:checked) {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .text-center {
   text-align: center;
 }
@@ -3370,6 +3380,9 @@ html:has(.drawer-toggle:checked) {
 }
 .font-light {
   font-weight: 300;
+}
+.font-medium {
+  font-weight: 500;
 }
 .font-normal {
   font-weight: 400;
@@ -3409,6 +3422,10 @@ html:has(.drawer-toggle:checked) {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(43 88 107 / var(--tw-text-opacity));
@@ -3423,10 +3440,6 @@ html:has(.drawer-toggle:checked) {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .no-underline {
   text-decoration-line: none;
@@ -3889,6 +3902,10 @@ body {
 
   .md\:mt-auto {
     margin-top: auto;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:block {

@@ -30,7 +30,6 @@ const NavBar = () => {
         </ul>
 
         <div className="dropdown dropdown-end md:hidden">
-
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
@@ -57,9 +56,6 @@ const NavBar = () => {
               </ul>
             </div>
           </div>
-
-
-          
         </div>
       </div>
     </nav>
