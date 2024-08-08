@@ -1,3 +1,4 @@
 {
+  "/privacyandpolicy/page": "app/privacyandpolicy/page.js",
   "/(home)/page": "app/(home)/page.js"
 }
