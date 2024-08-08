@@ -37,7 +37,7 @@ const Footer = ()=>{
           <div>
             <h6 className="text-sm font-semibold mb-5">Support</h6>
             <ul className="text-xs flex flex-col gap-2">
-              <li>Privacy Policy</li>
+              <li><Link href="/privacyandpolicy">Privacy Policy</Link></li>
               <li>Help</li>
             </ul>
           </div>
