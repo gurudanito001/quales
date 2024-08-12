@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 
@@ -147,7 +146,6 @@ const UseCasesSection = ()=>{
             />
             <button onClick={()=>setShowSignatureExtra( prevState => !prevState)} className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8 max-w-48 inline-flex md:hidden">{showSignatureExtra ? "Show Less" : "Read More"}</button>
           </figure>
-
         </section>
     </section>
     
