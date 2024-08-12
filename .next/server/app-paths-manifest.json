@@ -1,7 +1,1 @@
-{
-  "/(home)/page": "app/(home)/page.js",
-  "/privacyandpolicy/page": "app/privacyandpolicy/page.js",
-  "/about-us/page": "app/about-us/page.js",
-  "/usecases/page": "app/usecases/page.js",
-  "/explore-talents/page": "app/explore-talents/page.js"
-}
+{}
