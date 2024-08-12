@@ -1,6 +1,13 @@
 import NavBar from "../(home)/navbar";
 import Footer from "../(home)/footer";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy and Policy | Quales Consulting',
+  description: "At Quales Consulting, we are deeply committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, share, and protect the personal information you provide to us. By accessing our services, you agree to the terms outlined in this policy. We value your trust and are dedicated to safeguarding your privacy.",
+};
+
 const PrivacyAndPolicy = () =>{
   return(
     <main className="bg-white">

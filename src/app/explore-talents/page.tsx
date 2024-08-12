@@ -8,6 +8,12 @@ import OurGraduates from "./ourGraduates";
 import LatestArticles from "../(home)/ourLatestArticles";
 import Footer from "../(home)/footer";
 import ScheduleCall from "./scheduleCall";
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Explore Talents | Quales Consulting',
+  description: "Experience unparalleled expertise and immediate impact with our rigorously vetted, top-tier technology professionals.",
+};
 
 
 export default function Home() {

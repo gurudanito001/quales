@@ -50,7 +50,7 @@ const HeroSection = () => {
   return (
     <section className=" relative flex flex-col">
         <article className=" absolute top-1/3 z-10 w-full text-white mx-auto opacity-100 px-3 md:px-5">
-          <h3 className=" text-xl md:text-4xl mb-5 lg:mb-10 text-white max-w-800 mx-auto text-center">Engage the best talents around the globe</h3>
+          <h1 className=" text-xl md:text-4xl mb-5 lg:mb-10 text-white max-w-800 mx-auto text-center">Engage the best talents around the globe</h1>
           <p className="font-light text-sm mb-5 lg:mb-8 lg:text-lg max-w-1000 mx-auto text-center">Quales Consulting comprises an elite network of the finest freelance Software Developers, Designers, Business Analysts, Product Managers, and Scrum Masters, Data Analysts globally. Leading companies engage freelancers from Quales Consulting for their critical projects.</p>
           <div className="flex gap-2 md:gap-5">
             <Link href="/explore-talents" className="btn text-sm md:font-medium md:text-lg glass rounded-full px-9 font-light text-white ml-auto" >Explore Talents</Link>

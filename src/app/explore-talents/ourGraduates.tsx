@@ -11,7 +11,7 @@ const OurGraduates = ()=>{
           src={`/images/our-community.svg`}
           className="w-100"
           style={{ height: "auto", objectFit: "contain" }}
-          alt="Product Image"
+          alt="Two Business men shaking hands in a professional environment"
           width={700}
           height={700}
         />
@@ -23,9 +23,9 @@ const OurGraduates = ()=>{
 
       <article className="text-base-content md:w-1/2 flex flex-col">
         <header className="flex flex-col">
-          <h3 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0"> Our Graduates Work </h3>
-          <h3 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">
-            for Top Companies Worldwide</h3>
+          <h2 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0"> Our Graduates Work </h2>
+          <h2 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">
+            for Top Companies Worldwide</h2>
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg text-center md:text-left">

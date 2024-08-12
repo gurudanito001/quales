@@ -13,9 +13,9 @@ const HeroSection = ()=>{
 
       <article className="text-base-content md:w-1/2 flex flex-col">
         <header className="flex flex-col">
-          <h3 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">Real-World Success </h3>
-          <h3 className="text-xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">
-            Stories with Quales Consulting</h3>
+          <h1 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">Real-World Success </h1>
+          <h1 className="text-xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">
+            Stories with Quales Consulting</h1>
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg text-center md:text-left">
@@ -28,7 +28,7 @@ const HeroSection = ()=>{
           src={`/images/our-community.svg`}
           className="w-100"
           style={{ height: "auto", objectFit: "contain" }}
-          alt="Product Image"
+          alt="Two Business men shaking hands in a professional environment"
           width={700}
           height={700}
         />

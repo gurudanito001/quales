@@ -58,7 +58,7 @@ const MissionVision = () => {
             <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">
                 <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h3 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Ayobami Elutade</h3>
+                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Ayobami Elutade</h4>
                   <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
                     Ayo is a co-founder at Quales with 12+ years of experience in management and technical expertise cutting across Energy, Fintech, Banking, Telecoms sectors playing a key role as a Senior Engineer and Management in helping these institutions generate multi million dollars in revenue.
                   </p>
@@ -72,7 +72,7 @@ const MissionVision = () => {
             <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">
                 <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h3 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Bob Oghumah</h3>
+                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Bob Oghumah</h4>
                   <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
                     Bob Oghumah is a seasoned, dynamic, and results-driven Software Quality Assurance Engineer based in Dublin, Ireland, with over a decade of extensive experience across diverse sectors including Telecommunications, FinTech, E-Commerce, Legal-Tech, Health-Tech, and Consulting. His areas of expertise 
                   </p>
@@ -86,7 +86,7 @@ const MissionVision = () => {
             <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">
                 <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h3 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Akinola Odunlade</h3>
+                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Akinola Odunlade</h4>
                   <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. 
                   </p>

@@ -9,6 +9,14 @@ import LatestArticles from "../(home)/ourLatestArticles";
 import Footer from "../(home)/footer";
 
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Use Cases | Quales Consulting',
+  description: "Explore real-world success stories where Quales Consulting has driven innovation and efficiency. See how we've transformed our clients' projects and businesses with our expertise.",
+};
+
+
 
 
 

@@ -1,7 +1,7 @@
 {
-  "/thought-leadership/page": "app/thought-leadership/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/privacyandpolicy/page": "app/privacyandpolicy/page.js",
   "/about-us/page": "app/about-us/page.js",
-  "/explore-talents/[category]/[userId]/page": "app/explore-talents/[category]/[userId]/page.js",
   "/usecases/page": "app/usecases/page.js",
-  "/privacyandpolicy/page": "app/privacyandpolicy/page.js"
+  "/explore-talents/page": "app/explore-talents/page.js"
 }

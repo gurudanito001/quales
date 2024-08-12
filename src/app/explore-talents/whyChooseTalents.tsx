@@ -35,7 +35,7 @@ const WhyChooseTalents = () => {
                 <h3 className="text-xl md:text-3xl mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Adewale Abdulrasaq Habeeb</h3>
                 <h6 className="text-primary font-550 text-lg text-center md:text-left">PowerBI Specialist</h6>
                 <p className="text-md text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 7 years</p>
-                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/africa.svg" width={150} height={150} />
+                <Image className="mx-auto md:mx-0" alt="africacontinent image" src="/images/africa.svg" width={150} height={150} />
               </article>
             </div>
           </div>
@@ -50,7 +50,7 @@ const WhyChooseTalents = () => {
                 <h3 className="text-xl md:text-3xl mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Moses Ayankoya</h3>
                 <h6 className="text-primary font-550 text-lg text-center md:text-left">Senior iOS Developer</h6>
                 <p className="text-md text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 9+ years</p>
-                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/africa.svg" width={150} height={150} />
+                <Image className="mx-auto md:mx-0" alt="africa continent image" src="/images/africa.svg" width={150} height={150} />
               </article>
             </div>
           </div>
@@ -65,7 +65,7 @@ const WhyChooseTalents = () => {
                 <h3 className="text-xl md:text-3xl mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text hidden md:inline mb-2">Ashu Tyagi</h3>
                 <h6 className="text-primary font-550 text-lg text-center md:text-left">Senior Android Engineer</h6>
                 <p className="text-md text-primary text-center md:text-left mb-4"> <strong>Experience:</strong> 6+ years</p>
-                <Image className="mx-auto md:mx-0" alt="continent image" src="/images/asia.svg" width={150} height={150} />
+                <Image className="mx-auto md:mx-0" alt="asia continent image" src="/images/asia.svg" width={150} height={150} />
               </article>
             </div>
           </div>
@@ -98,7 +98,7 @@ const WhyChooseTalents = () => {
             src={`/images/our-community.svg`}
             className="w-100"
             style={{ height: "auto", objectFit: "contain" }}
-            alt="Product Image"
+            alt="Two Business men shaking hands in a professional environment"
             width={700}
             height={700}
           />

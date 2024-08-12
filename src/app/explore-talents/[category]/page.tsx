@@ -1,35 +1,52 @@
-"use client"
 
 import Link from "next/link";
 import NavBar from "@/app/(home)/navbar";
-import { UserIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import Footer from "@/app/(home)/footer";
-import { usePathname, useRouter } from "next/navigation";
+import type { Metadata, ResolvingMetadata } from 'next';
+const NEXT_PUBLIC_Base_Url = process.env.NEXT_PUBLIC_Base_Url;
+
+const formatCategory = (category: string) => {
+  switch (category) {
+    case "qa-engineers":
+      return "QA Engineers";
+    case "software-developers":
+      return "Software Developers";
+    case "product-managers":
+      return "Product Managers";
+    case "ui-ux-designers":
+      return "UI UX Designers";
+    case "business-analysts":
+      return "Business Analytics";
+    case "scrum-masters":
+      return "Scrum Masters";
+    case "data-analysts":
+      return "Data Analysts";
+    default:
+  }
+}
+ 
+type Props = {
+  params: { category: string }
+}
+ 
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+
+  const category = params.category
+ 
+  return {
+    title: `${formatCategory(category)} | Quales Consulting`,
+    description: "Experience unparalleled expertise and immediate impact with our rigorously vetted, top-tier technology professionals.",
+  }
+}
 
 export default function Page({params}: {params: {category: string}}) {
-  const pathname = usePathname();
-  const router = useRouter();
-  const formatCategory = (category: string) => {
-    switch (category) {
-      case "qa-engineers":
-        return "QA Engineers";
-      case "software-developers":
-        return "Software Developers";
-      case "product-managers":
-        return "Product Managers";
-      case "ui-ux-designers":
-        return "UI UX Designers";
-      case "business-analysts":
-        return "Business Analytics";
-      case "scrum-masters":
-        return "Scrum Masters";
-      case "data-analysts":
-        return "Data Analysts";
-      default:
-    }
-  }
+  
+  
   return(
-
     <>
     <NavBar />
     <section className="flex flex-col bg-white px-5 xl:px-28 mt-10">
@@ -43,13 +60,14 @@ export default function Page({params}: {params: {category: string}}) {
 
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -57,15 +75,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -73,15 +91,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -89,15 +107,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -105,15 +123,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -121,15 +139,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -137,15 +155,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -153,15 +171,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -169,15 +187,15 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
+        <Link href={`${NEXT_PUBLIC_Base_Url}/explore-talents/${params?.category}/jfghfdgpdg4t34t3`} className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer">
           <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h3 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h3>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
@@ -185,57 +203,9 @@ export default function Page({params}: {params: {category: string}}) {
               </div>
             </article>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
-          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
-              <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
-              </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
-              <div className="flex flex-col items-center">
-                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
-                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
-          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
-              <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
-              </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
-              <div className="flex flex-col items-center">
-                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
-                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="flex flex-col mb-5 items-center lg:mx-auto cursor-pointer" onClick={()=>router.push(`${pathname}/jfghfdgpdg4t34t3`)}>
-          <header className=" w-44 sm:w-64 h-24 shadow-md border border-gray-200 rounded-lg"></header>
-          <div className=" w-44 sm:w-64 pb-5 shadow-md border border-gray-200 rounded-lg">
-            <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
-              <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
-              </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
-              <div className="flex flex-col items-center">
-                <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
-                <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-
+        
       </div>
 
       <div className="join items-center mx-auto mt-8 mb-12 gap-3">

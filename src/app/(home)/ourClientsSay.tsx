@@ -5,7 +5,7 @@ const OurClientsSay = () => {
   return (
     <section className="bg-white px-5 xl:px-28">
       <header className="flex">
-        <h3 className="text-xl md:text-2xl mx-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text py-10">What our Clients Say About Us</h3>
+        <h2 className="text-xl md:text-2xl mx-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text py-10">What our Clients Say About Us</h2>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-3">
@@ -21,7 +21,7 @@ const OurClientsSay = () => {
               src={`/images/seamfix.svg`}
               className="max-h-14"
               style={{ height: "auto", objectFit: "contain" }}
-              alt="Product Image"
+              alt="Seamfix Logo"
               width={250}
               height={100}
             />
@@ -42,7 +42,7 @@ const OurClientsSay = () => {
                 src={`/images/zone.svg`}
                 className="max-h-14"
                 style={{ height: "auto", objectFit: "contain" }}
-                alt="Product Image"
+                alt="Zone Logo"
                 width={250}
                 height={100}
               />
@@ -62,7 +62,7 @@ const OurClientsSay = () => {
                 src={`/images/q-core.svg`}
                 className="max-h-12"
                 style={{ height: "auto", objectFit: "contain" }}
-                alt="Product Image"
+                alt="Qore logo"
                 width={250}
                 height={100}
               />
