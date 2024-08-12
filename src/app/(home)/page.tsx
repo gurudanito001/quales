@@ -9,6 +9,7 @@ import ExecutionProcess from "./executionProcess";
 import OurClientsSay from "./ourClientsSay";
 import LatestArticles from "./ourLatestArticles";
 import Footer from "./footer";
+import StoryWithNumbers from "./storyWithNumbers";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
     <HiringProcess />
     <ExecutionProcess />
     <OurClientsSay />
+    <StoryWithNumbers />
     <LatestArticles />
     <Footer />
     </main>

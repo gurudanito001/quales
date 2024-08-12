@@ -96,13 +96,10 @@ const Partners = () =>{
 
   return(
     <section className="bg-white py-5 xl:py-16 px-5 lg:px-20 overflow-x-hidden border shadow-inner xl:mt-20">
-      <h6 className="text-center text-primary text-xl md:text-2xl mb-5 md:mb-8">Quales is Trusted By:</h6>
+      <h6 className="text-center text-primary text-xl md:text-2xl mb-5 md:mb-8 font-550">Quales is Trusted By:</h6>
 
 
       <div className="relative h-full overflow-hidden bg-white mx-auto">
-
-            {/* <div className="absolute inset-0 z-20 before:absolute before:left-0 before:top-0 before:w-1/6 before:h-full before:bg-gradient-to-r before:from-white before:to-transparent before:filter before:blur-3 after:absolute after:right-0 after:top-0 after:w-1/6 after:h-full after:bg-gradient-to-l after:from-white after:to-transparent after:filter after:blur-3"></div> */}
-
             <motion.div
                 className="flex"
                 animate={{
@@ -115,7 +112,7 @@ const Partners = () =>{
                 }}
             >
                 {duplicatedSlides.map((slide, index) => (
-                    <div key={index} className="flex-shrink-0 w-44 md:w-52 mx-8 md:mx-12" /* style={{ width: `${300 / slides.length}%` }} */>
+                    <div key={index} className="flex-shrink-0 w-44 md:w-52 mx-8 md:mx-12" >
                         <div className="flex items-center justify-center h-full">
                             <span>{slide.logo}</span>
                         </div>

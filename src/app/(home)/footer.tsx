@@ -8,7 +8,7 @@ const Footer = ()=>{
     <section className="text-white py-8 lg:py-12 bg-primary">
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 px-5 lg:px-28 border-t py-8">
         <div>
-          <h6 className="text-sm font-semibold mb-5">Contact Us</h6>
+          <h6 className="text-sm font-550 mb-5">Contact Us</h6>
           <article className="flex items-start mb-4">
             <MapPinIcon className="w-5 text-white" />
             <p className="text-xs ml-4">
@@ -25,17 +25,17 @@ const Footer = ()=>{
         </div>
         <div className="grid grid-cols-2">
           <div>
-            <h6 className="text-sm font-semibold mb-5">Company</h6>
+            <h6 className="text-sm font-550 mb-5">Company</h6>
             <ul className="text-xs flex flex-col gap-2">
               <li><Link href="/about-us">About Us</Link></li>
               <li>How It Works</li>
               <li>Reviews</li>
-              <li>FAQ’s</li>
+              <li>FAQ&apos;s</li>
             </ul>
           </div>
 
           <div>
-            <h6 className="text-sm font-semibold mb-5">Support</h6>
+            <h6 className="text-sm font-550 mb-5">Support</h6>
             <ul className="text-xs flex flex-col gap-2">
               <li><Link href="/privacyandpolicy">Privacy Policy</Link></li>
               <li>Help</li>

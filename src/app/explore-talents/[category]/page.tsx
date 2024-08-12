@@ -36,8 +36,8 @@ export default function Page({params}: {params: {category: string}}) {
 
       <div className="breadcrumbs text-sm mb-10">
         <ul>
-          <li><Link href="/explore-talents" className="text-primary text-xl">Talents</Link></li>
-          <li><Link href={`/explore-talents/${params?.category}`} className="text-primary font-bold  text-xl capitalize">{formatCategory(params?.category)}</Link></li>
+          <li><Link href="/explore-talents" className="text-primary text-xl font-light">Talents</Link></li>
+          <li><Link href={`/explore-talents/${params?.category}`} className="text-primary font-550  text-xl capitalize">{formatCategory(params?.category)}</Link></li>
         </ul>
       </div>
 
@@ -49,11 +49,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -65,11 +65,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -81,11 +81,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -97,11 +97,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -113,11 +113,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -129,11 +129,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -145,11 +145,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -161,11 +161,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -177,11 +177,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -193,11 +193,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -209,11 +209,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>
@@ -225,11 +225,11 @@ export default function Page({params}: {params: {category: string}}) {
             <article className="flex flex-col items-center relative -mt-16 px-3 sm:px-5">
               <span className=" rounded-full h-28 w-28 bg-[url('/images/abati-1.jpg')] bg-no-repeat bg-cover bg-center">
               </span>
-              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-semibold uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
+              <h6 className="text-primary text-center leading-tight mt-3 mb-2 font-550 uppercase text-sm sm:text-lg">Abati Adeotan Senayon</h6>
               <div className="flex flex-col items-center">
                 <span className="text-primary text-xs sm:text-sm sm:font-bold text-center">Software Test Engineer</span> 
                 <span className="text-primary text-xs sm:text-sm font-light">Previously worked with:</span>
-                <span className="text-primary text-sm font-semibold">APPZONE, NIGERIA</span>
+                <span className="text-primary text-sm font-550">APPZONE, NIGERIA</span>
               </div>
             </article>
           </div>

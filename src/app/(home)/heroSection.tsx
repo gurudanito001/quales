@@ -1,21 +1,19 @@
 "use client"
 
-import { useRouter } from "next/navigation";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "@ant-design/react-slick";
+import Link from "next/link";
 
 
 
 
 const HeroSection = () => {
-  const router = useRouter();
 
   const images = [
     `bg-[url('/images/adaeze.png')]`,
     `bg-[url('/images/ibukunoluwa.png')]`,
     `bg-[url('/images/kosisochukwu.png')]`,
-    /* `bg-[url('/images/moses.jpg')]`, */
     `bg-[url('/images/patrick.png')]`
   ]
 
@@ -55,8 +53,8 @@ const HeroSection = () => {
           <h3 className=" text-xl md:text-4xl mb-5 lg:mb-10 text-white max-w-800 mx-auto text-center">Engage the best talents around the globe</h3>
           <p className="font-light text-sm mb-5 lg:mb-8 lg:text-lg max-w-1000 mx-auto text-center">Quales Consulting comprises an elite network of the finest freelance Software Developers, Designers, Business Analysts, Product Managers, and Scrum Masters, Data Analysts globally. Leading companies engage freelancers from Quales Consulting for their critical projects.</p>
           <div className="flex gap-2 md:gap-5">
-            <button className="btn text-sm md:font-semibold md:text-lg glass rounded-full px-9 font-light text-white ml-auto" onClick={()=>router.push("/explore-talents")}>Explore Talents</button>
-            <button className="btn text-sm md:font-semibold md:text-lg bg-white text-primary font-light rounded-full px-9 mr-auto" onClick={()=>router.push("/hire-talents")}>Hire Talents</button>
+            <Link href="/explore-talents" className="btn text-sm md:font-medium md:text-lg glass rounded-full px-9 font-light text-white ml-auto" >Explore Talents</Link>
+            <Link href="/hire-talents" className="btn text-sm md:font-medium md:text-lg bg-white text-primary font-light rounded-full px-9 mr-auto">Hire Talents</Link>
           </div>
         </article>
 

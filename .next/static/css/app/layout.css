@@ -2603,9 +2603,6 @@ html:has(.drawer-toggle:checked) {
 .sticky {
   position: sticky;
 }
-.inset-0 {
-  inset: 0px;
-}
 .top-0 {
   top: 0px;
 }
@@ -2614,9 +2611,6 @@ html:has(.drawer-toggle:checked) {
 }
 .z-10 {
   z-index: 10;
-}
-.z-20 {
-  z-index: 20;
 }
 .z-50 {
   z-index: 50;
@@ -2778,6 +2772,9 @@ html:has(.drawer-toggle:checked) {
 .mt-auto {
   margin-top: auto;
 }
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -2787,14 +2784,23 @@ html:has(.drawer-toggle:checked) {
 .flex {
   display: flex;
 }
+.inline-flex {
+  display: inline-flex;
+}
 .grid {
   display: grid;
+}
+.list-item {
+  display: list-item;
 }
 .hidden {
   display: none;
 }
 .h-10 {
   height: 2.5rem;
+}
+.h-14 {
+  height: 3.5rem;
 }
 .h-16 {
   height: 4rem;
@@ -2820,9 +2826,6 @@ html:has(.drawer-toggle:checked) {
 .h-48 {
   height: 12rem;
 }
-.h-56 {
-  height: 14rem;
-}
 .h-72 {
   height: 18rem;
 }
@@ -2837,6 +2840,9 @@ html:has(.drawer-toggle:checked) {
 }
 .h-screen {
   height: 100vh;
+}
+.max-h-12 {
+  max-height: 3rem;
 }
 .max-h-14 {
   max-height: 3.5rem;
@@ -2955,6 +2961,15 @@ html:has(.drawer-toggle:checked) {
 .max-w-xl {
   max-width: 36rem;
 }
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
+.max-w-4xl {
+  max-width: 56rem;
+}
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -2963,6 +2978,9 @@ html:has(.drawer-toggle:checked) {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.list-inside {
+  list-style-position: inside;
 }
 .list-outside {
   list-style-position: outside;
@@ -3023,6 +3041,12 @@ html:has(.drawer-toggle:checked) {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-y-14 {
+  row-gap: 3.5rem;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -3242,6 +3266,10 @@ html:has(.drawer-toggle:checked) {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -3269,6 +3297,10 @@ html:has(.drawer-toggle:checked) {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .py-14 {
   padding-top: 3.5rem;
@@ -3347,6 +3379,10 @@ html:has(.drawer-toggle:checked) {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3363,11 +3399,17 @@ html:has(.drawer-toggle:checked) {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.font-550 {
+  font-weight: 550;
+}
 .font-bold {
   font-weight: 700;
 }
 .font-light {
   font-weight: 300;
+}
+.font-medium {
+  font-weight: 500;
 }
 .font-normal {
   font-weight: 400;
@@ -3386,6 +3428,12 @@ html:has(.drawer-toggle:checked) {
 }
 .leading-tight {
   line-height: 1.25;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-3 {
+  line-height: .75rem;
 }
 .text-base-content {
   --tw-text-opacity: 1;
@@ -3665,100 +3713,6 @@ body {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:left-0::before {
-  content: var(--tw-content);
-  left: 0px;
-}
-
-.before\:top-0::before {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.before\:w-1\/6::before {
-  content: var(--tw-content);
-  width: 16.666667%;
-}
-
-.before\:bg-gradient-to-r::before {
-  content: var(--tw-content);
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.before\:from-white::before {
-  content: var(--tw-content);
-  --tw-gradient-from: #fff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.before\:to-transparent::before {
-  content: var(--tw-content);
-  --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.before\:filter::before {
-  content: var(--tw-content);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.after\:absolute::after {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.after\:right-0::after {
-  content: var(--tw-content);
-  right: 0px;
-}
-
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
-}
-
-.after\:h-full::after {
-  content: var(--tw-content);
-  height: 100%;
-}
-
-.after\:w-1\/6::after {
-  content: var(--tw-content);
-  width: 16.666667%;
-}
-
-.after\:bg-gradient-to-l::after {
-  content: var(--tw-content);
-  background-image: linear-gradient(to left, var(--tw-gradient-stops));
-}
-
-.after\:from-white::after {
-  content: var(--tw-content);
-  --tw-gradient-from: #fff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.after\:to-transparent::after {
-  content: var(--tw-content);
-  --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.after\:filter::after {
-  content: var(--tw-content);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 640px) {
@@ -4045,8 +3999,20 @@ body {
     padding-bottom: 3.5rem;
   }
 
+  .md\:pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
   .md\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .md\:text-left {
@@ -4068,6 +4034,11 @@ body {
     line-height: 2.5rem;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -4081,6 +4052,10 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
   }
 
   .md\:font-semibold {
@@ -4193,6 +4168,11 @@ body {
     padding-right: 7rem;
   }
 
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -4280,6 +4260,14 @@ body {
   .xl\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .xl\:pr-20 {
+    padding-right: 5rem;
   }
 
   .xl\:text-2xl {

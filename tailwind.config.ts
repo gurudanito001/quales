@@ -29,6 +29,9 @@ const config: Config = {
       fontSize: {
         "10px": "10px"
       },
+      fontWeight: {
+        "550": "550"
+      },
       width:{
         "336": "336px"
       },
