@@ -49,7 +49,7 @@ const UseCasesSection = ()=>{
               src={`/images/qore-screenshot.png`}
               className="w-100"
               style={{ height: "auto", objectFit: "contain" }}
-              alt="Product Image"
+              alt="Qore website screenshot"
               width={700}
               height={700}
             />
@@ -64,7 +64,7 @@ const UseCasesSection = ()=>{
               src={`/images/zone-screenshot.png`}
               className="w-100"
               style={{ height: "auto", objectFit: "contain" }}
-              alt="Product Image"
+              alt="Zone website screenshot"
               width={700}
               height={700}
             />
@@ -141,7 +141,7 @@ const UseCasesSection = ()=>{
               src={`/images/signature-screenshot.png`}
               className="w-100"
               style={{ height: "auto", objectFit: "contain" }}
-              alt="Product Image"
+              alt="Signature website screenshot"
               width={700}
               height={700}
             />

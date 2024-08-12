@@ -1,28 +1,54 @@
 import Link from "next/link";
 import NavBar from "@/app/(home)/navbar";
-import { UserIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import Footer from "@/app/(home)/footer";
+import type { Metadata, ResolvingMetadata } from 'next';
+
+
+const formatCategory = (category: string) => {
+  switch (category) {
+    case "qa-engineers":
+      return "QA Engineers";
+    case "software-developers":
+      return "Software Developers";
+    case "product-managers":
+      return "Product Managers";
+    case "ui-ux-designers":
+      return "UI UX Designers";
+    case "business-analysts":
+      return "Business Analytics";
+    case "scrum-masters":
+      return "Scrum Masters";
+    case "data-analysts":
+      return "Data Analysts";
+    default:
+  }
+}
+ 
+type Props = {
+  params: { category: string }
+}
+ 
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+
+  const category = params.category
+ 
+  return {
+    title: `Abati Adeotan Senayon | ${formatCategory(category)} | Quales Consulting`,
+    description: "As a certified software test engineer with a passion for research, I am highly detail-oriented and quality-focused. I possess excellent technical and problem-solving skills and have a deep understanding of both software development life cycle and software testing life cycle.",
+  }
+}
+
+
+
+
+
+
 
 export default async function Page({ params }: { params: { category: string, userId: string } }) {
-  const formatCategory = (category: string) => {
-    switch (category) {
-      case "qa-engineers":
-        return "QA Engineers";
-      case "software-developers":
-        return "Software Developers";
-      case "product-managers":
-        return "Product Managers";
-      case "ui-ux-designers":
-        return "UI UX Designers";
-      case "business-analysts":
-        return "Business Analytics";
-      case "scrum-masters":
-        return "Scrum Masters";
-      case "data-analysts":
-        return "Data Analysts";
-      default:
-    }
-  }
+ 
   return (
 
     <>

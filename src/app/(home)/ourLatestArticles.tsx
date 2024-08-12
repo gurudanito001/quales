@@ -6,7 +6,7 @@ const LatestArticles = () => {
   return (
     <section className="bg-white px-5 xl:px-28 pt-10 mb-20">
       <header>
-        <h5 className="text-primary font-550 mb-8 text-xl md:text-2xl">Read our Latest Articles</h5>
+        <h2 className="text-primary font-550 mb-8 text-xl md:text-2xl">Read our Latest Articles</h2>
       </header>
       <div className="flex flex-col gap-3">
         <div className="collapse bg-white rounded-xl">

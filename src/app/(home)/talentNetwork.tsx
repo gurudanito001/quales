@@ -10,7 +10,7 @@ const TalentNetwork = ()=>{
 
       <article className="text-base-content flex flex-col order-1 md:order-2">
         <header className="mt-auto flex">
-          <h3 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550  from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">Talents Within our Network</h3>
+          <h2 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550  from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">Talents Within our Network</h2>
         </header>
 
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg font-light text-center md:text-left">
@@ -83,7 +83,7 @@ const TalentNetwork = ()=>{
       </div>
 
       <div className="flex order-3">
-        <button className="btn bg-primary md:hidden text-white text-sm md:text-lg font-normal md:font-medium rounded-full w-48 mt-8 mx-auto">Explore Talents</button>
+        <Link href="/explore-talents" className="btn bg-primary md:hidden text-white text-sm md:text-lg font-normal md:font-medium rounded-full w-48 mt-8 mx-auto">Explore Talents</Link>
       </div>
 
       

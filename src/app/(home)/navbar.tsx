@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav className="navbar bg-white text-primary px-3 lg:px-28 sticky top-0 shadow-sm z-50">
       <div className="navbar-start w-auto">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo.svg" className="" alt="IBSMART LOGO" width={50} height={50} />
+          <Image src="/images/logo.svg" className="" alt="Quales Consulting LOGO" width={50} height={50} />
         </Link>
       </div>
 

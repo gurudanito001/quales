@@ -42,9 +42,9 @@ const OurCommunity = ()=>{
     <section className="bg-neutral px-5 lg:px-28 py-28 flex flex-col md:flex-row items-center">
       <article className="text-base-content md:w-1/2 flex flex-col mb-10">
         <header className="flex flex-col">
-          <h3 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0"> Leverage our Community </h3>
-          <h3 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">
-            of Top Technology Mavericks</h3>
+          <h2 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0"> Leverage our Community </h2>
+          <h2 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">
+            of Top Technology Mavericks</h2>
         </header>
         
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-xl font-light text-center md:text-left">
