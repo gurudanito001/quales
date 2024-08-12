@@ -7,8 +7,8 @@ const ExecutionProcess = () => {
 
   return (
     <section className="bg-white px-5 lg:px-28 py-8">
-      <h3 className="text-center text-xl font-semibold mb-3 text-primary">Our Execution Process</h3>
-      <p className="text-xs md:text-sm text-center text-primary max-w-550 mx-auto">
+      <h3 className="text-center text-xl md:text-2xl font-semibold mb-3 text-primary">Our Execution Process</h3>
+      <p className="text-sm md:text-lg text-center text-primary max-w-3xl mx-auto">
         With 8 years plus in the industry and experience supporting multiple tech companies,
         there are multiple ways Quales is able to support
       </p>

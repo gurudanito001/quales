@@ -1,16 +1,9 @@
-"use client"
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ShoppingCartIcon, Bars3BottomRightIcon, XMarkIcon, MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
-
-
-
-
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const NavBar = () => {
-  const router = useRouter();
 
 
   return (

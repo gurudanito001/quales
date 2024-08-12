@@ -1,22 +1,19 @@
-"use client"
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 
 
 const HeroSection = ()=>{
-  const router = useRouter();
   return(
     <>
-      <h4 className="text-xl font-semibold text-primary pt-14 md:mb-10 px-5 lg:px-28 text-center md:text-left">About Quales</h4>
+      <h4 className="text-xl font-550 text-primary pt-14 md:mb-10 px-5 lg:px-28 text-center md:text-left">About Quales</h4>
 
       <section className="bg-white px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">
 
         <article className="text-base-content md:w-1/2 flex flex-col">
           <header className="flex flex-col">
-            <h3 className="text-xl xl:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">Empowering </h3>
-            <h3 className="text-xl xl:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">
+            <h3 className="text-xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">Empowering </h3>
+            <h3 className="text-xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">
               Innovation Through Expertise</h3>
           </header>
 

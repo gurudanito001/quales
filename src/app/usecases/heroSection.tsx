@@ -13,8 +13,8 @@ const HeroSection = ()=>{
 
       <article className="text-base-content md:w-1/2 flex flex-col">
         <header className="flex flex-col">
-          <h3 className="text-2xl xl:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">Real-World Success </h3>
-          <h3 className="text-2xl xl:text-3xl font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">
+          <h3 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">Real-World Success </h3>
+          <h3 className="text-xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 text-center md:text-left">
             Stories with Quales Consulting</h3>
         </header>
         

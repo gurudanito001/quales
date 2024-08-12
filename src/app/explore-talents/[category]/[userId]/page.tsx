@@ -31,9 +31,9 @@ export default async function Page({ params }: { params: { category: string, use
 
         <div className="breadcrumbs text-sm mb-16">
           <ul>
-            <li><Link href="/explore-talents" className="text-primary lg:text-xl">Talents</Link></li>
-            <li><Link href={`/explore-talents/${params?.category}`} className="text-primary lg:text-xl capitalize">{formatCategory(params?.category)}</Link></li>
-            <li><Link href={`/explore-talents/${params?.category}/${params?.userId}`} className="text-primary font-bold lg:text-xl capitalize">Talent Information</Link></li>
+            <li><Link href="/explore-talents" className="text-primary lg:text-xl font-light">Talents</Link></li>
+            <li><Link href={`/explore-talents/${params?.category}`} className="text-primary lg:text-xl capitalize font-light">{formatCategory(params?.category)}</Link></li>
+            <li><Link href={`/explore-talents/${params?.category}/${params?.userId}`} className="text-primary font-550 lg:text-xl capitalize">Talent Information</Link></li>
           </ul>
         </div>
 
@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { category: string, use
 
           <div>
             <article className="text-primary">
-              <h3 className=" text-2xl mb-3 uppercase">Abati Adeotan Senayon</h3>
+              <h3 className="text-2xl mb-3 uppercase">Abati Adeotan Senayon</h3>
               <p className="font-light">
                 As a certified software test engineer with a passion for research, I am highly detail-oriented and quality-focused. I possess  excellent technical and problem-solving skills and have a deep understanding of both software development life cycle and  software  testing  life  cycle.  I  am  driven  to  identify  and  analyze  complex  situations  and  develop  innovative  solutions  to  overcome  them. My experience includes extensive  testing of web-based and mobile applications, and  I am committed  to  ensuring that all products meet the highest standards of quality and performance
               </p>
@@ -55,15 +55,15 @@ export default async function Page({ params }: { params: { category: string, use
 
             <article className="mt-2">
               <div className="w-auto border-r border-r-primary text-primary px-3 my-3 inline-block">
-                <h3 className="font-semibold">Currently working with</h3>
+                <h3 className="font-550">Currently working with</h3>
                 <p className="font-light">APPZONE, NIGERIA</p>
               </div>
               <div className="w-auto border-r border-r-primary text-primary px-3 my-3 inline-block">
-                <h3 className="font-semibold">Location</h3>
+                <h3 className="font-550">Location</h3>
                 <p className="font-light">Lagos, Nigeria</p>
               </div>
               <div className="w-auto text-primary px-3 my-3 inline-block">
-                <h3 className="font-semibold">Geographical map location</h3>
+                <h3 className="font-550">Geographical map location</h3>
                 <p className="font-light">Lorem Ipsum</p>
               </div>
             </article>
@@ -71,7 +71,7 @@ export default async function Page({ params }: { params: { category: string, use
             <hr className="border-primary mt-2"/>
 
             <article className="px-3 py-4">
-              <h3 className="font-semibold text-primary mb-4">Tech Stack</h3>
+              <h3 className="font-550 text-primary mb-4">Tech Stack</h3>
               <div>
                 <span className="inline-block px-3 py-2 rounded-full font-light bg-base text-primary text-xs lg:text-sm mr-2 mb-2">Postman</span>
                 <span className="inline-block px-3 py-2 rounded-full font-light bg-base text-primary text-xs lg:text-sm mr-2 mb-2">VSCode</span>
@@ -104,7 +104,7 @@ export default async function Page({ params }: { params: { category: string, use
             <hr className="border-primary"/>
 
             <article className="px-3 py-4">
-              <h3 className="font-semibold text-primary mb-4">Top Skills</h3>
+              <h3 className="font-550 text-primary mb-4">Top Skills</h3>
               <div>
                 <span className="inline-block px-3 py-2 rounded-full font-light bg-base text-primary text-xs lg:text-sm mr-2 mb-2">Excellent communication</span>
                 <span className="inline-block px-3 py-2 rounded-full font-light bg-base text-primary text-xs lg:text-sm mr-2 mb-2">Attention to details</span>
@@ -126,7 +126,7 @@ export default async function Page({ params }: { params: { category: string, use
 
             <hr className="border-primary"/>
 
-            <h3 className="font-semibold text-primary my-4 px-3">Employment History</h3>
+            <h3 className="font-550 text-primary my-4 px-3">Employment History</h3>
 
 
 
@@ -308,7 +308,7 @@ export default async function Page({ params }: { params: { category: string, use
             </ul>
             <hr className="border-primary mt-5"/>
 
-            <h3 className="font-semibold text-primary my-4 px-3">Education</h3>
+            <h3 className="font-550 text-primary my-4 px-3">Education</h3>
 
             <div className="px-3 mb-4">
               <header className="flex">
@@ -339,8 +339,8 @@ export default async function Page({ params }: { params: { category: string, use
 
       <section className=" bg-gray-black text-white px-5 lg:px-28 py-20 lg:py-36 flex flex-col md:flex-row mb-10">
         <article>
-          <h3 className="font-bold text-2xl lg:text-4xl">Want to connect with the talent?</h3>
-          <p className="font-light text-lg mt-5">Sometimes you need an engineer with a more specific set of skills to fit your project needs. Let’s see if we can help</p>
+          <h3 className="font-550 text-2xl lg:text-4xl">Want to connect with the Talent?</h3>
+          <p className="font-light text-lg mt-5">Sometimes you need an engineer with a more specific set of skills to fit your project needs. Let&apos;s see if we can help</p>
         </article>
         <Link href="https://calendly.com/ayobami-/discuss-about-prospective-talent?month=2024-07" target="_blank" className="btn bg-btn-blue border-btn-blue text-white rounded-full px-8 my-auto mr-auto md:mr-0 md:ml-auto mt-10 md:mt-0">Schedule a Call</Link>
       </section>
