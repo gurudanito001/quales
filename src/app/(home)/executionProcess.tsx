@@ -15,7 +15,7 @@ const ExecutionProcess = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 mt-12 md:mt-20 gap-5">
         <div className="flex flex-col items-center">
-          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto md:ml-auto md:mr-0">
+          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto md:mx-0 md:ml-auto">
             <Image src="/images/faculty.svg"  className="mx-auto w-8 h-8" width={40} height={40} objectFit="contain" alt="Brain Icon" />
             <h6 className="text-primary text-md md:text-xl mt-4 text-center font-semibold">Experienced Faculty </h6>
             <p className="text-primary text-xs md:text-sm mt-3 text-center">Faculty with 24+ years of experience in the field— in Africa & abroad.</p>
@@ -23,7 +23,7 @@ const ExecutionProcess = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto md:ml-auto md:mr-0">
+          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto">
             <Image src="/images/learning.svg" className="mx-auto w-8 h-8" width={40} height={40} objectFit="contain" alt="Learning Icon" />
             <h6 className="text-primary text-md md:text-xl mt-4 text-center font-semibold"> Learning & Development  </h6>
             <p className="text-primary text-xs md:text-sm mt-3 text-center">Engineers continue to get up-to-date training and support in the discharge of their duties.</p>
@@ -31,7 +31,7 @@ const ExecutionProcess = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto md:ml-auto md:mr-0">
+          <div className=" w-72 p-10 md:w-56 md:p-6 lg:p-10 xl:w-96 h-full flex flex-col items-center bg-neutral sm:p-12 rounded-3xl mb-5 shadow mx-auto md:mx-0 md:mr-auto">
             <Image src="/images/scale.svg" className="mx-auto w-8 h-8" width={40} height={40} objectFit="contain" alt="Arrow Scale Icon" />
             <h6 className="text-primary text-md md:text-xl mt-4 text-center font-semibold">Speed to Scale </h6>
             <p className="text-primary text-xs md:text-sm mt-3 text-center">Need 1 Mid level or Senior Engineers? We are able to scale with you as your needs evolve.</p>

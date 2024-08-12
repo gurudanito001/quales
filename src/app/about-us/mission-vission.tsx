@@ -39,13 +39,16 @@ const MissionVision = () => {
       <div className="py-10 md:py-14 px-5">
         <h3 className="text-center text-xl xl:text-2xl font-550 text-primary px-5 lg:px-28 pb-7 md:pb-10">Core Values</h3>
 
-        <div>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Duty of Care</span>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Hunger for Growth</span>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Ownership and Initiative</span>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Client-Value Creation</span>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Teamwork</span>
-          <span className="inline-block text-primary border border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Grit and Drive</span>
+        <div className="">
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1 w-auto">Duty of Care</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Hunger for Growth</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Ownership and Initiative</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Client-Value Creation</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Teamwork</span>
+        </div>
+
+        <div className="flex mt-3">
+          <span className="mx-auto inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 my-1">Grit and Drive</span>
         </div>
       </div>
 

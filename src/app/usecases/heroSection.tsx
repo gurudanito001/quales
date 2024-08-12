@@ -1,12 +1,8 @@
-"use client"
-
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 
 
 const HeroSection = ()=>{
-  const router = useRouter();
   return(
     <section className="bg-white px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">
       
