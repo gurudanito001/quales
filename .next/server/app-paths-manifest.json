@@ -1,6 +1,7 @@
 {
-  "/about-us/page": "app/about-us/page.js",
   "/(home)/page": "app/(home)/page.js",
-  "/thought-leadership/page": "app/thought-leadership/page.js",
-  "/usecases/page": "app/usecases/page.js"
+  "/about-us/page": "app/about-us/page.js",
+  "/explore-talents/page": "app/explore-talents/page.js",
+  "/usecases/page": "app/usecases/page.js",
+  "/thought-leadership/page": "app/thought-leadership/page.js"
 }
