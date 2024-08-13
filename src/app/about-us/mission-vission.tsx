@@ -86,7 +86,7 @@ const MissionVision = () => {
               </div>
             </div>
 
-            <div className="mx-auto">
+            {/* <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">
                 <article className="flex flex-col md:w-max my-auto ml-auto">
                   <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Akinola Odunlade</h4>
@@ -99,7 +99,7 @@ const MissionVision = () => {
                   <UserIcon className="w-48 m-auto text-gray-600" />
                 </figure>
               </div>
-            </div>
+            </div> */}
 
           </Slider>
         </div>

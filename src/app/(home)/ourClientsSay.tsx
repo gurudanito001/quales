@@ -55,8 +55,8 @@ const OurClientsSay = () => {
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
               Working with engineers from Quales has been incredibly rewarding and has helped us to achieve our testing goals faster. Their expertise and dedication to quality have been instrumental in streamlining our processes. We have seen a significant improvement in our testing efficiency and overall project delivery times. The team at Quales consistently goes above and beyond to ensure our needs are met. We highly recommend their services to any organization looking to enhance their QA capabilities.
             </p>
-            <h5 className="text-primary mt-auto text-center font-550">Qore</h5>
-            <h6 className="text-primary mt-1 text-center text-xs invisible">Client Representative</h6>
+            <h5 className="text-primary mt-auto text-center font-550">Fabian Amicki</h5>
+            <h6 className="text-primary mt-1 text-center text-xs">QA Manager, Qore </h6>
             <figure className="mt-5">
               <Image
                 src={`/images/q-core.svg`}
