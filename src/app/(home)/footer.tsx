@@ -28,8 +28,8 @@ const Footer = ()=>{
             <h6 className="text-sm font-550 mb-5">Company</h6>
             <ul className="text-xs flex flex-col gap-2">
               <li><Link href="/about-us">About Us</Link></li>
-              <li>How It Works</li>
-              <li>Reviews</li>
+              <li><Link href="#hiringProcess">How It Works </Link></li>
+              <li><Link href="#reviews">Reviews</Link></li>
               <li>FAQ&apos;s</li>
             </ul>
           </div>

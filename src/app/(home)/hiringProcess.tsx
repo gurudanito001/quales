@@ -2,10 +2,10 @@
 import Image from "next/image";
 import { ArrowLongRightIcon, ArrowLongDownIcon } from "@heroicons/react/24/outline";
 
-const HiringProcess =()=>{ //grid grid-cols-2 lg:grid-cols-4 mt-12 md:mt-20 gap-5
+const HiringProcess =()=>{
 
   return(
-    <section className="py-28 bg-neutral px-5 xl:px-28">
+    <section id="hiringProcess" className="py-28 bg-neutral px-5 xl:px-28">
       <h2 className="text-center text-xl md:text-2xl font-semibold mb-3 text-primary">Our Hiring Process</h2>
       <p className="text-md md:text-lg text-center text-primary">We have gone full circle so you can get to your needs in a simple, straight line</p>
 
