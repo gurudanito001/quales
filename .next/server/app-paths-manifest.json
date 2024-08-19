@@ -1,7 +1,5 @@
 {
   "/(home)/page": "app/(home)/page.js",
-  "/thought-leadership/page": "app/thought-leadership/page.js",
-  "/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page": "app/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page.js",
-  "/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page": "app/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page.js",
-  "/usecases/page": "app/usecases/page.js"
+  "/explore-talents/page": "app/explore-talents/page.js",
+  "/hire-talents/page": "app/hire-talents/page.js"
 }

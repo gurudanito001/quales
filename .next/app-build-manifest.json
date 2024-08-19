@@ -1,26 +1,15 @@
 {
   "pages": {
+    "/hire-talents/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hire-talents/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/usecases/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/usecases/page.js"
-    ],
-    "/thought-leadership/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/thought-leadership/page.js"
-    ],
-    "/about-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/about-us/page.css",
-      "static/chunks/app/about-us/page.js"
     ],
     "/(home)/page": [
       "static/chunks/webpack.js",
@@ -33,51 +22,6 @@
       "static/chunks/main-app.js",
       "static/css/app/explore-talents/page.css",
       "static/chunks/app/explore-talents/page.js"
-    ],
-    "/explore-talents/[category]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/explore-talents/[category]/page.js"
-    ],
-    "/explore-talents/[category]/[userId]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/explore-talents/[category]/[userId]/page.js"
-    ],
-    "/hire-talents/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/hire-talents/page.js"
-    ],
-    "/qualesacademy/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/qualesacademy/page.js"
-    ],
-    "/privacyandpolicy/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/privacyandpolicy/page.js"
-    ],
-    "/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page.js"
-    ],
-    "/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page.js"
-    ],
-    "/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js"
-    ],
-    "/articles/who-is-a-scrum-master/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/who-is-a-scrum-master/page.js"
     ]
   }
 }
