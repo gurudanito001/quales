@@ -2756,6 +2756,9 @@ html:has(.drawer-toggle:checked) {
 .h-screen {
   height: 100vh;
 }
+.h-40 {
+  height: 10rem;
+}
 .max-h-12 {
   max-height: 3rem;
 }
@@ -3116,6 +3119,10 @@ html:has(.drawer-toggle:checked) {
   --tw-bg-opacity: 1;
   background-color: rgb(186 105 215 / var(--tw-bg-opacity));
 }
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\'\/images\/abati-1\.jpg\'\)\] {
   background-image: url('/images/abati-1.jpg');
 }
@@ -3442,6 +3449,14 @@ html:has(.drawer-toggle:checked) {
   --tw-text-opacity: 1;
   color: rgb(252 165 165 / var(--tw-text-opacity));
 }
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(55 92 113 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -3687,6 +3702,16 @@ body {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.before\:block::before {
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:content-\[\'hello\'\]::before {
+  --tw-content: 'hello';
+  content: var(--tw-content);
 }
 
 .focus\:border-none:focus {
@@ -4107,6 +4132,10 @@ body {
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }
@@ -4228,6 +4257,14 @@ body {
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:min-h-56 {

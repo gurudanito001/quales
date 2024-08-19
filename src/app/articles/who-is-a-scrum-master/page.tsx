@@ -158,8 +158,8 @@ const Article = () =>{
 
           <p>A skilled Scrum Master can significantly influence the success of a Scrum team and the organization as a whole. By fostering a collaborative and productive environment, removing obstacles, and ensuring adherence to Scrum principles, the Scrum Master helps the team deliver high-quality products more efficiently. Additionally, they play a vital role in promoting a culture of continuous improvement and learning.</p>
 
-          <p>Get a certification in QA Engineering <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfBZN4UTF7OJ_Ai_IDx60lkrvaDFw1VAdTlDJPc7UVh_r5ViQ/viewform?usp=sharing" className="underline font-550" target="_blank">here</Link>.</p>
-          <p>Get in touch with top-notch QA Engineers here.</p>
+          {/* <p>Get a certification in QA Engineering <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfBZN4UTF7OJ_Ai_IDx60lkrvaDFw1VAdTlDJPc7UVh_r5ViQ/viewform?usp=sharing" className="underline font-550" target="_blank">here</Link>.</p>
+          <p>Get in touch with top-notch QA Engineers here.</p> */}
 
         </article>
 
