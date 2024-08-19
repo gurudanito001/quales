@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Hire Talents | Quales Consulting',
   description: "Leverage Quales Talents to Seamlessly Ensure Project Success",
+  
 };
 
 const HireTalents = ()=>{

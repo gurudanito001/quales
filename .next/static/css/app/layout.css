@@ -4266,6 +4266,14 @@ body {
     padding: 3rem;
   }
 
+  .xl\:p-24 {
+    padding: 6rem;
+  }
+
+  .xl\:p-14 {
+    padding: 3.5rem;
+  }
+
   .xl\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;

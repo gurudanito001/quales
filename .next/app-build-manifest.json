@@ -22,6 +22,22 @@
       "static/chunks/main-app.js",
       "static/css/app/explore-talents/page.css",
       "static/chunks/app/explore-talents/page.js"
+    ],
+    "/qualesacademy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/qualesacademy/page.js"
+    ],
+    "/usecases/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/usecases/page.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/about-us/page.css",
+      "static/chunks/app/about-us/page.js"
     ]
   }
 }

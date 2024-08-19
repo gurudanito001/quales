@@ -33,13 +33,15 @@ const OurClientsSay = () => {
         <div className=" flex flex-col items-center">
           <div className=" w-64 md:w-60 xl:w-80 h-full flex flex-col items-center bg-white p-4 xl:p-12 rounded-3xl mb-5 shadow-md">
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
-              We had a tough timeline in ensuring our back-end engineering system for our payment system was tested within two months due to some new critical changes. With Quales consulting for us, they showed tenacity, vigor, competency, professionalism and most importantly ensured quality was assured in our application within the timelines. They are our go-to people Appzone wide when it comes to Software Testing.
+              Our collaboration with Quales Consulting has been highly beneficial, as they have provided us with skilled and experienced Quality Assurance Engineers who excel in software testing. Their contributions
+              have significantly enhanced our product delivery, enabling us to achieve market readiness in record time.Quales Consulting has consistently demonstrated reliability, resourcefulness, efficiency, and effectiveness
+              in all our interactions with them
             </p>
-            <h5 className="text-primary mt-auto text-center font-550">Mayokun Soremekun</h5>
-            <h6 className="text-primary mt-1 text-center text-xs">Chief Operating Officer, Appzone Core</h6>
+            <h5 className="text-primary mt-auto text-center font-550">Adepegba Oduntan</h5>
+            <h6 className="text-primary mt-1 text-center text-xs">C.E.O , SME CAPITAL</h6>
             <figure className="mt-5">
               <Image
-                src={`/images/zone.svg`}
+                src={`/images/sme-capital.svg`}
                 className="max-h-14"
                 style={{ height: "auto", objectFit: "contain" }}
                 alt="Zone Logo"
