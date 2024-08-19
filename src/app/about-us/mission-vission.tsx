@@ -5,6 +5,7 @@ import { UserIcon, ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/sol
 import Slider from "@ant-design/react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
 
 
 
@@ -14,13 +15,11 @@ const settings = {
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  prevArrow: <button type="button" className="slick-prev text-gray-700"></button>,
-  
+  arrows: true,
 };
 
 const MissionVision = () => {
+
   return (
     <section className="bg-white md:bg-neutral lg:px-28 flex flex-col items-center">
       <div className="bg-neutral md:bg-white grid grid-cols-1 md:grid-cols-2 py-10 md:mt-14 w-full">
@@ -40,15 +39,16 @@ const MissionVision = () => {
         <h3 className="text-center text-xl xl:text-2xl font-550 text-primary px-5 lg:px-28 pb-7 md:pb-10">Core Values</h3>
 
         <div className="">
-          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1 w-auto">Duty of Care</span>
-          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Hunger for Growth</span>
-          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Ownership and Initiative</span>
-          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Client-Value Creation</span>
-          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 mx-2 my-1">Teamwork</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 mx-2 my-1 w-auto">Duty of Care</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 mx-2 my-1">Hunger for Growth</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 mx-2 my-1">Ownership and Initiative</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 mx-2 my-1">Client-Value Creation</span>
+          <span className="inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 mx-2 my-1">Teamwork</span>
+          <span className="inline-block xl:hidden text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 my-1">Grit and Drive</span>
         </div>
 
-        <div className="flex mt-3">
-          <span className="mx-auto inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-7 py-3 my-1">Grit and Drive</span>
+        <div className="mt-3 hidden xl:flex">
+          <span className="mx-auto inline-block text-primary border-2 border-primary rounded-2xl bg-transparent text-sm md:text-lg px-3 md:px-5 py-3 my-1">Grit and Drive</span>
         </div>
       </div>
 
@@ -56,7 +56,7 @@ const MissionVision = () => {
         <h3 className="text-xl xl:text-2xl font-550 text-primary px-5 xl:px-28 pt-10 pb-7 md:pt-14 md:pb-10 text-center md:text-left">Our Leadership</h3>
 
 
-        <div className=" flex px-5 sm:px-12 xl:px-60 pb-10 md:pb-14 w-screen">
+        <div className=" flex px-5 sm:px-12 xl:px-60 pb-10 md:pb-14 w-screen bg-neutral">
           <Slider {...settings} className="mx-auto md:mx-0 w-full flex">
             <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">

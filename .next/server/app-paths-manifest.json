@@ -1,6 +1,7 @@
 {
-  "/hire-talents/page": "app/hire-talents/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/explore-talents/page": "app/explore-talents/page.js",
-  "/usecases/page": "app/usecases/page.js"
+  "/usecases/page": "app/usecases/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page": "app/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page.js",
+  "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js",
+  "/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page": "app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js"
 }

@@ -38,6 +38,21 @@
       "static/chunks/main-app.js",
       "static/css/app/about-us/page.css",
       "static/chunks/app/about-us/page.js"
+    ],
+    "/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page.js"
+    ],
+    "/articles/who-is-a-scrum-master/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/who-is-a-scrum-master/page.js"
+    ],
+    "/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js"
     ]
   }
 }

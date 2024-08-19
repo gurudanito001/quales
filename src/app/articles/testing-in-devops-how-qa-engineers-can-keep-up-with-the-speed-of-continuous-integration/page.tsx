@@ -124,10 +124,10 @@ const Article = () =>{
 
           <p>By navigating these challenges with agility and innovation, QA engineers can transform potential obstacles into opportunities, solidifying their role as indispensable contributors to the success of DevOps initiatives. The future of software quality assurance in DevOps is bright, promising, and full of potential for those willing to adapt and evolve.</p>
 
-          <p>Get a certification in QA Engineering <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfBZN4UTF7OJ_Ai_IDx60lkrvaDFw1VAdTlDJPc7UVh_r5ViQ/viewform?usp=sharing" className="underline font-550" target="_blank">here</Link>.</p>
-          <p>Get in touch with top-notch QA Engineers here.</p>
+          {/* <p>Get a certification in QA Engineering <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfBZN4UTF7OJ_Ai_IDx60lkrvaDFw1VAdTlDJPc7UVh_r5ViQ/viewform?usp=sharing" className="underline font-550" target="_blank">here</Link>.</p>
+          <p>Get in touch with top-notch QA Engineers here.</p> */}
 
-        </article> testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration
+        </article>
 
 
       </div>
