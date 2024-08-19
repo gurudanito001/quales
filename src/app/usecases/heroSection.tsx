@@ -19,9 +19,9 @@ const HeroSection = ()=>{
         </p>
       </article>
 
-      <figure className=" md:w-1/2 mb-10 md:mb-0">
+      <figure className=" md:w-1/2 mb-10 md:mb-0 xl:p-14">
         <Image
-          src={`/images/our-community.svg`}
+          src={`/images/usecases-banner.png`}
           className="w-100"
           style={{ height: "auto", objectFit: "contain" }}
           alt="Two Business men shaking hands in a professional environment"

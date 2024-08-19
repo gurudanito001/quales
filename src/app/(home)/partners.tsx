@@ -60,9 +60,9 @@ const slides = [
 </div> },
 { logo: <div className="min-w-40">
   <Image
-    src={`/images/riby.svg`}
+    src={`/images/sme-capital.svg`}
     style={{ height: "auto", objectFit: "contain" }}
-    alt="Riby Logo"
+    alt="SME Capital Logo"
     width={250}
     height={100}
   />

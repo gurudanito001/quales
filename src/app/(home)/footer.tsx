@@ -19,7 +19,7 @@ const Footer = ()=>{
           <article className="flex items-start">
             <EnvelopeIcon className="w-5 text-white" />
             <p className="text-xs ml-4">
-              info@quales.tech
+              <a href="mailto:info@quales.tech">info@quales.tech</a>
             </p>
           </article>
         </div>

@@ -3,6 +3,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "@ant-design/react-slick";
+import Link from "next/link";
 
 
 
@@ -10,10 +11,10 @@ import Slider from "@ant-design/react-slick";
 const OurCommunity = ()=>{
 
   const images = [
-    `bg-[url('/images/adaeze.png')]`,
-    `bg-[url('/images/ibukunoluwa.png')]`,
-    `bg-[url('/images/kosisochukwu.png')]`,
-    `bg-[url('/images/patrick.png')]`
+    {name: "Adaeze", url: `bg-[url('/images/adaeze.png')]`},
+    {name: "Ibukunoluwa Adaghe", url: `bg-[url('/images/ibukunoluwa.png')]`},
+    {name: "Kosisochukwu", url: `bg-[url('/images/kosisochukwu.png')]`},
+    {name: "Patrick Asuquo", url: `bg-[url('/images/patrick.png')]`}
   ]
 
   const settings = {
@@ -28,10 +29,11 @@ const OurCommunity = ()=>{
   };
 
   const listImages = ()=>{
-    return images.map( (item: string, index) =>{
+    return images.map( (item: {name: string, url: string}, index) =>{
       return (
-        <div key={item} className="w-full flex">
-          <div className={`carousel-item ${images[index]} bg-cover bg-center bg-no-repeat h-420 max-w-96 mx-auto`}>
+        <div key={item?.name} className="w-full flex">
+          <div className={`carousel-item ${images[index].url} bg-cover bg-center bg-no-repeat h-420 max-w-96 mx-auto flex`}>
+            <caption className="bg-overlay text-white px-5 py-3 mt-auto w-full">{images[index].name}</caption>
           </div>
         </div>
       )
@@ -50,9 +52,9 @@ const OurCommunity = ()=>{
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-xl font-light text-center md:text-left">
           Unlock the potential of your projects with our elite network of tech experts. Our community of top-tier QA engineers and Scrum Masters is ready to drive innovation and deliver exceptional results. Partner with us to elevate your technology initiatives to the next level.
         </p>
-        <button className="btn hidden md:inline-block bg-primary text-white text-sm md:text-lg font-normal font-medium rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8">
+        <Link href="/qualesacademy" className="btn hidden md:inline-flex items-center bg-primary text-white text-sm md:text-lg font-normal rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8 ">
           Quales Academy
-        </button>
+        </Link>
       </article>
       
       <figure className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -61,9 +63,9 @@ const OurCommunity = ()=>{
         </Slider>
       </figure>
 
-      <button className="btn md:hidden bg-primary text-white text-sm md:text-lg font-normal md:font-medium rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8">
-          Quales Academy
-        </button>
+      <Link href="/qualesacademy" className="btn inline-flex items-center md:hidden bg-primary text-white text-sm md:text-lg font-normal md:font-medium rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8">
+        Quales Academy
+      </Link>
     </section>
   )
 }
