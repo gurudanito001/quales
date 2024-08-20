@@ -15,3 +15,31 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-arrow {
+  border-radius: 50%; /* Make it circular */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-prev-arrow {
+  left: 10px; /* Positioning for the previous arrow */
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-next-arrow {
+  right: 10px; /* Positioning for the next arrow */
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+

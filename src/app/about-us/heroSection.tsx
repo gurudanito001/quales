@@ -8,7 +8,7 @@ const HeroSection = ()=>{
     <>
       <h1 className="text-xl font-550 text-primary pt-14 md:mb-10 px-5 lg:px-28 text-center md:text-left">About Quales</h1>
 
-      <section className="bg-white px-5 lg:px-28 py-10 flex flex-col md:flex-row items-center">
+      <section className="bg-white px-5 lg:px-28 pt-10 pb-16 flex flex-col md:flex-row items-center">
 
         <article className="text-base-content md:w-1/2 flex flex-col">
           <header className="flex flex-col">
@@ -24,10 +24,10 @@ const HeroSection = ()=>{
 
         <figure className=" md:w-1/2 mb-10 md:mb-0">
           <Image
-            src={`/images/our-community.svg`}
+            src={`/images/about-us-banner.png`}
             className="w-100"
             style={{ height: "auto", objectFit: "contain" }}
-            alt="Two Business men shaking hands in a professional environment"
+            alt="Two men backing each other with a laptop in their hands"
             width={700}
             height={700}
           />
