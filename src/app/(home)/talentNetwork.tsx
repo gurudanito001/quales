@@ -6,20 +6,20 @@ import Link from "next/link";
 
 const TalentNetwork = ()=>{
   return(
-    <section className=" bg-white px-5 lg:px-28 py-28 grid grid-cols-1 md:grid-cols-2">
+    <section className=" bg-white px-5 lg:px-10 xl:px-28 py-28 grid grid-cols-1 md:grid-cols-2">
 
       <article className="text-base-content flex flex-col order-1 md:order-2">
         <header className="mt-auto flex">
           <h2 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550  from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">Talents Within our Network</h2>
         </header>
 
-        <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg font-light text-center md:text-left">
+        <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg font-light text-center md:text-left mx-auto">
           Our network boasts a diverse group of highly skilled professionals specializing in QA Engineering, Scrum Mastery, Data Science, and Software Development. Each talent is meticulously vetted and trained to ensure they bring unparalleled expertise and value to your organization. Discover the power of a workforce dedicated to excellence and innovation.
         </p>
         <Link href="/explore-talents" className="btn bg-primary hidden md:inline-flex items-center text-white text-sm md:text-lg md:font-medium font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</Link>
       </article>
       
-      <div className="grid grid-cols-2 mb-5 md:mb-0 gap-5 order-2 md:order-1 mt-10 md:mt-0">
+      <div className="grid grid-cols-2 xl:grid-cols-3 mb-5 md:mb-0 gap-5 order-2 md:order-1 mt-10 md:mt-0">
         <div className="flex flex-col mb-5 items-end ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 min-h-40 shadow-md border border-gray-200 rounded-lg">
@@ -35,7 +35,7 @@ const TalentNetwork = ()=>{
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-start ">
+        <div className="flex flex-col mb-5 items-start xl:items-center ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 min-h-40 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
@@ -50,7 +50,7 @@ const TalentNetwork = ()=>{
           </div>
         </div>
 
-        <div className="flex flex-col mb-5 items-end ">
+        {/* <div className="flex flex-col mb-5 items-end ">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 min-h-40 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">
@@ -64,9 +64,9 @@ const TalentNetwork = ()=>{
               </div>
             </article>
           </div>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col mb-5 items-start ">
+        <div className="flex flex-col mb-5 items-end xl:items-start">
           <header className=" w-40 h-16 shadow-md border border-gray-200 rounded-lg"></header>
           <div className=" w-40 min-h-40 shadow-md border border-gray-200 rounded-lg">
             <article className=" flex flex-col items-center relative -mt-12">

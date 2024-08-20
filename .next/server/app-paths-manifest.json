@@ -1,9 +1,7 @@
 {
   "/about-us/page": "app/about-us/page.js",
-  "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js",
   "/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page": "app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js",
   "/hire-talents/page": "app/hire-talents/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(home)/page": "app/(home)/page.js",
   "/privacyandpolicy/page": "app/privacyandpolicy/page.js"
 }
