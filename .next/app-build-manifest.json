@@ -53,6 +53,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js"
+    ],
+    "/privacyandpolicy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/privacyandpolicy/page.js"
     ]
   }
 }
