@@ -5,7 +5,7 @@ import { UserIcon, ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/sol
 import Slider from "@ant-design/react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect } from "react";
+import { CustomPrevArrow, CustomNextArrow } from "./customArrows";
 
 
 
@@ -15,8 +15,22 @@ const settings = {
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
+  prevArrow: <CustomPrevArrow onClick={()=>{}} />,
+  nextArrow: <CustomNextArrow onClick={()=>{}}/>,
   arrows: true,
 };
+
+const settings2 = {
+  fade: true, // Enable fade effect
+  autoplay: true,
+  autoplaySpeed: 15000,
+  infinite: true,
+  speed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false, // Optional: Show navigation dots
+};
+
 
 const MissionVision = () => {
 
@@ -56,32 +70,48 @@ const MissionVision = () => {
         <h3 className="text-xl xl:text-2xl font-550 text-primary px-5 xl:px-28 pt-10 pb-7 md:pt-14 md:pb-10 text-center md:text-left">Our Leadership</h3>
 
 
-        <div className=" flex px-5 sm:px-12 xl:px-60 pb-10 md:pb-14 w-screen bg-neutral">
-          <Slider {...settings} className="mx-auto md:mx-0 w-full flex">
+        <div className=" flex px-5 sm:px-12 lg:px-0 xl:px-44 pb-10 lg:pb-14 w-screen">
+          <Slider {...settings} className="mx-auto lg:mx-0 w-full flex">
             <div className="mx-auto">
-              <div className="flex flex-col-reverse md:flex-row gap-8">
-                <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Ayobami Elutade</h4>
-                  <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
-                    Ayo is a co-founder at Quales with 12+ years of experience in management and technical expertise cutting across Energy, Fintech, Banking, Telecoms sectors playing a key role as a Senior Engineer and Management in helping these institutions generate multi million dollars in revenue.
-                  </p>
+              <div className="flex flex-col-reverse lg:flex-row lg:gap-8">
+                <article className="flex flex-col w-full lg:max-w-550 my-auto ml-auto">
+                  <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text my-4">Ayobami Elutade</h4>
+                  <div className="text-lg text-primary font-light text-center lg:text-left mb-4 w-full">
+                    <Slider {...settings2} className="w-full overflow-x-clip">
+                      <p className="w-full mt-8">Ayo is a co-founder at Quales with 12+ years of experience in management and technical expertise cutting across Energy, Fintech, Banking, Telecoms sectors playing a key role as a Senior Engineer and Management in helping these institutions generate multi million dollars in revenue.</p>
+
+                      <p className="w-full mt-8">He holds a degree in Computer Technology and Business Administration, along with various business courses and technology certifications. An alumnus of Harvard Business School, University of South Wales, and Babcock University, his educational background has been pivotal in founding Quales Consulting. Driven by a mission to build human capacity and facilitate gainful employment for talents, he has also played a crucial role in forging strategic partnerships to grow the company.</p>
+
+                      <p className="w-full mt-8">
+                        In his leadership role, he oversees Human Resources, Operations, Software Engineering, and Partnerships, focusing on enabling the company&apos;s vision and ensuring operational excellence. His initiatives have significantly contributed to the company&apos;s strategic expansion and sustained success.
+                      </p>
+                    </Slider>
+                  </div>
                 </article>
 
-                <figure className="h-80 w-80 bg-neutral2  bg-[url('/images/ayo-avatar.png')] bg-cover bg-center rounded-full mx-auto md:mx-0 md:mr-auto">
+                <figure className="h-80 w-80 bg-[url('/images/ayo-avatar.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:mr-auto">
                 </figure>
               </div>
             </div>
 
             <div className="mx-auto">
-              <div className="flex flex-col-reverse md:flex-row gap-8">
-                <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Bob Oghumah</h4>
-                  <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
-                    Bob Oghumah is a seasoned, dynamic, and results-driven Software Quality Assurance Engineer based in Dublin, Ireland, with over a decade of extensive experience across diverse sectors including Telecommunications, FinTech, E-Commerce, Legal-Tech, Health-Tech, and Consulting. His areas of expertise 
-                  </p>
+              <div className="flex flex-col-reverse lg:flex-row lg:gap-8">
+                <article className="flex flex-col w-full lg:max-w-550 my-auto ml-auto">
+                  <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text my-4">Bob Oghumah</h4>
+                  <div className="text-lg text-primary font-light text-center lg:text-left mb-4 w-full">
+                    <Slider {...settings2} className="w-full overflow-x-clip">
+                      <p className="w-full mt-8">Bob Oghumah is a seasoned, dynamic, and results-driven Software Quality Assurance Engineer based in Dublin, Ireland, with over a decade of extensive experience across diverse sectors including Telecommunications, FinTech, E-Commerce, Legal-Tech, Health-Tech, and Consulting. His areas of expertise at Quales include Leadership, QA consultancy, and Engineering.</p>
+
+                      <p className="w-full mt-8">With a proven track record of delivering robust solutions and driving organizational success through strategic QA initiatives, Bob is renowned for his ability to implement cutting-edge QA testing methodologies. His meticulous approach to software testing has resulted in significant reductions in defects and an unparalleled level of customer satisfaction. As a visionary leader, Bob has spearheaded the establishment of various high-performing technology teams, leveraging his exceptional leadership skills to foster innovation and drive efficiency.</p>
+
+                      <p className="w-full mt-8">
+                        His qualifications and certifications include a BSc. in Computer Science and an MSc. in Computing.
+                      </p>
+                    </Slider>
+                  </div>
                 </article>
 
-                <figure className="h-80 w-80 bg-neutral2  bg-[url('/images/bob-avatar.png')] bg-cover bg-center rounded-full mx-auto md:mx-0 md:mr-auto">
+                <figure className="h-80 w-80 bg-[url('/images/bob-avatar.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:mr-auto">
                 </figure>
               </div>
             </div>
@@ -89,17 +119,26 @@ const MissionVision = () => {
             {/* <div className="mx-auto">
               <div className="flex flex-col-reverse md:flex-row gap-8">
                 <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Akinola Odunlade</h4>
-                  <p className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. 
-                  </p>
+                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Bob Oghumah</h4>
+                  <div className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
+                    <Slider {...settings2}>
+                      <p>Bob Oghumah is a seasoned, dynamic, and results-driven Software Quality Assurance Engineer based in Dublin, Ireland, with over a decade of extensive experience across diverse sectors including Telecommunications, FinTech, E-Commerce, Legal-Tech, Health-Tech, and Consulting. His areas of expertise at Quales include Leadership, QA consultancy, and Engineering.</p>
+
+                      <p>With a proven track record of delivering robust solutions and driving organizational success through strategic QA initiatives, Bob is renowned for his ability to implement cutting-edge QA testing methodologies. His meticulous approach to software testing has resulted in significant reductions in defects and an unparalleled level of customer satisfaction. As a visionary leader, Bob has spearheaded the establishment of various high-performing technology teams, leveraging his exceptional leadership skills to foster innovation and drive efficiency.</p>
+
+                      <p>
+                        His qualifications and certifications include a BSc. in Computer Science and an MSc. in Computing.
+                      </p>
+                    </Slider>
+                  </div>
                 </article>
 
-                <figure className="h-80 w-80 border shadow-md bg-neutral2 flex  rounded-lg mx-auto md:mx-0 md:mr-auto">
-                  <UserIcon className="w-48 m-auto text-gray-600" />
+                <figure className="h-80 w-80 bg-neutral2  bg-[url('/images/bob-avatar.png')] bg-cover bg-center rounded-full mx-auto md:mx-0 md:mr-auto">
                 </figure>
               </div>
             </div> */}
+
+            
 
           </Slider>
         </div>
