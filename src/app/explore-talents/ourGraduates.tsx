@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const OurGraduates = ()=>{
   return(
-    <section className="bg-white px-5 lg:px-28 py-10 flex flex-col-reverse md:flex-row items-center">
+    <section className="bg-white px-5 lg:px-28 pt-20 flex flex-col-reverse md:flex-row items-center">
       <figure className=" md:w-1/2 mb-10 md:mb-0">
         <Image
-          src={`/images/our-community.svg`}
-          className="w-100"
+          src={`/images/our-graduates-image.png`}
+          className="w-100 xl:max-w-600"
           style={{ height: "auto", objectFit: "contain" }}
           alt="Two Business men shaking hands in a professional environment"
           width={700}

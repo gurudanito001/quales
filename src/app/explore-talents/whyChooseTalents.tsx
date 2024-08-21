@@ -23,7 +23,7 @@ const settings = {
 const WhyChooseTalents = () => {
   const router = useRouter();
   return (
-    <section className="bg-white pb-16">
+    <section className="bg-white">
       <div className=" flex sm:px-12 xl:px-72 bg-neutral2 py-32">
         <Slider {...settings}  className="mx-auto md:mx-0 w-full">
           <div>
@@ -74,7 +74,7 @@ const WhyChooseTalents = () => {
       
 
 
-      <div className="px-5 md:py-10 flex flex-col-reverse md:flex-row items-center mt-14 lg:mt-0 xl:px-28">
+      <div className="px-5  flex flex-col-reverse md:flex-row items-center mt-14 lg:mt-0 xl:px-28">
         <article className="flex flex-col text-base-content lg:w-1/2 mx-auto">
           <header className="flex">
             <h3 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto lg:mx-0"> Why Choose Quales Talents? </h3>
@@ -92,11 +92,15 @@ const WhyChooseTalents = () => {
             <div className="bg-neutral text-primary p-5 rounded-2xl">Proven Track Record</div>
             <div className="bg-neutral text-primary p-5 rounded-2xl">Dedicated Support Team</div>
           </div>
+
+          <div className="flex xl:mt-10">
+            <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto lg:mx-0 lg:ml-auto mt-8 lg:-mr-20 xl:-mr-36" >Hire Talents</Link>
+          </div>
         </article>
         <figure className="lg:w-1/2 mb-10 md:mb-0 hidden lg:block">
           <Image
-            src={`/images/our-community.svg`}
-            className="w-100"
+            src={`/images/why-choose-quales-image.png`}
+            className="w-100 xl:max-w-800"
             style={{ height: "auto", objectFit: "contain" }}
             alt="Two Business men shaking hands in a professional environment"
             width={700}
@@ -105,9 +109,7 @@ const WhyChooseTalents = () => {
         </figure>
       </div>
       
-      <div className="flex">
-        <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto mt-8" >Hire Talents</Link>
-      </div>
+      
 
     </section>
   )

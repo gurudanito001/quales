@@ -58,6 +58,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/privacyandpolicy/page.js"
+    ],
+    "/thought-leadership/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/thought-leadership/page.js"
     ]
   }
 }
