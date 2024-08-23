@@ -13,7 +13,7 @@ const TalentNetwork = ()=>{
           <h2 className="text-2xl md:text-3xl font-550 bg-gradient-to-r max-w-550  from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0">Talents Within our Network</h2>
         </header>
 
-        <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg font-light text-center md:text-left mx-auto">
+        <p className="text-primary max-w-600 mt-6 text-sm lg:text-lg font-light text-center md:text-left mx-auto md:mx-0">
           Our network boasts a diverse group of highly skilled professionals specializing in QA Engineering, Scrum Mastery, Data Science, and Software Development. Each talent is meticulously vetted and trained to ensure they bring unparalleled expertise and value to your organization. Discover the power of a workforce dedicated to excellence and innovation.
         </p>
         <Link href="/explore-talents" className="btn bg-primary hidden md:inline-flex items-center text-white text-sm md:text-lg md:font-medium font-normal rounded-full w-48 mt-8 mb-auto">Explore Talents</Link>
