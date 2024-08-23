@@ -33,6 +33,7 @@ const config: Config = {
         "550": "550"
       },
       width:{
+        "300": "300px",
         "336": "336px"
       },
       height: {
