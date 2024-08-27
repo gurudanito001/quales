@@ -1175,10 +1175,6 @@ html {
     border-radius: inherit;
   }
 }
-.link {
-  cursor: pointer;
-  text-decoration-line: underline;
-}
 .menu {
   display: flex;
   flex-direction: column;
@@ -1816,14 +1812,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .join-item:focus {
   isolation: isolate;
-}
-.link:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-.link:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
 }
 :where(.menu li:empty) {
   --tw-bg-opacity: 1;
@@ -2682,6 +2670,9 @@ html:has(.drawer-toggle:checked) {
 .top-1\/3 {
   top: 33.333333%;
 }
+.top-1\/2 {
+  top: 50%;
+}
 .z-10 {
   z-index: 10;
 }
@@ -2911,6 +2902,15 @@ html:has(.drawer-toggle:checked) {
 .h-screen {
   height: 100vh;
 }
+.h-52 {
+  height: 13rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-40 {
+  height: 10rem;
+}
 .max-h-12 {
   max-height: 3rem;
 }
@@ -2928,6 +2928,12 @@ html:has(.drawer-toggle:checked) {
 }
 .max-h-850 {
   max-height: 850px;
+}
+.max-h-full {
+  max-height: 100%;
+}
+.max-h-screen {
+  max-height: 100vh;
 }
 .min-h-40 {
   min-height: 10rem;
@@ -3136,11 +3142,17 @@ html:has(.drawer-toggle:checked) {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 .overflow-x-clip {
   overflow-x: clip;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 .rounded-2xl {
   border-radius: 1rem;
@@ -3208,6 +3220,14 @@ html:has(.drawer-toggle:checked) {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-red-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+}
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 .border-b-primary {
   --tw-border-opacity: 1;
@@ -3318,6 +3338,18 @@ html:has(.drawer-toggle:checked) {
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+.bg-\[url\(\'\/images\/role-of-automation\.png\'\)\] {
+  background-image: url('/images/role-of-automation.png');
+}
+.bg-\[url\(\'\/images\/shift-from-manual\.png\'\)\] {
+  background-image: url('/images/shift-from-manual.png');
+}
+.bg-\[url\(\'\/images\/testing-in-devops\.png\'\)\] {
+  background-image: url('/images/testing-in-devops.png');
+}
+.bg-\[url\(\'\/images\/who-is-a-scrum-master\.png\'\)\] {
+  background-image: url('/images/who-is-a-scrum-master.png');
+}
 .from-slate-700 {
   --tw-gradient-from: #334155 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(51 65 85 / 0) var(--tw-gradient-to-position);
@@ -3328,6 +3360,9 @@ html:has(.drawer-toggle:checked) {
 }
 .bg-cover {
   background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
 }
 .bg-clip-text {
   background-clip: text;
