@@ -8,7 +8,7 @@ const HowToEnroll =()=>{
   return(
     <section id="howToEnroll" className="py-28 bg-neutral px-5 xl:px-28">
       <h2 className="text-center text-xl md:text-2xl font-semibold mb-3 text-primary">How To Enroll</h2>
-      <p className="text-md md:text-lg text-center text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula.</p>
+      <p className="text-md md:text-lg text-center text-primary">Get started with our simple, step-by-step enrollment process.</p>
 
       <div className="flex flex-col mt-14">
         <div className="flex flex-col md:flex-row md:gap-3 justify-center w-full">
@@ -52,10 +52,10 @@ const HowToEnroll =()=>{
           </div>
         </div>
 
-        {/* <div className="w-auto flex items-center justify-center sm:hidden lg:flex">
+        <div className="w-auto flex items-center justify-center md:hidden">
           <ArrowLongRightIcon className="text-primary w-8 hidden md:inline" />
           <ArrowLongDownIcon className="text-primary w-8 inline md:hidden" />
-        </div> */}
+        </div>
 
         <div className="flex flex-col md:flex-row md:gap-3 justify-center w-full">
 
@@ -101,7 +101,7 @@ const HowToEnroll =()=>{
 
 
       <div className="flex justify-center">
-        <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
+        <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
       </div>
 
 

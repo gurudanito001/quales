@@ -23,7 +23,7 @@ const settings = {
 const settings2 = {
   fade: true, // Enable fade effect
   autoplay: true,
-  autoplaySpeed: 15000,
+  autoplaySpeed: 13000,
   infinite: true,
   speed: 3000,
   slidesToShow: 1,

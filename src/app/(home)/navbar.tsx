@@ -42,7 +42,7 @@ const NavBar = () => {
                   </label>
                   
                 </li>
-                <li><Link href="/qualesacademy" className="py-3 px-5 text-lg">Quales Academy</Link></li>
+                <li><Link href="/learning" className="py-3 px-5 text-lg">Quales Academy</Link></li>
                 <li><Link href="/usecases" className="py-3 px-5 text-lg" >Use Cases</Link></li>
                 <li><Link href="/thought-leadership" className="py-3 px-5 text-lg">Thought Leadership</Link></li>
                 <li><Link href="/about-us" className="py-3 px-5 text-lg">About Us</Link></li>
