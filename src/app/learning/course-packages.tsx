@@ -19,7 +19,7 @@ const CoursePackages = ()=>{
           <p className="max-w-md text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. </p>
 
           <div className="flex justify-center">
-            <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
+            <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
           </div>
         </article>
 
@@ -29,7 +29,7 @@ const CoursePackages = ()=>{
           <p className="max-w-md text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. </p>
 
           <div className="flex justify-center">
-            <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
+            <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
           </div>
         </article>
       </div>
