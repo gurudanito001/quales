@@ -43,12 +43,12 @@ const NavBar = () => {
                     <XMarkIcon className="w-6 text-white p-0" />
                   </label>
                 </li>
-                <li><Link href="/learning/#coursePackages">Course Packages</Link></li>
-                <li><Link href="/learning/#learningPlans">Learning Plans</Link></li>
-                <li><Link href="/learning/#howToEnroll">How to Enroll</Link></li>
-                <li><Link href="/learning/#testimonials">Testimonial</Link></li>
-                <li><Link href="/learning/#faqs">FAQ&apos;s</Link></li>
-                <li><Link href="">Consulting</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/#coursePackages">Course Packages</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/#learningPlans">Learning Plans</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/#howToEnroll">How to Enroll</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/#testimonials">Testimonial</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/#faqs">FAQ&apos;s</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="">Consulting</Link></li>
               </ul>
             </div>
           </div>

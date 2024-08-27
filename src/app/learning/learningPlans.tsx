@@ -5,7 +5,7 @@ const LearningPlans = () => {
 
 
   return (
-    <section id="learningPlans" className="bg-white flex flex-col items-center py-14 lg:py-20">
+    <section id="learningPlans" className="bg-white flex flex-col items-center py-14 py-28">
       <h2 className="text-center text-xl md:text-2xl font-550 mb-3 text-primary">Our Learning Plans</h2>
       <p className="text-primary max-w-4xl text-center mx-auto md:max-w-550 lg:max-w-full px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, </p>
 

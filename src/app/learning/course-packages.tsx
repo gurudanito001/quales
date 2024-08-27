@@ -6,7 +6,7 @@ import Image from "next/image";
 const CoursePackages = ()=>{
 
   return (
-    <section id="coursePackages" className="bg-neutral lg:px-28 flex flex-col items-center py-14 lg:py-20 px-5 sm:px-12 md:px-0">
+    <section id="coursePackages" className="bg-neutral lg:px-28 flex flex-col items-center py-28 px-5 sm:px-12 md:px-0">
       <h2 className="text-center text-xl md:text-2xl font-550 mb-3 text-primary">Course Packages</h2>
       <h3 className="text-2xl xl:text-3xl font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text mx-auto md:mx-0 mb-5 text-center">Certified Tech Training Courses</h3>
 

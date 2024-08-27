@@ -52,7 +52,7 @@ const OurCommunity = ()=>{
         <p className="text-primary max-w-600 mt-6 text-sm lg:text-xl font-light text-center md:text-left">
           Unlock the potential of your projects with our elite network of tech experts. Our community of top-tier QA engineers and Scrum Masters is ready to drive innovation and deliver exceptional results. Partner with us to elevate your technology initiatives to the next level.
         </p>
-        <Link href="/qualesacademy" className="btn hidden md:inline-flex items-center bg-primary text-white text-sm md:text-lg font-normal rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8 ">
+        <Link href="/learning" className="btn hidden md:inline-flex items-center bg-primary text-white text-sm md:text-lg font-normal rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8 ">
           Quales Academy
         </Link>
       </article>
