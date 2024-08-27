@@ -24,22 +24,22 @@ const Article = () =>{
         <h3 className="text-lg lg:text-xl font-550 text-primary">More Like This</h3>
 
         <Link href="/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-0.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/role-of-automation.png" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Role of Automation in Quality Assurance: Tools and Techniques</h4>
         </Link>
        
         <Link href="/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img1.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/shift-from-manual.png" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Shift from Manual to Automated Testing: Challenges and Solutions</h4>
         </Link>
 
         <Link href="/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration">
-        <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img2.png" alt="Article Image" width={250} height={200} />
+        <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/testing-in-devops.png" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Testing in DevOps: How QA Engineers Can Keep Up with the Speed of Continuous Integration</h4>
         </Link>
 
         <Link href="/articles/who-is-a-scrum-master">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img3.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/who-is-a-scrum-master.png" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Who is a Scrum Master?</h4>
         </Link>
       </div>
@@ -51,12 +51,12 @@ const Article = () =>{
             <Image src="/images/user-img.png" width={40} height={40} alt="author image" />
             <div className="flex flex-col text-black">
               <span className="text-xs font-semibold">David Ibekwe</span>
-              <span className="text-xs">Nov 24, 2023 . 10 min read</span>
+              <span className="text-xs">23rd April, 2024 . 3 min read</span>
             </div>
           </div>
 
           <figure className="mt-7">
-            <Image className="w-full max-h-550 object-cover" src="/images/article-0.png" alt="Article Image" width={800} height={400} />
+            <Image className="w-full max-h-550 object-cover" src="/images/role-of-automation.png" alt="Article Image" width={800} height={400} />
           </figure>
 
           <p>In today&apos;s fast-paced digital landscape, quality assurance (QA) has become more critical than ever. As software development cycles shorten and the demand for flawless user experiences increases, traditional manual testing methods can no longer keep up. This is where automation in QA comes into play, revolutionizing the way we ensure software quality and reliability. In this article, we will explore the role of automation in QA, its benefits, key tools, and techniques that can drive efficiency and accuracy in your testing processes.</p>

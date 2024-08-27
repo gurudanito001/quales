@@ -33,7 +33,7 @@ const OurCommunity = ()=>{
       return (
         <div key={item?.name} className="w-full flex">
           <div className={`carousel-item ${images[index].url} bg-cover bg-center bg-no-repeat h-420 max-w-96 mx-auto flex`}>
-            <caption className="bg-overlay text-white px-5 py-3 mt-auto w-full">{images[index].name}</caption>
+            <span className="bg-overlay text-white px-5 py-3 mt-auto w-full block text-center">{images[index].name}</span>
           </div>
         </div>
       )

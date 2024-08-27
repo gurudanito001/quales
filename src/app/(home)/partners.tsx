@@ -91,9 +91,6 @@ const Partners = () =>{
 
   const duplicatedSlides = [...slides, ...slides];
 
-  
-
-
   return(
     <section className="bg-white py-5 xl:py-16 px-5 lg:px-20 overflow-x-hidden border shadow-inner xl:mt-20">
       <h2 className="text-center text-primary text-xl md:text-2xl mb-5 md:mb-8 font-550">Quales is Trusted By:</h2>
@@ -103,10 +100,10 @@ const Partners = () =>{
             <motion.div
                 className="flex"
                 animate={{
-                    x: ['0%', '-340%'],
+                    x: ['0%', '-500%'],
                     transition: {
                         ease: 'linear',
-                        duration: 50,
+                        duration: 40,
                         repeat: Infinity,
                     }
                 }}

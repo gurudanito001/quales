@@ -26,13 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* <meta property="og:title" content="Title Here" />
-        <meta property="og:description" content="Description Here" />
-        <meta property="og:image" content="image_url_here" /> */}
-        <link rel="stylesheet" href="/styles/styles.css" />
-      </Head>
-      <body >{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

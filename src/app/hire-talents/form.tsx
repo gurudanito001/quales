@@ -6,13 +6,19 @@ import generateRandomId from "../lib/generateRandomId";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 
 const categories = {
-  "qa-engineer": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "software-developer": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "product-manager": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "ui-ux-designer": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "business-analyst": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "scrum-master": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
-  "data-analyst": ["skill-1", "skill-2", "skill-3", "skill-4", "skill-5", "skill-6"],
+  "qa-engineer": ["test-automation", "programming", "api-testing", "feedback", "database-knowledge", "critical-thinking", "documentation", "collaboration", "time-management", "continuous-learning", "ci-cd", "problem-solving"],
+
+  "software-developer": ["object-oriented-programming", "debugging", "algorithmic-thinking", "software-development-life-cycle", "database-knowledge", "attention-to-detail", "version-control", "collaboration", "time-management", "continuous-learning", "creativity", "logic-programming", "front-end", "back-end" ],
+
+  "product-manager": ["communication", "leadership", "organization", "risk-management", "budget", "negotiation", "reporting", "adaptability", "conflict-resolution", "quality-management", "stakeholder-management", "problem-solving", "decision-making", "team-building"],
+
+  "ui-ux-designer": ["creativity", "wireframing-and-prototyping", "visual-design", "information-architecture", "interactive-design", "usability-testing", "empathy", "collaboration", "user-centric-design", "attention-to-detail"],
+
+  "business-analyst": ["analytical-skills", "communication", "business-acumen", "requirement-gathering", "process-mapping", "data-analysis", "decision-making", "collaboration", "domain-knowledge", "attention-to-detail", "documentation", "problem-identification"],
+
+  "scrum-master": ["communication", "leadership", "organization", "risk-management", "scrum-framework-knowledge", "technical-skills", "coaching-and-mentoring", "adaptability", "conflict-resolution", "empathy", "stakeholder-management", "problem-solving", "facilitation-skills", "time-management"],
+
+  "data-analyst": ["analytical-skills", "communication", "business-acumen", "requirement-gathering", "process-mapping", "data-analysis", "decision-making", "collaboration", "domain-knowledge", "attention-to-detail", "documentation", "problem-identification"],
 }
 
 const formatCategory = (category: string) => {
@@ -33,6 +39,10 @@ const formatCategory = (category: string) => {
       return "Data Analyst";
     default:
   }
+}
+
+const formatSkills = (skill: string) => {
+  return skill.replaceAll("-", " ");
 }
 
 const HireTalentsForm = () =>{
@@ -88,7 +98,7 @@ const HireTalentsForm = () =>{
     if(categoryList.includes(category)){
       return categories[category].map((item: string) =>{
         return (
-          <button onClick={()=>handleClickSkill(item)} className={`${tempTalentData.skills.includes(item) ? "bg-primary text-white" : "bg-white text-primary"} h-6 lg:h-10 px-3 lg:px-5 text-sm rounded-full m-1`} key={item}> {item}</button>
+          <button onClick={()=>handleClickSkill(item)} className={`${tempTalentData.skills.includes(item) ? "bg-primary text-white" : "bg-white text-primary "}  capitalize h-6 lg:h-10 px-3 lg:px-5 text-xs rounded-full m-1`} key={item}> {formatSkills(item)}</button>
         )
       })
     }
@@ -172,14 +182,14 @@ const HireTalentsForm = () =>{
   }
 
   return (
-    <section className="bg-white py-14 lg:py-32 px-5 lg:px-24 flex flex-col items-center">
+    <section className="bg-white py-32 px-5 lg:px-24 flex flex-col items-center h-screen overflow-y-auto">
       <h2 className="text-primary text-2xl font-light mb-16 text-center">Let’s find you the right talent</h2>
 
-      <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <input type="text" value={formData?.companyName} onChange={handleChangeFormData("companyName")} className="grow px-5 placeholder:text-sm" placeholder="Company Name" />
+      <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550 ">
+        <input type="text" value={formData?.companyName} onChange={handleChangeFormData("companyName")} className="grow px-5 placeholder:text-sm h-12" placeholder="Company Name" />
       </label>
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <input type="text"  value={formData?.email} onChange={handleChangeFormData("email")}  className="grow px-5 placeholder:text-sm" placeholder="Company Email Address" />
+        <input type="text"  value={formData?.email} onChange={handleChangeFormData("email")}  className="grow px-5 placeholder:text-sm h-12" placeholder="Company Email Address" />
       </label>
 
       {formData?.talentsRequired.length > 0 && <div className="border p-3 rounded-3xl mb-5 bg-neutral w-full max-w-550"> {listSelectedTalents()} </div>}
@@ -198,7 +208,7 @@ const HireTalentsForm = () =>{
           <input type="number" value={tempTalentData.number === 0 ? "" : tempTalentData.number} onChange={handleChangeTalentData("number")} className="grow px-5 placeholder:text-sm" placeholder="Number of Talents Required" />
         </label>
 
-        <button disabled={disableSaveButton()} onClick={handleSaveTalentData} className="btn btn-sm bg-btn-blue h-10 px-5 rounded-full text-white mx-auto flex items-center mt-4">+Save</button>
+        <button disabled={disableSaveButton()} onClick={handleSaveTalentData} className="btn btn-sm bg-btn-blue h-10 px-5 rounded-full text-white mx-auto flex items-center mt-4">Save</button>
       </div>
 
 
