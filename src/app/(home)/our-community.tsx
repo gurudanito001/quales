@@ -63,7 +63,7 @@ const OurCommunity = ()=>{
         </Slider>
       </figure>
 
-      <Link href="/qualesacademy" className="btn inline-flex items-center md:hidden bg-primary text-white text-sm md:text-lg font-normal md:font-medium rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8">
+      <Link href="/learning" className="btn inline-flex items-center md:hidden bg-primary text-white text-sm md:text-lg font-normal md:font-medium rounded-full px-9 mx-auto md:ml-0 md:mr-auto mt-8">
         Quales Academy
       </Link>
     </section>
