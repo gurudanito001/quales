@@ -115,31 +115,6 @@ const MissionVision = () => {
                 </figure>
               </div>
             </div>
-
-            {/* <div className="mx-auto">
-              <div className="flex flex-col-reverse md:flex-row gap-8">
-                <article className="flex flex-col md:w-max my-auto ml-auto">
-                  <h4 className="text-xl md:text-3xl mx-auto md:mx-0 md:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text mb-4">Bob Oghumah</h4>
-                  <div className="text-lg text-primary font-light text-center md:text-left mb-4 max-w-xl">
-                    <Slider {...settings2}>
-                      <p>Bob Oghumah is a seasoned, dynamic, and results-driven Software Quality Assurance Engineer based in Dublin, Ireland, with over a decade of extensive experience across diverse sectors including Telecommunications, FinTech, E-Commerce, Legal-Tech, Health-Tech, and Consulting. His areas of expertise at Quales include Leadership, QA consultancy, and Engineering.</p>
-
-                      <p>With a proven track record of delivering robust solutions and driving organizational success through strategic QA initiatives, Bob is renowned for his ability to implement cutting-edge QA testing methodologies. His meticulous approach to software testing has resulted in significant reductions in defects and an unparalleled level of customer satisfaction. As a visionary leader, Bob has spearheaded the establishment of various high-performing technology teams, leveraging his exceptional leadership skills to foster innovation and drive efficiency.</p>
-
-                      <p>
-                        His qualifications and certifications include a BSc. in Computer Science and an MSc. in Computing.
-                      </p>
-                    </Slider>
-                  </div>
-                </article>
-
-                <figure className="h-80 w-80 bg-neutral2  bg-[url('/images/bob-avatar.png')] bg-cover bg-center rounded-full mx-auto md:mx-0 md:mr-auto">
-                </figure>
-              </div>
-            </div> */}
-
-            
-
           </Slider>
         </div>
       </div>

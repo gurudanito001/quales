@@ -16,7 +16,7 @@ const CoursePackages = ()=>{
         <article className="text-primary flex flex-col md:border-r md:border-gray-400 p-10">
           <Image src="/images/qaEngineer.svg" className="mx-auto w-24 h-24 mb-3" width={150} height={150} objectFit="contain" alt="qa-engineer Icon" />  
           <h3 className="text-center text-xl font-550 text-primary mb-5 md:mb-7 px-5">QUALITY ASSURANCE ENGINEERING</h3>
-          <p className="max-w-md text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. </p>
+          <p className="max-w-md text-center mx-auto">Master the art of quality assurance with hands-on training in testing methodologies, automation, and real-world tools. Our program equips you with the skills to ensure flawless software performance in any industry.</p>
 
           <div className="flex justify-center">
             <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
@@ -26,7 +26,7 @@ const CoursePackages = ()=>{
         <article className="text-primary flex flex-col p-10">
           <Image src="/images/scrumMaster.svg" className="mx-auto w-24 h-24 mb-3" width={150} height={150} objectFit="contain" alt="Scrum Master Icon" />
           <h3 className="text-center text-xl font-550 text-primary mb-5 md:mb-7 px-5">SCRUM MASTERY</h3>
-          <p className="max-w-md text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. </p>
+          <p className="max-w-md text-center mx-auto">Become a certified Scrum Master and lead agile teams to success. Learn the principles of Scrum, effective team management, and the strategies needed to drive project excellence in dynamic environments. </p>
 
           <div className="flex justify-center">
             <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>

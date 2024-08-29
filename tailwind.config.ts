@@ -50,7 +50,7 @@ const config: Config = {
         "700": "700px",
         "800": "800px",
         "1000": "1000px"
-      }
+      },
     },
     keyframes: {
       shimmer: {
