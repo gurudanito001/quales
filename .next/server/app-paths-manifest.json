@@ -1,8 +1,7 @@
 {
+  "/learning/faqs/page": "app/learning/faqs/page.js",
+  "/learning/testimonials/page": "app/learning/testimonials/page.js",
   "/learning/page": "app/learning/page.js",
   "/learning/learningplans/page": "app/learning/learningplans/page.js",
-  "/learning/testimonials/page": "app/learning/testimonials/page.js",
-  "/learning/faqs/page": "app/learning/faqs/page.js",
-  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js",
-  "/(home)/page": "app/(home)/page.js"
+  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js"
 }
