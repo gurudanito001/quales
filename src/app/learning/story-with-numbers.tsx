@@ -7,7 +7,7 @@ const StoryWithNumbers = () =>{
     <section id="storyWithNumbers" className="bg-primary text-white px-5 xl:px-28 pt-10">
         <header>
           <h2 className="text-center text-xl md:text-2xl font-550 mb-3 ">Our Story with Numbers</h2>
-          <p className="text-sm md:text-lg text-center max-w-4xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui.  </p>
+          <p className="text-sm md:text-lg text-center max-w-4xl mx-auto">Discover the impact we&apos;ve made through our impressive stats. Our numbers tell the story of success, growth, and transformation at Quales Academy.</p>
         </header>
 
         <div className="grid grid-cols-2  py-12 gap-y-14 lg:px-36">
