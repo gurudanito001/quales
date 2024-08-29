@@ -16,11 +16,19 @@ const NavBar = () => {
 
       <div className="navbar-end w-auto ml-auto">
         <ul className="menu menu-horizontal px-1 hidden lg:flex gap-8">
-          <li><Link href="/learning/#coursePackages">Course Packages</Link></li>
-          <li><Link href="/learning/#learningPlans">Learning Plans</Link></li>
-          <li><Link href="/learning/#howToEnroll">How to Enroll</Link></li>
-          <li><Link href="/learning/#testimonials">Testimonial</Link></li>
-          <li><Link href="/learning/#faqs">FAQ&apos;s</Link></li>
+          <li>
+            <details>
+              <summary>Course Packages</summary>
+              <ul className="bg-base-100 rounded-t-none p-2 w-72">
+                <li><a>Software Quality Assurance</a></li>
+                <li><a>Scrum Mastery</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><Link href="/learning/learningplans">Learning Plans</Link></li>
+          <li><Link href="/learning/howtoenroll">How to Enroll</Link></li>
+          <li><Link href="/learning/testimonials">Testimonial</Link></li>
+          <li><Link href="/learning/faqs">FAQ&apos;s</Link></li>
           <li><Link href="">Consulting</Link></li>
         </ul>
 
@@ -43,11 +51,19 @@ const NavBar = () => {
                     <XMarkIcon className="w-6 text-white p-0" />
                   </label>
                 </li>
-                <li><Link className="py-3 px-5 text-lg" href="/learning/#coursePackages">Course Packages</Link></li>
-                <li><Link className="py-3 px-5 text-lg" href="/learning/#learningPlans">Learning Plans</Link></li>
-                <li><Link className="py-3 px-5 text-lg" href="/learning/#howToEnroll">How to Enroll</Link></li>
-                <li><Link className="py-3 px-5 text-lg" href="/learning/#testimonials">Testimonial</Link></li>
-                <li><Link className="py-3 px-5 text-lg" href="/learning/#faqs">FAQ&apos;s</Link></li>
+                <li>
+                  <details>
+                    <summary className="py-3 px-5 text-lg">Course Packages</summary>
+                    <ul className="bg-base-100 rounded-t-none p-2 text-primary font-550">
+                      <li><a>Software Quality Assurance</a></li>
+                      <li><a>Scrum Mastery</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/learningplans">Learning Plans</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/howtoenroll">How to Enroll</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/testimonials">Testimonial</Link></li>
+                <li><Link className="py-3 px-5 text-lg" href="/learning/faqs">FAQ&apos;s</Link></li>
                 <li><Link className="py-3 px-5 text-lg" href="">Consulting</Link></li>
               </ul>
             </div>

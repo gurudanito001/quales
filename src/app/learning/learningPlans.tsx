@@ -10,32 +10,37 @@ import { CustomPrevArrow, CustomNextArrow } from "../about-us/customArrows";
 import { useState } from "react";
 
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 900,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: <CustomPrevArrow onClick={()=>{}} additionalClasses="invisible" id="learningPlanPrevArrow" />,
-  nextArrow: <CustomNextArrow onClick={()=>{}} additionalClasses="invisible" id="learningPlanNextArrow"/>,
-  arrows: true,
-};
+
 
 
 const LearningPlans = () => {
-  let [currentPackage, setCurrentPackage] = useState("Scrum Learning Package");
 
-  const onClickPackage = () =>{
+  const [currentPackage, setCurrentPackage] = useState("Scrum Learning Package");
+
+  const settings = {
+    infinite: true,
+    speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <CustomPrevArrow onClick={()=>{}} additionalClasses="invisible" id="learningPlanPrevArrow" />,
+    nextArrow: <CustomNextArrow onClick={()=>{}} additionalClasses="invisible" id="learningPlanNextArrow"/>,
+    arrows: true,
+    afterChange: ()=>{
+      console.log("carousel was swipped")
+        setCurrentPackage( (prevState) => {
+          if(prevState === "Scrum Learning Package"){
+            return "QA Learning Package"
+          }else{
+            return "Scrum Learning Package"
+          }
+        })
+    }
+  };
+
+  const changePackage = () =>{
     if(document){
       let nextArrow = document.getElementById("learningPlanNextArrow");
       nextArrow?.click();
-      setCurrentPackage( (prevState) => {
-        if(prevState === "Scrum Learning Package"){
-          return "QA Learning Package"
-        }else{
-          return "Scrum Learning Package"
-        }
-      })
     }
   }
 
@@ -46,12 +51,12 @@ const LearningPlans = () => {
       <p className="text-primary max-w-4xl text-center mx-auto md:max-w-550 lg:max-w-full px-5 mb-5">Explore flexible learning plans tailored to suit your career goals. </p>
 
       <div className="flex px-5 xl:px-14 -mt-28 md:-mt-24 mb-10 lg:-mt-20 lg:mb-0 w-full">
-        <button onClick={onClickPackage} className="btn btn-sm lg:btn-md bg-primary text-white text-xs md:text-sm rounded-full px-2 lg:px-9 ml-auto"> <Image src="/images/switch-icon.svg" alt="switch icon" width={15} height={15} /> <span className=" hidden lg:inline">{currentPackage}</span></button>
+        <button onClick={changePackage} className="btn btn-sm lg:btn-md bg-primary text-white text-xs md:text-sm rounded-full px-2 lg:px-9 ml-auto"> <Image src="/images/switch-icon.svg" alt="switch icon" width={15} height={15} /> <span className=" hidden lg:inline">{currentPackage}</span></button>
       </div>
 
 
       <div className="flex pb-10 lg:pb-14 w-screen">
-        <Slider {...settings} className="mx-auto lg:mx-0 w-full flex">
+        <Slider {...settings} className="mx-auto lg:mx-0 w-full h-auto flex">
           <div className="mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 px-5 md:px-14 gap-10 md:gap-5 py-10 md:mt-14 w-full">
               <article className="text-primary flex flex-col p-5 lg:p-7 border-2 border-primary rounded-3xl max-w-96 mx-auto md:max-w-full md:mx-0">
@@ -182,8 +187,8 @@ const LearningPlans = () => {
         </article>
       </div> */}
 
-      <div className="flex justify-center">
-        <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
+      <div className={`flex justify-center ${currentPackage === "QA Learning Package" && "-mt-64 xl:-mt-0"}`}>
+        <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0" >View More</Link>
       </div>
     </section>
   )
