@@ -13,25 +13,25 @@ const StoryWithNumbers = () =>{
         <div className="grid grid-cols-2 text-primary py-12 gap-y-14 lg:px-36">
 
           <article className="fle flex-col mb-5">
-            <h3 className="text-4xl md:text-6xl font-550 text-center">50+</h3>
+            <h3 className="text-4xl md:text-6xl font-550 text-center">14+</h3>
             <p className="text-sm md:text-xl text-center">Clients supported</p>
             <Image src="/images/quales-support-icon.svg" className="mx-auto mt-3 h-14" width={50} height={50} objectFit="contain" alt="Shaking Hands Icon"/>
           </article>
 
           <article className="fle flex-col mb-5">
-            <h3 className="text-4xl md:text-6xl font-550 text-center">500+</h3>
+            <h3 className="text-4xl md:text-6xl font-550 text-center">35+</h3>
             <p className="text-sm md:text-xl text-center">Projects completed</p>
             <Image src="/images/quales-project-icon.svg" className="mx-auto mt-3 h-14" width={50} height={50} objectFit="contain" alt="Folder Icon"/>
           </article>
 
           <article className="fle flex-col mb-5">
-            <h3 className="text-4xl md:text-6xl font-550 text-center">300+</h3>
+            <h3 className="text-4xl md:text-6xl font-550 text-center">58+</h3>
             <p className="text-sm md:text-xl text-center">Talents Provided</p>
             <Image src="/images/quales-talents-icon.svg" className="mx-auto mt-3 h-14" width={50} height={50} objectFit="contain" alt="Talents in two rows icon"/>
           </article>
 
           <article className="fle flex-col mb-5">
-            <h3 className="text-4xl md:text-6xl font-550 text-center">50+</h3>
+            <h3 className="text-4xl md:text-6xl font-550 text-center">4+</h3>
             <p className="text-sm md:text-xl text-center">Countries supported</p>
             <Image src="/images/quales-countries-icon.svg" className="mx-auto mt-3 h-14" width={50} height={50} objectFit="contain" alt="World Globe Icon"/>
           </article>

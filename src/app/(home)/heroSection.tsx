@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   const images = [
     `bg-[url('/images/adaeze.png')]`,
-    `bg-[url('/images/ibukunoluwa.png')]`,
+    `bg-[url('/images/ibukunoluwa.webp')]`,
     `bg-[url('/images/kosisochukwu.png')]`,
     `bg-[url('/images/patrick.png')]`
   ]

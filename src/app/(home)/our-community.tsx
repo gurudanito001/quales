@@ -12,7 +12,7 @@ const OurCommunity = ()=>{
 
   const images = [
     {name: "Adaeze", url: `bg-[url('/images/adaeze.png')]`},
-    {name: "Ibukunoluwa Adaghe", url: `bg-[url('/images/ibukunoluwa.png')]`},
+    {name: "Ibukunoluwa Adaghe", url: `bg-[url('/images/ibukunoluwa.webp')]`},
     {name: "Kosisochukwu", url: `bg-[url('/images/kosisochukwu.png')]`},
     {name: "Patrick Asuquo", url: `bg-[url('/images/patrick.png')]`}
   ]

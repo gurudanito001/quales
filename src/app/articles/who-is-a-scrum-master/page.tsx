@@ -24,22 +24,22 @@ const Article = () =>{
         <h3 className="text-lg lg:text-xl font-550 text-primary">More Like This</h3>
 
         <Link href="/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/role-of-automation.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/role-of-automation.webp" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Role of Automation in Quality Assurance: Tools and Techniques</h4>
         </Link>
        
         <Link href="/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/shift-from-manual.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/shift-from-manual.webp" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Shift from Manual to Automated Testing: Challenges and Solutions</h4>
         </Link>
 
         <Link href="/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration">
-        <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/testing-in-devops.png" alt="Article Image" width={250} height={200} />
+        <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/testing-in-devops.webp" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Testing in DevOps: How QA Engineers Can Keep Up with the Speed of Continuous Integration</h4>
         </Link>
 
         <Link href="/articles/who-is-a-scrum-master">
-          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/who-is-a-scrum-master.png" alt="Article Image" width={250} height={200} />
+          <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/who-is-a-scrum-master.webp" alt="Article Image" width={250} height={200} />
           <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Who is a Scrum Master?</h4>
         </Link>
       </div>
@@ -48,7 +48,7 @@ const Article = () =>{
         <article className="text-primary flex flex-col gap-5 text-lg">
           <h1 className="text-2xl lg:text-4xl mb-5 capitalize font-extrabold max-w-4xl xl:pr-20">Who is a Scrum Master?</h1>
           <div className="flex items-center gap-3">
-            <Image src="/images/user-img.png" width={40} height={40} alt="author image" />
+            <Image src="/images/david-ibekwe.jpeg" className="rounded-full w-full max-h-10 max-w-10 object-cover" width={40} height={40} alt="author image" />
             <div className="flex flex-col text-black">
               <span className="text-xs font-semibold">David Ibekwe</span>
               <span className="text-xs">4th June, 2024 . 3 min read</span>
@@ -56,7 +56,7 @@ const Article = () =>{
           </div>
 
           <figure className="mt-7">
-            <Image className="w-full max-h-550 object-cover" src="/images/who-is-a-scrum-master.png" alt="Article Image" width={800} height={400} />
+            <Image className="w-full max-h-550 object-cover" src="/images/who-is-a-scrum-master.webp" alt="Article Image" width={800} height={400} />
           </figure>
 
           <p>In the realm of Agile project management, the role of a Scrum Master stands out as a pivotal element for the successful implementation of the Scrum framework. As organizations increasingly adopt Agile methodologies to enhance their flexibility and responsiveness, understanding the responsibilities and significance of the Scrum Master becomes crucial.</p>
@@ -167,32 +167,31 @@ const Article = () =>{
       </div>
     </div>
     <section className="w-screen overflow-x-hidden">
-
       <div className="carousel carousel-start rounded-box w-auto mt-12 mx-5 md:hidden">
         <div className="carousel-item w-3/4 max-w-xs">
           <Link href="/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques">
-            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-0.png" alt="Article Image" width={250} height={200} />
+            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/role-of-automation.webp" alt="Article Image" width={250} height={200} />
             <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Role of Automation in Quality Assurance: Tools and Techniques</h4>
           </Link>
         </div>
 
         <div className="carousel-item w-3/4 max-w-xs">
           <Link href="/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions">
-            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img1.png" alt="Article Image" width={250} height={200} />
+            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/shift-from-manual.webp" alt="Article Image" width={250} height={200} />
             <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">The Shift from Manual to Automated Testing: Challenges and Solutions</h4>
           </Link>
         </div>
 
         <div className="carousel-item w-3/4 max-w-xs">
           <Link href="/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration">
-            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img2.png" alt="Article Image" width={250} height={200} />
+            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/testing-in-devops.webp" alt="Article Image" width={250} height={200} />
             <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Testing in DevOps: How QA Engineers Can Keep Up with the Speed of Continuous Integration</h4>
           </Link>
         </div>
 
         <div className="carousel-item w-3/4 max-w-xs">
           <Link href="/articles/who-is-a-scrum-master">
-            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/article-img3.png" alt="Article Image" width={250} height={200} />
+            <Image className="w-full max-h-48 max-w-60 object-contain" src="/images/who-is-a-scrum-master.webp" alt="Article Image" width={250} height={200} />
             <h4 className="mt-3 text-md font-550 mb-2 leading-5 text-primary max-w-60">Who is a Scrum Master?</h4>
           </Link>
         </div>

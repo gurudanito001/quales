@@ -19,7 +19,7 @@ const CoursePackages = ()=>{
           <p className="max-w-md text-center mx-auto">Master the art of quality assurance with hands-on training in testing methodologies, automation, and real-world tools. Our program equips you with the skills to ensure flawless software performance in any industry.</p>
 
           <div className="flex justify-center">
-            <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
+            <Link href="/learning/courses/quality-assurance" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
           </div>
         </article>
 
@@ -29,7 +29,7 @@ const CoursePackages = ()=>{
           <p className="max-w-md text-center mx-auto">Become a certified Scrum Master and lead agile teams to success. Learn the principles of Scrum, effective team management, and the strategies needed to drive project excellence in dynamic environments. </p>
 
           <div className="flex justify-center">
-            <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
+            <Link href="/learning/courses/scrum-mastery" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View Course</Link>
           </div>
         </article>
       </div>
