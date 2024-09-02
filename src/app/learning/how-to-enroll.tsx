@@ -101,7 +101,7 @@ const HowToEnroll =()=>{
 
 
       <div className="flex justify-center">
-        <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
+        <Link href="/learning/howtoenroll" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
       </div>
 
 
