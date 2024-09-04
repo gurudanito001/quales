@@ -13,7 +13,7 @@ const StoryWithNumbers = () =>{
         <div className="grid grid-cols-2  py-12 gap-y-14 lg:px-36">
 
           <article className="fle flex-col mb-5">
-            <h3 className="text-4xl md:text-6xl font-550 text-center">300+</h3>
+            <h3 className="text-4xl md:text-6xl font-550 text-center">58+</h3>
             <p className="text-sm md:text-xl text-center">Talents provided.</p>
             <Image src="/images/talents-provided.svg" className="mx-auto mt-3 h-14" width={50} height={50} objectFit="contain" alt="Shaking Hands Icon"/>
           </article>

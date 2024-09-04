@@ -1,4 +1,5 @@
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
 const Testimonials = () => {
 
@@ -12,11 +13,19 @@ const Testimonials = () => {
         <div className=" flex flex-col items-center xl:items-end">
           <div className="w-64 md:w-56 lg:w-300 xl:w-336 h-full flex flex-col items-center bg-white p-4 xl:p-12 rounded-3xl mb-5 shadow-md">
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
-              My experience at Quales was the best. Initially was sceptical about trying because people say they’d do something and they don’t, but it’s the fact that what Quales tells you is what you will get. So, if they tell you that they will teach you, make you the best, and further you in your career path, you will get that!
+              My experience at Quales was the best. Initially I was sceptical about trying because people says they’ll do something and they don’t, but it’s the fact that what Quales tells you is what you will get. So, if they tell you that they will teach you, make you the best, and further you in your career path, you will get that!
             </p>
             <h5 className="text-primary mt-7 text-center font-550">Adaeze Atusuba</h5>
             {/* <h6 className="text-primary mt-1 text-center text-xs">Cohort #</h6> */}
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
+              <Image
+                src={`/images/Adaeze-min.png`}
+                className=" w-full h-full rounded-full"
+                style={{ objectFit: "cover" }}
+                alt="Seamfix Logo"
+                width={96}
+                height={96}
+              />
             </figure>
             
           </div>
@@ -30,6 +39,14 @@ const Testimonials = () => {
             <h5 className="text-primary mt-auto text-center font-550">Bashiru</h5>
             {/* <h6 className="text-primary mt-1 text-center text-xs">Cohort #</h6> */}
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
+              <Image
+                src={`/images/Bashir-min.jpg`}
+                className=" w-full h-full rounded-full"
+                style={{ objectFit: "cover" }}
+                alt="Seamfix Logo"
+                width={96}
+                height={96}
+              />
             </figure>
           </div>
         </div>
@@ -42,6 +59,14 @@ const Testimonials = () => {
             <h5 className="text-primary mt-auto text-center font-550">Ayobami Obanewa</h5>
             {/* <h6 className="text-primary mt-1 text-center text-xs">Cohort #</h6> */}
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
+              <Image
+                src={`/images/Ayomide-min.jpg`}
+                className=" w-full h-full rounded-full"
+                style={{ objectFit: "cover" }}
+                alt="Seamfix Logo"
+                width={96}
+                height={96}
+              />
             </figure>
           </div>
         </div>
