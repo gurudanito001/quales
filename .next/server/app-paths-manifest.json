@@ -1,14 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js",
   "/thought-leadership/page": "app/thought-leadership/page.js",
   "/(home)/page": "app/(home)/page.js",
   "/learning/page": "app/learning/page.js",
-  "/learning/courses/scrum-mastery/page": "app/learning/courses/scrum-mastery/page.js",
-  "/learning/learningplans/page": "app/learning/learningplans/page.js",
-  "/learning/how-to-enroll": "app/learning/how-to-enroll.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js",
-  "/learning/testimonials/page": "app/learning/testimonials/page.js",
-  "/learning/faqs/page": "app/learning/faqs/page.js"
+  "/learning/courses/scrum-mastery/page": "app/learning/courses/scrum-mastery/page.js"
 }

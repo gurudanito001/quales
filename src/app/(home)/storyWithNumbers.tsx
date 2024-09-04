@@ -7,7 +7,7 @@ const StoryWithNumbers = () =>{
     <section className="bg-white px-5 xl:px-28 pt-10">
         <header>
           <h2 className="text-center text-xl md:text-2xl font-550 mb-3 text-primary">Our Story with Numbers</h2>
-          <p className="text-sm md:text-lg text-center text-primary max-w-4xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui.  </p>
+          <p className="text-sm md:text-lg text-center text-primary max-w-4xl mx-auto">Explore the impact of our outsourcing services through compelling numbers. Our stats reveal the success, efficiency, and transformation we&apos;ve delivered to our clients at Quales Consulting. </p>
         </header>
 
         <div className="grid grid-cols-2 text-primary py-12 gap-y-14 lg:px-36">
