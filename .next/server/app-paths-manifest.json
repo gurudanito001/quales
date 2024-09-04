@@ -1,7 +1,8 @@
 {
-  "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js",
-  "/thought-leadership/page": "app/thought-leadership/page.js",
   "/(home)/page": "app/(home)/page.js",
+  "/learning/courses/scrum-mastery/page": "app/learning/courses/scrum-mastery/page.js",
+  "/thought-leadership/page": "app/thought-leadership/page.js",
+  "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js",
   "/learning/page": "app/learning/page.js",
-  "/learning/courses/scrum-mastery/page": "app/learning/courses/scrum-mastery/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
