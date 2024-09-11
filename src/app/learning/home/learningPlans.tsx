@@ -112,7 +112,7 @@ const LearningPlans = () => {
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
                   <li>8-Week Intense Training on Manual and Automated Testing </li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc</li>
+                  <li>Admission to Quales Group with over 300+ Software Testers  </li>
                   <li>Placement Support</li>
                 </ul>
               </article>
@@ -122,9 +122,10 @@ const LearningPlans = () => {
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
                   <li>8-Week Intense Training on Manual and Automated Testing </li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc</li>
+                  <li>Admission to Quales Group with over 300+ Software Testers  </li>
                   <li>Placement Support</li>
-                  <li>Registration for the Certified Tester Foundation Level (CTFL) Exam</li>
+                  <li>Mentorship</li>
+                  <li>Registration for CTFL exam</li>
                 </ul>
               </article>
 
@@ -133,10 +134,11 @@ const LearningPlans = () => {
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
                   <li>8-Week Intense Training on Manual and Automated Testing </li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc</li>
+                  <li>Admission to Quales Group with over 300+ Software Testers  </li>
                   <li>Placement Support</li>
-                  <li>Registration for the Certified Tester Foundation Level (CTFL) Exam</li>
-                  <li>Three months internship with Quales</li>
+                  <li>Mentorship</li>
+                  <li>Registration for CTFL exam</li>
+                  <li>Internship</li>
                 </ul>
               </article>
             </div>

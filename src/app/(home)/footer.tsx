@@ -2,7 +2,7 @@ import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = ()=>{
+const Footer = ({showScrumMasterLink = false}: { showScrumMasterLink?: boolean})=>{
 
   return(
     <section className="text-white py-8 lg:py-12 bg-primary">
@@ -39,6 +39,8 @@ const Footer = ()=>{
             <ul className="text-xs flex flex-col gap-2">
               <li><Link href="/privacyandpolicy">Privacy Policy</Link></li>
               <li>Help</li>
+              {showScrumMasterLink && <li><Link href="/learning/scrummaster">Scrum Master Packages</Link></li>}
+              
             </ul>
           </div>
         </div>
