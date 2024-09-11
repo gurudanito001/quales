@@ -1,8 +1,8 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/learning/courses/scrum-mastery/page": "app/learning/courses/scrum-mastery/page.js",
+  "/learning/softwarequalityassurance/page": "app/learning/softwarequalityassurance/page.js",
+  "/explore-talents/[category]/[userId]/page": "app/explore-talents/[category]/[userId]/page.js",
   "/(home)/page": "app/(home)/page.js",
+  "/about-us/page": "app/about-us/page.js",
   "/learning/page": "app/learning/page.js",
-  "/thought-leadership/page": "app/thought-leadership/page.js",
-  "/articles/who-is-a-scrum-master/page": "app/articles/who-is-a-scrum-master/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

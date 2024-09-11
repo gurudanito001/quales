@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/learning/page": [
+    "/(home)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/learning/page.css",
-      "static/chunks/app/learning/page.js"
+      "static/css/app/(home)/page.css",
+      "static/chunks/app/(home)/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,66 +12,44 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(home)/page": [
+    "/explore-talents/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(home)/page.css",
-      "static/chunks/app/(home)/page.js"
+      "static/css/app/explore-talents/page.css",
+      "static/chunks/app/explore-talents/page.js"
     ],
-    "/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page": [
+    "/explore-talents/[category]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/the-role-of-automation-in-quality-assurance-tools-and-techniques/page.js"
+      "static/chunks/app/explore-talents/[category]/page.js"
     ],
-    "/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page": [
+    "/learning/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/the-shift-from-manual-to-automated-testing-challenges-and-solutions/page.js"
+      "static/css/app/learning/page.css",
+      "static/chunks/app/learning/page.js"
     ],
-    "/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page": [
+    "/learning/softwarequalityassurance/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/testing-in-devops-how-qa-engineers-can-keep-up-with-the-speed-of-continuous-integration/page.js"
+      "static/css/app/learning/softwarequalityassurance/page.css",
+      "static/chunks/app/learning/softwarequalityassurance/page.js"
     ],
-    "/articles/who-is-a-scrum-master/page": [
+    "/privacyandpolicy/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/who-is-a-scrum-master/page.js"
+      "static/chunks/app/privacyandpolicy/page.js"
     ],
-    "/thought-leadership/page": [
+    "/explore-talents/[category]/[userId]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/thought-leadership/page.js"
+      "static/chunks/app/explore-talents/[category]/[userId]/page.js"
     ],
-    "/learning/courses/quality-assurance/page": [
+    "/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/learning/courses/quality-assurance/page.js"
-    ],
-    "/learning/courses/scrum-mastery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/courses/scrum-mastery/page.js"
-    ],
-    "/learning/learningplans/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/learningplans/page.js"
-    ],
-    "/learning/howtoenroll/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/howtoenroll/page.js"
-    ],
-    "/learning/testimonials/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/testimonials/page.js"
-    ],
-    "/learning/faqs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/faqs/page.js"
+      "static/css/app/about-us/page.css",
+      "static/chunks/app/about-us/page.js"
     ]
   }
 }

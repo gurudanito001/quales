@@ -30,7 +30,7 @@ const Footer = ()=>{
               <li><Link href="/about-us">About Us</Link></li>
               <li><Link href="/#hiringProcess">How It Works </Link></li>
               <li><Link href="/#reviews">Reviews</Link></li>
-              {/* <li>FAQ&apos;s</li> */}
+              <li>FAQ&apos;s</li>
             </ul>
           </div>
 
@@ -38,7 +38,7 @@ const Footer = ()=>{
             <h6 className="text-sm font-550 mb-5">Support</h6>
             <ul className="text-xs flex flex-col gap-2">
               <li><Link href="/privacyandpolicy">Privacy Policy</Link></li>
-              {/* <li>Help</li> */}
+              <li>Help</li>
             </ul>
           </div>
         </div>

@@ -1,5 +1,5 @@
 
-import NavBar from "../navbar";
+import NavBar from "../home/navbar";
 
 
 const AlumniTestimonials = ()=>{
