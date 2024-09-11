@@ -29,7 +29,7 @@ const QualityAssuranceCourse = () => {
       <TalentsTrained />
       <Partners />
       <CohortSignup />
-      <Footer />
+      <Footer showScrumMasterLink={true} />
     </main>
   )
 }
