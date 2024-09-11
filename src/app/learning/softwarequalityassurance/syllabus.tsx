@@ -1,13 +1,18 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react";
+import { PauseIcon, PlayIcon } from "@heroicons/react/24/solid";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
-const Module1 = ()=>{
+const Module1 = () => {
   return (
-    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
+    <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3" >
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 1: Testing Fundamentals
         </h6>
       </header>
@@ -39,15 +44,18 @@ const Module1 = ()=>{
         </div>
       </li>
     </ul>
+
   )
 }
 
-const Module2 = ()=>{
+const Module2 = () => {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 2: Levels of Testing and Test Preparations
         </h6>
       </header>
@@ -81,12 +89,14 @@ const Module2 = ()=>{
   )
 }
 
-const Module3 = ()=>{
+const Module3 = () => {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 3: SDLC and STLC
         </h6>
       </header>
@@ -118,12 +128,14 @@ const Module3 = ()=>{
   )
 }
 
-const Module4 = ()=>{
+const Module4 = () => {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 4: Manual and Automated API Test (Postman)
         </h6>
       </header>
@@ -155,12 +167,14 @@ const Module4 = ()=>{
   )
 }
 
-const Module5 = ()=>{
+const Module5 = () => {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 5: Automated Test using Cypress
         </h6>
       </header>
@@ -192,12 +206,14 @@ const Module5 = ()=>{
   )
 }
 
-const Module6 = ()=>{
+const Module6 = () => {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-3">
       <header className="flex">
-        <h6 className="text-primary relative -ml-2 text-xl font-550">
-          <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+        <h6 className="text-primary relative -ml-2 text-lg sm:text-xl font-550 flex items-center">
+          <div>
+            <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
+          </div>
           Module 6: Introduction to JavaScript using a Cloud Repository
         </h6>
       </header>
@@ -224,47 +240,72 @@ const Module6 = ()=>{
   )
 }
 
-const modules = [
-  <Module1 key="module1" />,
-  <Module2 key="module2" />,
-  <Module3 key="module3" />,
-  <Module4 key="module4" />,
-  <Module5 key="module5" />,
-  <Module6 key="module6" />
-]
 
-const Syllabus = () =>{
+
+const Syllabus = () => {
   const [moduleIndex, setModuleIndex] = useState(0)
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(1);
+  const [status, setStatus] = useState("play");
+  let interval: any = useRef();
+
+  const pauseSecondsCounter = () => {
+    clearInterval(interval.current)
+    setStatus("pause");
+  }
+
+  const continueSecondsCounter = () => {
+    setStatus("play");
+  }
+
+  const handleClickPausePlayBtn = () => {
+    if (status === "play") {
+      pauseSecondsCounter()
+    } else {
+      continueSecondsCounter()
+    }
+  }
+
+  const modules = [
+    <Module1 key="module1" />,
+    <Module2 key="module2" />,
+    <Module3 key="module3" />,
+    <Module4 key="module4" />,
+    <Module5 key="module5" />,
+    <Module6 key="module6" />
+  ]
+
+
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds(prevSeconds => {
-        if(prevSeconds === 10){
-          return 0
-        }else{
-          return prevSeconds + 1
-        }
-      });
-    }, 1000);
+    if (status === "play") {
+      interval.current = setInterval(() => {
+        setSeconds(prevSeconds => {
+          if (prevSeconds === 10) {
+            return 0
+          } else {
+            return prevSeconds + 1
+          }
+        });
+      }, 1000);
+    }
 
-    return () => clearInterval(interval);
-  }, []);
+    return () => clearInterval(interval.current);
+  }, [status]);
 
-  useEffect(()=>{
-    if(seconds === 10){
-      setModuleIndex( prevIndex =>{
-        if(prevIndex < modules.length - 1 ){
+  useEffect(() => {
+    if (seconds === 0) {
+      setModuleIndex(prevIndex => {
+        if (prevIndex < modules.length - 1) {
           return prevIndex + 1
-        }else{
+        } else {
           return 0
         }
       })
     }
-  },[seconds])
+  }, [seconds])
 
-  const backToTop = () =>{
-    if(window){
+  const backToTop = () => {
+    if (window) {
       window.scrollTo({
         top: 0,
         behavior: "smooth"
@@ -272,52 +313,59 @@ const Syllabus = () =>{
     }
   }
 
-  const setCurrentModule = (index: number)=>{
+  const setCurrentModule = (index: number) => {
     setModuleIndex(index);
-    setSeconds(0);
+    setSeconds(1);
     backToTop();
   }
 
 
-  return(
+  return (
     <section className="mb-14">
-      <h2 className="text-primary text-2xl font-semibold mb-5">Syllabus</h2>
+      <header className="flex items-center mb-5">
+        <h2 className="text-primary text-2xl font-semibold">Syllabus</h2>
+        <div className="w-10 h-10 ml-4 playBtnContainer">
+          <CircularProgressbar value={seconds * 10} />
+          <button onClick={handleClickPausePlayBtn} className="btn btn-sm btn-circle bg-primary text-white z-30 playBtn"> {status === "play" ? <PauseIcon className="w-5" /> : <PlayIcon className="w-5" />}</button>
+        </div>
+      </header>
+
       {modules[moduleIndex]}
 
       <h2 className="text-primary text-2xl font-semibold mt-14">Time Table</h2>
 
       <section className="bg-white grid grid-cols-1 md:grid-cols-2 mt-5 gap-7">
 
-        <div onClick={()=>setCurrentModule(0)} className={`${moduleIndex === 0 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(0)} className={`${moduleIndex === 0 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 1</h5>
           <p className="mt-2 xl:text-lg">Testing Fundamentals</p>
         </div>
 
-        <div onClick={()=>setCurrentModule(1)} className={`${moduleIndex === 1 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(1)} className={`${moduleIndex === 1 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 2</h5>
           <p className="mt-2 xl:text-lg">Levels of Testing and Test Preparation</p>
         </div>
 
-        <div onClick={()=>setCurrentModule(2)} className={`${moduleIndex === 2 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(2)} className={`${moduleIndex === 2 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 3</h5>
           <p className="mt-2 xl:text-lg">SDLC and STLC</p>
         </div>
 
-        <div onClick={()=>setCurrentModule(3)} className={`${moduleIndex === 3 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(3)} className={`${moduleIndex === 3 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 4</h5>
           <p className="mt-2 xl:text-lg">Manual and Automated API Test (Postman)</p>
         </div>
 
-        <div onClick={()=>setCurrentModule(4)} className={`${moduleIndex === 4 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(4)} className={`${moduleIndex === 4 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 5</h5>
           <p className="mt-2 xl:text-lg">Automated Test using Cypress</p>
         </div>
 
-        <div onClick={()=>setCurrentModule(5)} className={`${moduleIndex === 5 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
+        <div onClick={() => setCurrentModule(5)} className={`${moduleIndex === 5 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 6</h5>
           <p className="mt-2 xl:text-lg">Introduction to JavaScript Using a Cloud Repository</p>
         </div>
-        
+
       </section>
 
     </section>
