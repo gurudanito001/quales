@@ -15,7 +15,7 @@ const QualityAssuranceCourse = () => {
   return (
     <main className="bg-white">
       <NavBar />
-      <section className="flex flex-col bg-white px-5 xl:px-28 mt-10">
+      <section className="flex flex-col bg-white px-3 sm:px-5 xl:px-28 mt-10">
         <div className="breadcrumbs text-sm mb-10">
           <ul>
             <li><Link href="" className="text-primary text-sm lg:text-xl font-normal">Course Packages</Link></li>
