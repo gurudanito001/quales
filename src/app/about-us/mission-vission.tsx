@@ -15,8 +15,8 @@ const settings = {
   speed: 900,
   slidesToShow: 1,
   slidesToScroll: 1,
-  prevArrow: <CustomPrevArrow onClick={()=>{}} />,
-  nextArrow: <CustomNextArrow onClick={()=>{}}/>,
+  prevArrow: <CustomPrevArrow/>,
+  nextArrow: <CustomNextArrow/>,
   arrows: true,
 };
 
