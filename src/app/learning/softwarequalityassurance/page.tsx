@@ -4,7 +4,7 @@ import Link from "next/link";
 import Footer from "@/app/(home)/footer";
 import Syllabus from "./syllabus";
 import LearningPlans from "./learningPlans";
-import Testimonials from "../home/testimonials";
+import Testimonials from "./testimonials";
 import TalentsTrained from "./talentsTrained";
 import Partners from "@/app/(home)/partners";
 import CohortSignup from "./cohortSignup";

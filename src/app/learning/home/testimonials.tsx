@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Testimonials = ({showButton = true}: {showButton?: boolean}) => {
+const Testimonials = () => {
 
   return (
     <section id="testimonials" className="bg-white px-5 xl:px-28 py-14">
@@ -13,13 +13,13 @@ const Testimonials = ({showButton = true}: {showButton?: boolean}) => {
         <div className=" flex flex-col items-center xl:items-end">
           <div className="w-64 md:w-56 lg:w-300 xl:w-336 h-full flex flex-col items-center bg-white p-4 xl:p-12 rounded-3xl mb-5 shadow-md">
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
-              My experience at Quales was the best. Initially I was sceptical about trying because people says they’ll do something and they don’t, but it’s the fact that what Quales tells you is what you will get. So, if they tell you that they will teach you, make you the best, and further you in your career path, you will get that!
+              My journey with Quales through learning Scrum, taking the exam, and completing an internship has been incredibly rewarding. From the classes to the Exam support to my internship with Quales now, it has been all I hoped for and more. The combination of theoretical learning and practical experience has given me a solid foundation in Scrum, and I am excited to continue applying these skills in my career.
             </p>
-            <h5 className="text-primary mt-7 text-center font-550">Adaeze Atusuba</h5>
-            <h6 className="text-primary mt-1 text-center text-xs">Cohort 2</h6>
+            <h5 className="text-primary mt-7 text-center font-550">Sandra Alutu</h5>
+            <h6 className="text-primary mt-1 text-center text-xs">Cohort 1</h6>
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
               <Image
-                src={`/images/Adaeze-min.png`}
+                src={`/images/sandra.png`}
                 className=" w-full h-full rounded-full"
                 style={{ objectFit: "cover" }}
                 alt="Seamfix Logo"
@@ -74,7 +74,7 @@ const Testimonials = ({showButton = true}: {showButton?: boolean}) => {
       </div>
 
       <div className="flex justify-center">
-        {showButton && <Link href="/learning/testimonials" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>}
+        <Link href="/learning/testimonials" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >View More</Link>
       </div>
     </section>
   )

@@ -21,7 +21,7 @@ const NavBar = () => {
               <summary>Course Packages</summary>
               <ul className="bg-base-100 rounded-t-none p-2 w-72">
                 <li><Link href="/learning/softwarequalityassurance">Software Quality Assurance</Link></li>
-                <li><a>Scrum Mastery</a></li>
+                <li><Link href="/learning/scrummaster">Scrum Mastery</Link></li>
               </ul>
             </details>
           </li>
@@ -56,7 +56,7 @@ const NavBar = () => {
                     <summary className="py-3 px-5 text-lg">Course Packages</summary>
                     <ul className="bg-base-100 rounded-t-none p-2 text-primary font-550">
                       <li><Link href="/learning/softwarequalityassurance">Software Quality Assurance</Link></li>
-                      <li><a>Scrum Mastery</a></li>
+                      <li><Link href="/learning/scrummaster">Scrum Mastery</Link></li>
                     </ul>
                   </details>
                 </li>
