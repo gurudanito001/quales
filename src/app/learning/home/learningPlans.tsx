@@ -63,9 +63,10 @@ const LearningPlans = () => {
                 <h3 className="text-left text-2xl md:text-3xl font-550 mb-5 text-primary">Standard</h3>
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
-                  <li>5-Weeks Intense training including Case Studies, exam practice etc.</li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc.</li>
-                  <li>Placement Support </li>
+                  <li>5-Weeks Intense training</li>
+                  <li>Case Studies</li>
+                  <li>Exam Practice </li>
+                  <li>Admission into the Quales Community</li>
                 </ul>
               </article>
 
@@ -73,10 +74,11 @@ const LearningPlans = () => {
                 <h3 className="text-left text-2xl md:text-3xl font-550 mb-5 text-primary">Premium</h3>
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
-                  <li>5-Weeks Intense training including Case Studies, exam practice etc.</li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc.</li>
-                  <li>Placement Support </li>
-                  <li>Three(3) months internship with Quales Consulting </li>
+                  <li>5-Weeks Intense training</li>
+                  <li>Case Studies</li>
+                  <li>Exam Practice </li>
+                  <li>Admission into the Quales Community</li>
+                  <li>Internship</li>
                 </ul>
               </article>
 
@@ -84,10 +86,12 @@ const LearningPlans = () => {
                 <h3 className="text-left text-2xl md:text-3xl font-550 mb-5 text-primary">Gold</h3>
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
-                  <li>5-Weeks Intense training including Case Studies, exam practice etc.</li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc.</li>
-                  <li>Placement Support </li>
-                  <li>Registration for Scrum Master Pro Exam </li>
+                  <li>5-Weeks Intense training</li>
+                  <li>Case Studies</li>
+                  <li>Exam Practice </li>
+                  <li>Admission into the Quales Community</li>
+                  <li>Registration for Exam</li>
+                  <li>Employment Support</li>
                 </ul>
               </article>
 
@@ -95,11 +99,13 @@ const LearningPlans = () => {
                 <h3 className="text-left text-2xl md:text-3xl font-550 mb-5 text-primary">Platinum</h3>
 
                 <ul className=" list-disc list-outside gap-4 text-sm font-light flex flex-col px-3">
-                  <li>5-Weeks Intense training including Case Studies, exam practice etc.</li>
-                  <li>Admission to Quales Group with over 300+ software testers in organizations like Appzone, Interswitch, Microsoft etc.</li>
-                  <li>Placement Support </li>
-                  <li>Registration for Scrum Master Pro Exam </li>
-                  <li>Three(3) months internship with Quales Consulting </li>
+                  <li>5-Weeks Intense training</li>
+                  <li>Case Studies</li>
+                  <li>Exam Practice </li>
+                  <li>Admission into the Quales Community</li>
+                  <li>Internship</li>
+                  <li>Registration for Exam</li>
+                  <li>Employment Support</li>
                 </ul>
               </article>
             </div>

@@ -2,5 +2,5 @@
   "/learning/softwarequalityassurance/page": "app/learning/softwarequalityassurance/page.js",
   "/(home)/page": "app/(home)/page.js",
   "/learning/page": "app/learning/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/learning/scrummaster/page": "app/learning/scrummaster/page.js"
 }

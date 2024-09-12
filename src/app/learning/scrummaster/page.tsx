@@ -1,19 +1,38 @@
 
 import NavBar from "../home/navbar";
+import Link from "next/link";
+import Syllabus from "./syllabus";
+import LearningPlans from "./learningPlans";
+import Testimonials from "./testimonials";
+import TalentsTrained from "./talentsTrained";
+import Partners from "@/app/(home)/partners";
+import CohortSignup from "./cohortSignup";
+import Footer from "@/app/(home)/footer";
 
 
-const ScrumMasterCourse = ()=>{
+
+const ScrumMasteryCourse = ()=>{
 
   return (
-<main className="bg-white">
-    <NavBar/>
-    <section className="bg-white px-5 xl:px-28">
-      <header className="flex">
-        <h3 className="text-lg md:text-xl mx-auto font-semibold bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 inline text-transparent bg-clip-text py-10">Scrum Master Course Packages</h3>
-      </header>
-    </section>
+    <main className="bg-white">
+      <NavBar />
+      <section className="flex flex-col bg-white px-3 sm:px-5 xl:px-28 mt-10">
+        <div className="breadcrumbs text-sm mb-10">
+          <ul>
+            <li><Link href="" className="text-primary text-sm lg:text-xl font-normal">Course Packages</Link></li>
+            <li><Link href="" className="text-primary font-semibold text-sm lg:text-xl capitalize">Scrum Mastery</Link></li>
+          </ul>
+        </div>
+        <Syllabus />
+      </section>
+      <LearningPlans />
+      <Testimonials />
+      <TalentsTrained />
+      <Partners />
+      <CohortSignup />
+      <Footer showqalink={true} />
     </main>
   )
 }
 
-export default ScrumMasterCourse
+export default ScrumMasteryCourse
