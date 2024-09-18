@@ -70,15 +70,15 @@ const PersonalInfoForm = ({formData, setFormData, setCurrentScreen}: {formData: 
       </label>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.programType} onChange={handleChangeFormData("programType")} className={`select bg-transparent focus:border-none w-full ${formData?.programType === "" ? "text-gray-400" : "text-black"}`}>
-          <option className="text-red-900" disabled value="">Program Type</option>
+        <select value={formData.programType} onChange={handleChangeFormData("programType")} className={`select bg-transparent focus:border-none w-full ${formData?.programType === "" ? "text-red-900" : "text-black"}`}>
+          <option disabled value="">Program Type</option>
           <option value="software-quality-assurance">Software Quality Assurance</option>
           <option value="scrum-mastery">Scrum Mastery</option>
         </select>
       </label>
 
       {formData?.programType && <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.cohort} onChange={handleChangeFormData("cohort")} className={`select bg-transparent focus:border-none w-full ${formData?.cohort === "" ? "text-gray-400" : "text-black"}`}>
+        <select value={formData.cohort} onChange={handleChangeFormData("cohort")} className={`select bg-transparent focus:border-none w-full ${formData?.cohort === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">Cohort</option>
           <option value="cohort-19">Cohort 19</option>
           <option value="cohort-20">Cohort 20</option>

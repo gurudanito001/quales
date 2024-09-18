@@ -35,15 +35,15 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.currentlyWorking} onChange={handleChangeFormData("currentlyWorking")} className={`select bg-transparent focus:border-none w-full ${formData?.currentlyWorking === "" ? "text-gray-400" : "text-black"}`}>
-          <option disabled value="" className="text-red-900">I Currently Work as a {formData?.programType === "scrum-mastery" ? "Scrum Master" : "Software Tester"} </option>
+        <select value={formData.currentlyWorking} onChange={handleChangeFormData("currentlyWorking")} className={`select bg-transparent focus:border-none w-full ${formData?.currentlyWorking === "" ? "text-red-900" : "text-black"}`}>
+          <option disabled value="">I Currently Work as a {formData?.programType === "scrum-mastery" ? "Scrum Master" : "Software Tester"} </option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
       </label>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.plan} onChange={handleChangeFormData("plan")} className={`select bg-transparent focus:border-none w-full ${formData?.plan === "" ? "text-gray-400" : "text-black"}`}>
+        <select value={formData.plan} onChange={handleChangeFormData("plan")} className={`select bg-transparent focus:border-none w-full ${formData?.plan === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">Which Plan Would You Like to Choose</option>
           {formData?.programType === "software-quality-assurance" && <option value="basic">Basic</option>}
           <option value="standard">Standard</option>
@@ -54,8 +54,8 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       </label>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.howDoYouIntendToPay} onChange={handleChangeFormData("howDoYouIntendToPay")} className={`select bg-transparent focus:border-none w-full ${formData?.howDoYouIntendToPay === "" ? "text-gray-400" : "text-black"}`}>
-          <option disabled value="" className="text-red-900">How Do You Intend to Pay and Take up the Course</option>
+        <select value={formData.howDoYouIntendToPay} onChange={handleChangeFormData("howDoYouIntendToPay")} className={`select bg-transparent focus:border-none w-full ${formData?.howDoYouIntendToPay === "" ? "text-red-900" : "text-black"}`}>
+          <option disabled value="">How Do You Intend to Pay and Take up the Course</option>
           <option value="1-3 months">In the next 1 - 3 months</option>
           <option value="4-6 months">In the next 4 - 6 months</option>
           <option value="7-9 months">In the next 7 - 9 months</option>
@@ -63,7 +63,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       </label>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.whyTakeCourse} onChange={handleChangeFormData("whyTakeCourse")} className={`select bg-transparent focus:border-none w-full ${formData?.whyTakeCourse === "" ? "text-gray-400" : "text-black"}`}>
+        <select value={formData.whyTakeCourse} onChange={handleChangeFormData("whyTakeCourse")} className={`select bg-transparent focus:border-none w-full ${formData?.whyTakeCourse === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">Tell us Why You Want to take this Course</option>
           <option value="career change">I&apos;m a Considering a Career Change</option>
           <option value="interested in software testing">Interested in {formData?.programType === "scrum-mastery" ? "Scrum Mastery" : "Software Testing"} as I am not confident of any other competencies</option>
@@ -72,7 +72,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       </label>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.howDidYouHearAboutUs} onChange={handleChangeFormData("howDidYouHearAboutUs")} className={`select bg-transparent focus:border-none w-full ${formData?.howDidYouHearAboutUs === "" ? "text-gray-400" : "text-black"}`}>
+        <select value={formData.howDidYouHearAboutUs} onChange={handleChangeFormData("howDidYouHearAboutUs")} className={`select bg-transparent focus:border-none w-full ${formData?.howDidYouHearAboutUs === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">How Did You Learn About Us</option>
           <option value="ads">Quales Instagram/LinkedIn/Twitter Ads</option>
           <option value="quales representative">A Quales Representative</option>
@@ -80,17 +80,10 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
           <option value="">Other</option>
         </select>
       </label>
-      {formData?.howDidYouHearAboutUs !== "ads" && formData?.howDidYouHearAboutUs !== "quales representative" && formData?.howDidYouHearAboutUs !== "previous participant" &&
+      {formData?.howDidYouHearAboutUs !== "" && 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <input type="text"  value={formData?.howDidYouHearAboutUs} onChange={handleChangeFormData("howDidYouHearAboutUs")}  className="grow px-5 placeholder:text-sm h-12" placeholder="Tell us how you heard about Us" />
+        <input type="text"  value={formData?.refererNameAndPhone} onChange={handleChangeFormData("refererNameAndPhone")}  className="grow px-5 placeholder:text-sm text-red-900 h-12" placeholder="Referrer's Name and Phone Number" />
       </label>}
-
-      <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <input type="text"  value={formData?.refererNameAndPhone} onChange={handleChangeFormData("refererNameAndPhone")}  className="grow px-5 placeholder:text-sm h-12" placeholder="Referrer's Name and Phone Number" />
-      </label>
-
-
-
 
       <button disabled={disableSubmitButton()} className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-12" onClick={(e) => {
         e.preventDefault();

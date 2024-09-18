@@ -13,19 +13,19 @@ const Testimonials = ({showButton = true}: {showButton?: boolean}) => {
         <div className=" flex flex-col items-center xl:items-end">
           <div className="w-64 md:w-56 lg:w-300 xl:w-336 h-full flex flex-col items-center bg-white p-4 xl:p-12 rounded-3xl mb-5 shadow-md">
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
-              I recently finished a training course that was a great introduction to Scrum mastery, with practical examples used throughout the training that made everything feel relevant and easy to understand. The team was great about sending reminders for lesson times, which helped keep me on track. Additionally, the engaging quizzes made the learning process interactive. I’ve just started my internship, and the onboarding has been both warm and welcoming.
+            My experience with Quales learning was awesome. Coming from a non-tech background, the classes were well simplified by tutors. I highly recommend the course packages for anyone with or without a tech background.
             </p>
-            <h5 className="text-primary mt-7 text-center font-550">Danielle Ngaleu</h5>
+            <h5 className="text-primary mt-7 md:mt-auto text-center font-550">Margaret Odegua</h5>
             <h6 className="text-primary mt-1 text-center text-xs">Cohort 1</h6>
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
-              {/* <Image
-                src={`/images/Adaeze-min.png`}
+              <Image
+                src={`/images/Margaret.png`}
                 className=" w-full h-full rounded-full"
                 style={{ objectFit: "cover" }}
                 alt="Danielle Ngaleu"
                 width={96}
                 height={96}
-              /> */}
+              />
             </figure>
             
           </div>
@@ -36,7 +36,7 @@ const Testimonials = ({showButton = true}: {showButton?: boolean}) => {
             <p className="text-primary mt-3 text-center text-xs md:text-sm font-light">
               My journey with Quales through learning Scrum, taking the exam, and completing an internship has been incredibly rewarding. From the classes to the Exam support to my internship with Quales now, it has been all I hoped for and more. The combination of theoretical learning and practical experience has given me a solid foundation in Scrum, and I am excited to continue applying these skills in my career.
             </p>
-            <h5 className="text-primary mt-7 md:mt-auto text-center font-550">Sandra Alutu</h5>
+            <h5 className="text-primary mt-7 text-center font-550">Sandra Alutu</h5>
             <h6 className="text-primary mt-1 text-center text-xs">Cohort 1</h6>
             <figure className="mt-5 w-24 h-24 bg-neutral2 rounded-full">
               <Image
