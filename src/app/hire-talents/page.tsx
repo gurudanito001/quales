@@ -20,11 +20,6 @@ const HireTalents = ()=>{
     
 
     <section className="grid grid-cols-1 xl:grid-cols-2 max-h-screen">
-      {/* <div className="hidden xl:block text-white bg-[url('/images/hire-talent-bg.png')] bg-cover bg-center bg-no-repeat h-screen">
-          <div className="h-full bg-overlay flex items-center content-center py-44 p-8">
-            <h2 className="text-3xl font-550 lg:mx-14 my-auto text-center">Leverage Quales Talents<br/>to Seamlessly Ensure Project Success</h2>
-          </div>
-      </div> */}
       <HireTalentSlider />
       <HireTalentsForm />
     </section>

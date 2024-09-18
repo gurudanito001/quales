@@ -21,7 +21,7 @@ const HeroSection = ()=>{
 
       <figure className=" md:w-1/2 mb-10 md:mb-0 xl:p-14">
         <Image
-          src={`/images/usecases-banner.png`}
+          src={`/images/usecases-hero-img.png`}
           className="w-100"
           style={{ height: "auto", objectFit: "contain" }}
           alt="Two Business men shaking hands in a professional environment"
