@@ -33,10 +33,10 @@ const TalentsTrained = () => {
         <Slider {...settings} className="mx-auto lg:mx-0 w-full flex">
           <div className="mx-auto">
             <div className="flex flex-col lg:flex-row lg:gap-8">
-              <figure className="h-72 w-72 bg-[url('/images/danielle.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:ml-auto my-auto">
+              <figure className="h-72 w-72 bg-[url('/images/blessing.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:ml-auto my-auto">
               </figure>
               <article className="flex flex-col w-full lg:max-w-550 my-auto mr-auto">
-                <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text">Danielle Ngaleu</h4>
+                <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text">Blessing Arigbe</h4>
                 <div className="text-lg text-primary font-light text-center lg:text-left w-full">
                   <p className="w-full mt-8 md:text-lg">With over 4 years of experience in Quality Assurance Engineering, Blessing Arigbe brings her passion for delivering high-quality software solutions to every project. As a BSc Computer Science graduate with multiple certifications, she emphasizes collaboration, communication, and continuous improvement. Now with Sabi, she is helping connect African markets globally while embodying the excellence instilled through her QA training.</p>
                 </div>

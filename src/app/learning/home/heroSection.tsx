@@ -44,7 +44,7 @@ const HeroSection = ()=>{
           Embark on your tech career with Quales Academy, where industry-leading programs equip you with the skills and expertise needed to thrive. Our comprehensive courses in QA Engineering, Scrum Mastery, Data Analytics, and more are designed to fast-track your success. Start learning today and unlock your potential in the ever-evolving tech landscape!
         </p>
         <div className="hidden md:block">
-          <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >Register for a Cohort</Link>
+          <Link href="/learning/register-for-cohort" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >Register for a Cohort</Link>
         </div>
       </article>
 
