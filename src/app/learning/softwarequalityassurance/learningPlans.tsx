@@ -7,7 +7,7 @@ const LearningPlans = () =>{
     <section className="mx-auto lg:mx-0 w-full h-auto flex flex-col bg-primary text-white py-14">
 
       <h2 className="text-center text-xl md:text-2xl font-550 mb-3">Our Learning Plans</h2>
-      <p className="max-w-4xl text-center mx-auto md:max-w-550 lg:max-w-full px-5">Explore flexible learning plans tailored to suit your career goals. </p>
+      <p className="max-w-4xl text-center mx-auto md:max-w-550 lg:max-w-full px-5">Explore flexible learning plans designed to fit your schedule and career goals in Software Testing.</p>
 
 
       <div className="mx-auto">

@@ -3,7 +3,6 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "@ant-design/react-slick";
-import Link from "next/link";
 
 
 
@@ -50,7 +49,6 @@ const HireTalentSlider = () => {
           {listImages()} 
         </Slider>
     </section>
-      
   )
 }
 
