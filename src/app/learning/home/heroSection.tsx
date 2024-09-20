@@ -31,7 +31,7 @@ const HeroSection = ()=>{
         />
 
         <div className="md:hidden flex">
-          <Link href="" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >Register for a Cohort</Link>
+          <Link href="/learning/register-for-cohort" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto md:mx-0 mt-8" >Register for a Cohort</Link>
         </div>
       </figure>
 

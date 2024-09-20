@@ -106,7 +106,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       <dialog id="qa_modal" className="modal">
         <div className="modal-box flex flex-col rounded-xl py-14 px-5 w-11/12 max-w-5xl h-full max-h-550">
           <Image src="/images/success-avatar.svg" alt="success avatar" width={200} height={200} className="mx-auto mt-auto" />
-          <p className="py-4 text-primary text-center max-w-800 mx-auto">Thanks you for your interest in our classes, you have successfully registered for Cohort #, would you like to proceed to make payment?</p>
+          <p className="py-4 text-primary text-center max-w-800 mx-auto">Thanks you for your interest in our classes, you have successfully registered for <span className=" capitalize">{formData?.cohort}</span>, would you like to proceed to make payment?</p>
           <div className="modal-action flex mb-auto">
             <form method="dialog" className="mx-auto">
               <button className="btn bg-primary text-white rounded-full px-8">Done</button>
