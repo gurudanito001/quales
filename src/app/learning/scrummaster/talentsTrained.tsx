@@ -53,7 +53,7 @@ const TalentsTrained = () => {
               <article className="flex flex-col w-full lg:max-w-550 my-auto mr-auto">
                 <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text">Jemima Abutu</h4>
                 <div className="text-lg text-primary font-light text-center lg:text-left w-full">
-                  <p className="w-full mt-8 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu ultrices ligula. Proin dictum orci non nisi rhoncus, eu dignissim libero efficitur. Nullam a mollis dui. Sed eget malesuada enim. Aliquam vitae mi nec nibh interdum commodo eu vitae quam. Ut purus sem, porta et eros vitae, placerat ornare augue. Nullam non ipsum libero. Suspendisse finibus dolor id eleifend posuere. Morbi lorem ligula, consectetur ac facilisis vel, fermentum nec sapien. </p>
+                  <p className="w-full mt-8 md:text-lg">Jemima masters in Human Resource Management and I currently work with IKEA. She wanted a career diversion in Tech because I felt it would make me globally relevant. Then, coincidentally, I stumbled on “Quales consulting” on a friend&apos;s WhatsApp Status and it seemed like the best way to combine natural talent and a career. In Summary, Quales consulting is the best option for you. As the Tutors are well knowledgeable, experienced and of course, willing to follow you at your learning pace. It was an amazing experience for me. </p>
                 </div>
               </article>
             </div>

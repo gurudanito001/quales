@@ -1,7 +1,7 @@
 {
+  "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
   "/learning/softwarequalityassurance/page": "app/learning/softwarequalityassurance/page.js",
-  "/hire-talents/page": "app/hire-talents/page.js",
+  "/(home)/page": "app/(home)/page.js",
   "/learning/page": "app/learning/page.js",
-  "/learning/scrummaster/page": "app/learning/scrummaster/page.js",
-  "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js"
+  "/learning/scrummaster/page": "app/learning/scrummaster/page.js"
 }
