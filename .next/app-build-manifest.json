@@ -42,10 +42,15 @@
       "static/css/app/learning/scrummaster/page.css",
       "static/chunks/app/learning/scrummaster/page.js"
     ],
-    "/learning/plans/page": [
+    "/learning/learningplans/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/learning/plans/page.js"
+      "static/chunks/app/learning/learningplans/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
