@@ -46,7 +46,7 @@ const TalentsTrained = () => {
           </div>
 
 
-          <div className="mx-auto">
+          {/* <div className="mx-auto">
             <div className="flex flex-col lg:flex-row lg:gap-8">
               <figure className="h-72 w-72 bg-[url('/images/Jemima.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:ml-auto my-auto">
               </figure>
@@ -57,7 +57,7 @@ const TalentsTrained = () => {
                 </div>
               </article>
             </div>
-          </div>
+          </div> */}
 
         </Slider>
       </div>

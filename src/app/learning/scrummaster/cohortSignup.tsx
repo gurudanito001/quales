@@ -8,7 +8,7 @@ const CohortSignup = ()=>{
         <h2 className="font-550 text-2xl lg:text-4xl">Sign up for our next Cohort now</h2>
         <p className="font-light text-lg mt-5">Join the waitlist for our next Scrum Mastery classes today </p>
       </article>
-      <Link href="https://calendly.com/ayobami-/discuss-about-prospective-talent?month=2024-07" target="_blank" className="btn bg-gray-900 text-white rounded-full px-8 mr-auto md:mr-0 md:ml-auto mt-8">Register for Course</Link>
+      <Link href="/learning/register-for-cohort" className="btn bg-gray-900 text-white rounded-full px-8 mr-auto md:mr-0 md:ml-auto mt-8">Register for Course</Link>
     </section>
   )
 }
