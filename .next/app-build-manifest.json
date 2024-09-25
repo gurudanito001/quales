@@ -41,6 +41,11 @@
       "static/chunks/main-app.js",
       "static/css/app/learning/scrummaster/page.css",
       "static/chunks/app/learning/scrummaster/page.js"
+    ],
+    "/learning/plans/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/learning/plans/page.js"
     ]
   }
 }

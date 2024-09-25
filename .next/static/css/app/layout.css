@@ -3150,6 +3150,9 @@ html:has(.drawer-toggle:checked) {
 .list-disc {
   list-style-type: disc;
 }
+.list-none {
+  list-style-type: none;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -3216,6 +3219,9 @@ html:has(.drawer-toggle:checked) {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-clip {
+  overflow: clip;
+}
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -3243,6 +3249,9 @@ html:has(.drawer-toggle:checked) {
 .rounded-xl {
   border-radius: 0.75rem;
 }
+.rounded-none {
+  border-radius: 0px;
+}
 .rounded-t-none {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3252,6 +3261,9 @@ html:has(.drawer-toggle:checked) {
 }
 .border-2 {
   border-width: 2px;
+}
+.border-0 {
+  border-width: 0px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -3273,6 +3285,9 @@ html:has(.drawer-toggle:checked) {
 }
 .border-t-0 {
   border-top-width: 0px;
+}
+.border-r-2 {
+  border-right-width: 2px;
 }
 .border-dashed {
   border-style: dashed;
@@ -3597,6 +3612,10 @@ html:has(.drawer-toggle:checked) {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -3669,6 +3688,10 @@ html:has(.drawer-toggle:checked) {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-550 {
   font-weight: 550;
@@ -4355,8 +4378,16 @@ body {
     gap: 1.25rem;
   }
 
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
   .md\:rounded-none {
     border-radius: 0px;
+  }
+
+  .md\:border-2 {
+    border-width: 2px;
   }
 
   .md\:border-r {
@@ -4370,6 +4401,11 @@ body {
   .md\:border-gray-400 {
     --tw-border-opacity: 1;
     border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  }
+
+  .md\:border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgb(43 88 107 / var(--tw-border-opacity));
   }
 
   .md\:bg-neutral {
@@ -4472,6 +4508,11 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:font-medium {
@@ -4631,6 +4672,61 @@ body {
     gap: 2rem;
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
+  .lg\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .lg\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .lg\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .lg\:border-2 {
+    border-width: 2px;
+  }
+
+  .lg\:border {
+    border-width: 1px;
+  }
+
+  .lg\:border-r-2 {
+    border-right-width: 2px;
+  }
+
+  .lg\:border-r {
+    border-right-width: 1px;
+  }
+
+  .lg\:border-t-0 {
+    border-top-width: 0px;
+  }
+
+  .lg\:border-none {
+    border-style: none;
+  }
+
+  .lg\:border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgb(43 88 107 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-r-primary {
+    --tw-border-opacity: 1;
+    border-right-color: rgb(43 88 107 / var(--tw-border-opacity));
+  }
+
   .lg\:p-7 {
     padding: 1.75rem;
   }
@@ -4690,6 +4786,16 @@ body {
     padding-bottom: 9rem;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
@@ -4721,6 +4827,16 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
