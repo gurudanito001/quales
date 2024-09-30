@@ -24,33 +24,15 @@
       "static/css/app/learning/register-for-cohort/page.css",
       "static/chunks/app/learning/register-for-cohort/page.js"
     ],
-    "/hire-talents/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hire-talents/page.css",
-      "static/chunks/app/hire-talents/page.js"
-    ],
-    "/learning/softwarequalityassurance/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/learning/softwarequalityassurance/page.css",
-      "static/chunks/app/learning/softwarequalityassurance/page.js"
-    ],
-    "/learning/scrummaster/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/learning/scrummaster/page.css",
-      "static/chunks/app/learning/scrummaster/page.js"
-    ],
     "/learning/learningplans/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learning/learningplans/page.js"
     ],
-    "/_not-found/page": [
+    "/learning/howtoenroll/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/learning/howtoenroll/page.js"
     ]
   }
 }

@@ -1,8 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/learning/scrummaster/page": "app/learning/scrummaster/page.js",
+  "/(home)/page": "app/(home)/page.js",
   "/learning/page": "app/learning/page.js",
   "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/learning/learningplans/page": "app/learning/learningplans/page.js"
+  "/learning/learningplans/page": "app/learning/learningplans/page.js",
+  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js"
 }

@@ -30,7 +30,7 @@ const PersonalInfoForm = ({formData, setFormData, setCurrentScreen}: {formData: 
       <h1 className="text-primary text-3xl mb-10 w-full max-w-550">Register for a Cohort</h1>
       <div className="flex items-center mb-5 w-full max-w-550">
         <h2 className="text-primary text-lg font-light mr-auto">Let&apos;s help choose the best plan for you, click here to find out. </h2>
-        <Link href=""  className="btn bg-green-600 text-white rounded-full px-8 h-12">View Learning Plans</Link>
+        <Link href="/learning/learningplans"  className="btn bg-green-600 text-white rounded-full px-8 h-12">View Learning Plans</Link>
       </div>
       
 
