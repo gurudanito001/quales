@@ -154,12 +154,6 @@ const Articles = ()=>{
           {filterArticles(category, search).map( item => {
             return <Fragment key={item.title}>{item?.article}</Fragment>
           })}
-
-          {/* <Article1 />
-          <Article2 />
-          <Article3 />
-          <Article4 /> */}
-          
         </div>
 
         <div className="flex">

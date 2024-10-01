@@ -214,7 +214,7 @@ const Module6 = () => {
           <div>
             <span className="inline-block w-4 h-4 mr-2 lg:mr-6 rounded-full bg-primary"></span>
           </div>
-          Module 6: Introduction to JavaScript using a Cloud Repository
+          Module 6: Introduction to JavaScript & using a Cloud Repository
         </h6>
       </header>
       <li className="border-l border-dashed border-l-primary flex flex-row items-start px-3 xl:px-10 pt-4">
@@ -363,7 +363,7 @@ const Syllabus = () => {
 
         <div onClick={() => setCurrentModule(5)} className={`${moduleIndex === 5 ? "bg-primary text-white" : "bg-neutral2 text-primary"} py-3 px-5 xl:py-5 xl:px-9 rounded-2xl xl:rounded-3xl shadow-md cursor-pointer`}>
           <h5 className="font-550 xl:text-xl">Module 6</h5>
-          <p className="mt-2 xl:text-lg">Introduction to JavaScript Using a Cloud Repository</p>
+          <p className="mt-2 xl:text-lg">Introduction to JavaScript & Using a Cloud Repository</p>
         </div>
 
       </section>
