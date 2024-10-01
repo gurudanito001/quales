@@ -1,7 +1,8 @@
 {
-  "/(home)/page": "app/(home)/page.js",
   "/learning/page": "app/learning/page.js",
-  "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
-  "/learning/learningplans/page": "app/learning/learningplans/page.js",
-  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js"
+  "/learning/softwarequalityassurance/page": "app/learning/softwarequalityassurance/page.js",
+  "/(home)/page": "app/(home)/page.js",
+  "/learning/faqs/page": "app/learning/faqs/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/learning/learningplans/page": "app/learning/learningplans/page.js"
 }

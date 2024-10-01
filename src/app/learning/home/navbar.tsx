@@ -29,7 +29,7 @@ const NavBar = () => {
           <li><Link href="/learning/howtoenroll">How to Enroll</Link></li>
           <li><Link href="/learning/testimonials">Testimonial</Link></li>
           <li><Link href="/learning/faqs">FAQ&apos;s</Link></li>
-          <li><Link href="">Consulting</Link></li>
+          <li><Link href="/">Consulting</Link></li>
         </ul>
 
         <div className="dropdown dropdown-end lg:hidden">

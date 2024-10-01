@@ -1,10 +1,9 @@
 {
   "pages": {
-    "/(home)/page": [
+    "/learning/testimonials/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(home)/page.css",
-      "static/chunks/app/(home)/page.js"
+      "static/chunks/app/learning/testimonials/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -12,27 +11,39 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/(home)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(home)/page.css",
+      "static/chunks/app/(home)/page.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/about-us/page.css",
+      "static/chunks/app/about-us/page.js"
+    ],
     "/learning/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/learning/page.css",
       "static/chunks/app/learning/page.js"
     ],
-    "/learning/register-for-cohort/page": [
+    "/learning/faqs/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/learning/register-for-cohort/page.css",
-      "static/chunks/app/learning/register-for-cohort/page.js"
+      "static/chunks/app/learning/faqs/page.js"
+    ],
+    "/learning/softwarequalityassurance/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/learning/softwarequalityassurance/page.css",
+      "static/chunks/app/learning/softwarequalityassurance/page.js"
     ],
     "/learning/learningplans/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learning/learningplans/page.js"
-    ],
-    "/learning/howtoenroll/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learning/howtoenroll/page.js"
     ]
   }
 }
