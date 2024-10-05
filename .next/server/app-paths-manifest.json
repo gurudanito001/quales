@@ -1,8 +1,3 @@
 {
-  "/learning/page": "app/learning/page.js",
-  "/learning/softwarequalityassurance/page": "app/learning/softwarequalityassurance/page.js",
-  "/(home)/page": "app/(home)/page.js",
-  "/learning/faqs/page": "app/learning/faqs/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/learning/learningplans/page": "app/learning/learningplans/page.js"
+  "/learning/testimonials/page": "app/learning/testimonials/page.js"
 }

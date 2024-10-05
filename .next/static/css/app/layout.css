@@ -3141,14 +3141,8 @@ html:has(.drawer-toggle:checked) {
 .w-screen {
   width: 100vw;
 }
-.w-60 {
-  width: 15rem;
-}
 .min-w-40 {
   min-width: 10rem;
-}
-.min-w-72 {
-  min-width: 18rem;
 }
 .min-w-80 {
   min-width: 20rem;
@@ -3683,6 +3677,9 @@ html:has(.drawer-toggle:checked) {
 .pb-12 {
   padding-bottom: 3rem;
 }
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -3715,9 +3712,6 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 .text-left {
   text-align: left;
@@ -4393,6 +4387,14 @@ body {
     width: max-content;
   }
 
+  .md\:min-w-80 {
+    min-width: 20rem;
+  }
+
+  .md\:min-w-96 {
+    min-width: 24rem;
+  }
+
   .md\:max-w-550 {
     max-width: 550px;
   }
@@ -4401,16 +4403,16 @@ body {
     max-width: 14rem;
   }
 
+  .md\:max-w-80 {
+    max-width: 20rem;
+  }
+
   .md\:max-w-96 {
     max-width: 24rem;
   }
 
   .md\:max-w-full {
     max-width: 100%;
-  }
-
-  .md\:max-w-80 {
-    max-width: 20rem;
   }
 
   .md\:list-outside {
@@ -4706,6 +4708,10 @@ body {
     width: 100%;
   }
 
+  .lg\:min-w-max {
+    min-width: max-content;
+  }
+
   .lg\:max-w-4xl {
     max-width: 56rem;
   }
@@ -4720,18 +4726,6 @@ body {
 
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .lg\:max-w-lg {
-    max-width: 32rem;
   }
 
   .lg\:max-w-md {
@@ -4858,6 +4852,11 @@ body {
     padding-bottom: 3rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
@@ -4868,17 +4867,17 @@ body {
     padding-bottom: 1.75rem;
   }
 
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl {
@@ -4909,11 +4908,6 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
