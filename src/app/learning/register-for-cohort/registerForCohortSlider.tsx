@@ -16,6 +16,8 @@ const RegisterForCohortSlider = () => {
     `bg-[url('/images/patrick.png')]`
   ]
 
+  
+
   const settings = {
     infinite: true,
     speed: 900,

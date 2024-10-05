@@ -30,7 +30,7 @@ const Footer = ({showScrumMasterLink = false, showqalink = false}: { showScrumMa
               <li><Link href="/about-us">About Us</Link></li>
               <li><Link href="/#hiringProcess">How It Works </Link></li>
               <li><Link href="/#reviews">Reviews</Link></li>
-              <li>FAQ&apos;s</li>
+              <li><Link href="/learning/faqs">FAQ&apos;s</Link></li>
             </ul>
           </div>
 

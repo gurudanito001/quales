@@ -2976,6 +2976,9 @@ html:has(.drawer-toggle:checked) {
 .mt-auto {
   margin-top: auto;
 }
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .block {
   display: block;
 }
@@ -3141,14 +3144,8 @@ html:has(.drawer-toggle:checked) {
 .w-screen {
   width: 100vw;
 }
-.w-60 {
-  width: 15rem;
-}
 .min-w-40 {
   min-width: 10rem;
-}
-.min-w-72 {
-  min-width: 18rem;
 }
 .min-w-80 {
   min-width: 20rem;
@@ -3464,6 +3461,10 @@ html:has(.drawer-toggle:checked) {
   --tw-bg-opacity: 1;
   background-color: rgb(43 88 107 / var(--tw-bg-opacity));
 }
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 92 113 / var(--tw-bg-opacity));
+}
 .bg-section-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(198 217 241 / var(--tw-bg-opacity));
@@ -3474,6 +3475,9 @@ html:has(.drawer-toggle:checked) {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-secondary-2 {
+  background-color: #2B586B59;
 }
 .bg-\[url\(\'\/images\/Akinbowale\.png\'\)\] {
   background-image: url('/images/Akinbowale.png');
@@ -3677,11 +3681,18 @@ html:has(.drawer-toggle:checked) {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
+}
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -3715,9 +3726,6 @@ html:has(.drawer-toggle:checked) {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 .text-left {
   text-align: left;
@@ -3828,6 +3836,10 @@ html:has(.drawer-toggle:checked) {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -4401,16 +4413,16 @@ body {
     max-width: 14rem;
   }
 
+  .md\:max-w-80 {
+    max-width: 20rem;
+  }
+
   .md\:max-w-96 {
     max-width: 24rem;
   }
 
   .md\:max-w-full {
     max-width: 100%;
-  }
-
-  .md\:max-w-80 {
-    max-width: 20rem;
   }
 
   .md\:list-outside {
@@ -4662,6 +4674,10 @@ body {
     margin-top: 3.5rem;
   }
 
+  .lg\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4720,18 +4736,6 @@ body {
 
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:max-w-2xl {
-    max-width: 42rem;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
-  }
-
-  .lg\:max-w-lg {
-    max-width: 32rem;
   }
 
   .lg\:max-w-md {
@@ -4858,6 +4862,11 @@ body {
     padding-bottom: 3rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
@@ -4868,17 +4877,17 @@ body {
     padding-bottom: 1.75rem;
   }
 
-  .lg\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-3xl {
@@ -4909,11 +4918,6 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
