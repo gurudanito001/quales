@@ -52,7 +52,7 @@ const PersonalInfoForm = ({formData, setFormData, setCurrentScreen}: {formData: 
 
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
-        <select value={formData.gender} onChange={handleChangeFormData("gender")} className={`select bg-transparent focus:border-none w-full ${formData?.gender === "" ? "text-gray-400" : "text-black"}`}>
+        <select value={formData.gender} onChange={handleChangeFormData("gender")} className={`select bg-transparent focus:border-none w-full ${formData?.gender === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
@@ -63,7 +63,7 @@ const PersonalInfoForm = ({formData, setFormData, setCurrentScreen}: {formData: 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg w-full max-w-550">
         <input type="email"  value={formData?.course} onChange={handleChangeFormData("course")}  className="grow px-5 placeholder:text-sm placeholder:text-red-900 h-12" placeholder="Course of Study" />
       </label>
-      <span className="text-xs text-gray-400 mb-5 w-full px-8">(please write in full)</span>
+      <span className="text-xs text-gray-400 mb-5 w-full px-8 max-w-550">(please write in full)</span>
 
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
         <input type="text"  value={formData?.university} onChange={handleChangeFormData("university")}  className="grow px-5 placeholder:text-sm placeholder:text-red-900 h-12" placeholder="University Attended" />

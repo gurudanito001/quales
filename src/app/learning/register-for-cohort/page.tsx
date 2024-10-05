@@ -14,7 +14,7 @@ import { useState } from "react";
 }; */
 
 export interface data {
-  firstname: string, lastname: string, email: string, phone: string, gender: string, course: string, university: string, programType: string, cohort: string, currentlyWorking: string, plan: string, howDoYouIntendToPay: string, whyTakeCourse: string, howDidYouHearAboutUs: string, refererNameAndPhone: string
+  firstname: string, lastname: string, email: string, phone: string, gender: string, course: string, university: string, programType: "scrum-mastery" | "software-quality-assurance" | "", cohort: string, currentlyWorking: string, plan: "basic" | "standard" | "premium" | "gold" | "platinum" | "", howDoYouIntendToPay: string, whyTakeCourse: string, howDidYouHearAboutUs: string, refererNameAndPhone: string
 }
 
 export default function Home() {
@@ -28,9 +28,9 @@ export default function Home() {
     course: "",
     university: "",
     programType: "",
+    plan: "",
     cohort: "",
     currentlyWorking: "",
-    plan: "",
     howDoYouIntendToPay: "",
     whyTakeCourse: "",
     howDidYouHearAboutUs: "",
