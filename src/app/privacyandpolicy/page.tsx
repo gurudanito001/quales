@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const PrivacyAndPolicy = () =>{
   return(
-    <main className="bg-white">
+    <main className="bg-white w-full overflow-x-hidden">
     <NavBar/>
     <section className="bg-white px-5 lg:px-28">
       <header className="mt-7 md:mt-10">

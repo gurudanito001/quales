@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Article = () =>{
   return(
-    <main className="bg-white">
+    <main className="bg-white w-full overflow-x-hidden">
     <NavBar/>
 
     <div className="flex flex-col md:flex-row gap-5 lg:gap-20 bg-white px-5 lg:px-28 mt-8 lg:mt-14">

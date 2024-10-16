@@ -79,7 +79,7 @@ export default function Home() {
     }
   }
   return (
-    <>
+    <main className="bg-white w-full overflow-x-hidden">
       <div className="w-screen z-50 absolute top-0 left-0"><NavBar /></div>
 
 
@@ -129,6 +129,6 @@ export default function Home() {
       <button disabled={disableSubmitButton()} className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-12" onClick={handleClickPay}>Proceed to Payment</button>
     </section>
       </section>
-    </>
+    </main>
   );
 }

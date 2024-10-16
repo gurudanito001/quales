@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const UseCases = () => {
 
   return (
-    <main className="bg-white">
+    <main className="bg-white w-full overflow-x-hidden">
       <NavBar/>
       <HeroSection />
       <Partners />

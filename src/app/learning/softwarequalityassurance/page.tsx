@@ -13,7 +13,7 @@ import CohortSignup from "./cohortSignup";
 const QualityAssuranceCourse = () => {
 
   return (
-    <main className="bg-white">
+    <main className="bg-white w-full overflow-x-hidden">
       <NavBar />
       <section className="flex flex-col bg-white px-3 sm:px-5 xl:px-28 mt-10">
         <div className="breadcrumbs text-sm mb-10">

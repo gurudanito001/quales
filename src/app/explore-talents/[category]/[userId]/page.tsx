@@ -51,7 +51,7 @@ export default async function Page({ params }: { params: { category: string, use
  
   return (
 
-    <>
+    <main className="bg-white w-full overflow-x-hidden">
       <NavBar />
       <section className="bg-white px-5 xl:px-28 mt-10 mb-20">
 
@@ -373,7 +373,7 @@ export default async function Page({ params }: { params: { category: string, use
 
       <Footer />
 
-    </>
+    </main>
   )
 }
 
