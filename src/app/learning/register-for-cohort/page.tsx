@@ -39,7 +39,7 @@ export default function Home() {
 
   const [currentScreen, setCurrentScreen] = useState("personalInfo")
   return (
-    <>
+    <main className="bg-white w-full overflow-x-hidden">
       <div className="w-screen z-50 absolute top-0 left-0"><NavBar /></div>
 
 
@@ -48,6 +48,6 @@ export default function Home() {
         { currentScreen === "personalInfo" && <PersonalInfoForm formData={formData} setFormData={setFormData} setCurrentScreen = {setCurrentScreen} />}
         { currentScreen === "courseInfo" && <CourseInfoForm formData={formData} setFormData={setFormData} />}
       </section>
-    </>
+    </main>
   );
 }

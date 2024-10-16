@@ -22,7 +22,6 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       basic: "https://paystack.com/buy/basic-plan-software-quality-assurance-package-atabvi",
       standard: "https://paystack.com/buy/standard-plan-software-quality-assurance-package-hnsfku",
       premium: "https://paystack.com/buy/premium-plan-software-quality-assurance-package-jelkmh",
-
       gold: "https://paystack.com/buy/gold-plan-scrum-master-package-oshqjl",
       platinum: "https://paystack.com/buy/platinum-plan-scrum-master-package-oqkumz"
     }
@@ -43,16 +42,28 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
     }
   }
 
+  const submitForm = async () =>{
+
+    const response = await fetch('http://localhost:3000/api/email/register-for-cohort', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    const content = await response.json();
+    console.log(content);
+  }
+
   const handleClickPay = (e: any) =>{
     e.preventDefault();
-    console.log(formData)
     if(formData.programType === ""){
       return;
     }
     if(formData.programType === "scrum-mastery"){
       console.log(formData)
       if( formData.plan !== "" && ["standard", "premium", "gold", "platinum"].includes(formData.plan)){
-        console.log("paying222!!!")
         router.push(paymentLinks["scrum-mastery"][formData.plan])
       }
     } else if(formData.programType === "software-quality-assurance"){
@@ -126,6 +137,12 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
         e.preventDefault();
         let el: any = document?.getElementById('qa_modal');
         if (!el) { return; }
+
+        try {
+          submitForm()
+        } catch (error) {
+          console.log(error)
+        }
         el.showModal()
       }}>Register</button>
 
@@ -135,7 +152,15 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
           <p className="py-4 text-primary text-center max-w-800 mx-auto">Thanks you for your interest in our classes, you have successfully registered for <span className=" capitalize">{formData?.cohort}</span>, would you like to proceed to make payment?</p>
           <div className="modal-action flex mb-auto">
             <form method="dialog" className="mx-auto">
-              <button className="btn bg-primary text-white rounded-full px-8">Done</button>
+              <button className="btn bg-primary text-white rounded-full px-8"  onClick={()=>{
+                  setFormData({
+                    companyName: "",
+                    email: "",
+                    talentsRequired: [],
+                    durationOfContract: "",
+                    resumptionWindow: ""
+                  }) 
+              }}>Done</button>
               <button className="btn bg-gray-300 text-gray-700 rounded-full px-8 ml-4" onClick={handleClickPay}>Pay</button>
             </form>
           </div>

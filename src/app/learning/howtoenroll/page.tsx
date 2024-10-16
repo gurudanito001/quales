@@ -9,7 +9,7 @@ const HowToEnroll = ()=>{
 
   return (
     <>
-<main className="bg-white">
+<main className="bg-white w-full overflow-x-hidden">
     <NavBar/>
     <section className="bg-white px-5 xl:px-28">
       <header className="mt-10">

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const HireTalents = ()=>{
   
   return(
-    <>
+    <main className="bg-white w-full overflow-x-hidden">
     <div className="w-screen z-50 absolute top-0 left-0"><NavBar /></div>
     
 
@@ -23,7 +23,7 @@ const HireTalents = ()=>{
       <HireTalentSlider />
       <HireTalentsForm />
     </section>
-    </>
+    </main>
     
   )
 }

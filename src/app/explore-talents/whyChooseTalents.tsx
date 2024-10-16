@@ -94,7 +94,7 @@ const WhyChooseTalents = () => {
           </div>
 
           <div className="flex xl:mt-10">
-            <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto lg:mx-0 lg:ml-auto mt-8 lg:-mr-20 xl:-mr-36" >Hire Talents</Link>
+            <Link href="/hire-talents" className="btn bg-primary text-white text-xs md:text-sm rounded-full px-9 mx-auto lg:mx-0 lg:ml-auto mt-8 lg:-mr-20 xl:-mr-36 z-50" >Hire Talents</Link>
           </div>
         </article>
         <figure className="lg:w-1/2 mb-10 md:mb-0 hidden lg:block">

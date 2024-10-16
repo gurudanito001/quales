@@ -7,7 +7,7 @@ import Link from "next/link";
 const LearningPlans = () => {
 
   return (
-    <main className="bg-white">
+    <main className="bg-white w-full overflow-x-hidden">
       <NavBar />
       <section className="bg-white px-5 xl:px-28 mb-14">
         <header className="py-10">

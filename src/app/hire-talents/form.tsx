@@ -181,6 +181,20 @@ const HireTalentsForm = () =>{
     }))
   }
 
+  const submitForm = async () =>{
+
+    const response = await fetch('http://localhost:3000/api/email/hire-talents', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    const content = await response.json();
+    console.log(content);
+  }
+
   return (
     <section className="bg-white py-32 px-5 lg:px-24 flex flex-col items-center h-screen overflow-y-auto">
       <h2 className="text-primary text-2xl font-light mb-16 text-center">Let’s find you the right talent</h2>
@@ -248,14 +262,12 @@ const HireTalentsForm = () =>{
       {/* <button className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-16">Link me up with the Talent </button> */}
       <button disabled={disableSubmitButton()} className="btn bg-primary text-white rounded-full mx-auto mt-10 px-14 h-16" onClick={(e) => {
         e.preventDefault();
-        setFormData( prevState =>({
-          ...prevState,
-          companyName: "",
-          email: "",
-          talentsRequired: [],
-          durationOfContract: "",
-          resumptionWindow: ""
-        }))
+        /* */
+          try {
+            submitForm()
+          } catch (error) {
+            console.log(error)
+          }
         let el: any = document?.getElementById('hire_talent_modal');
         if (!el) { return; }
         el.showModal()
@@ -267,7 +279,16 @@ const HireTalentsForm = () =>{
           <div className="modal-action flex">
             <form method="dialog" className=" mx-auto">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn bg-primary text-white rounded-full px-8">Done</button>
+              <button className="btn bg-primary text-white rounded-full px-8" onClick={()=>{
+                  setFormData( prevState =>({
+                    ...prevState,
+                    companyName: "",
+                    email: "",
+                    talentsRequired: [],
+                    durationOfContract: "",
+                    resumptionWindow: ""
+                  })) 
+              }}>Done</button>
             </form>
           </div>
         </div>

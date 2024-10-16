@@ -47,7 +47,7 @@ export default function Page({params}: {params: {category: string}}) {
   
   
   return(
-    <>
+    <main className=" bg-white w-full overflow-x-hidden">
     <NavBar />
     <section className="flex flex-col bg-white px-5 xl:px-28 mt-10">
 
@@ -223,7 +223,7 @@ export default function Page({params}: {params: {category: string}}) {
 
     <Footer />
 
-    </>
+    </main>
   )
 }
 

@@ -7,7 +7,7 @@ const Faq = () => {
 
   return (
     <>
-      <main className="bg-white">
+      <main className="bg-white w-full overflow-x-hidden">
         <NavBar />
         <section className="bg-white px-5 xl:px-28 py-14">
           <header className="flex mb-8">
