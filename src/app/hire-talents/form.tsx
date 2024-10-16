@@ -183,7 +183,7 @@ const HireTalentsForm = () =>{
 
   const submitForm = async () =>{
 
-    const response = await fetch('http://localhost:3000/api/email/hire-talents', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_Base_Url}/api/email/hire-talents`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',

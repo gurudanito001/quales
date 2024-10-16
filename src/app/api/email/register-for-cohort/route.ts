@@ -11,7 +11,14 @@ export async function POST(request: Request) {
   const myHeaders = new Headers();
   myHeaders.append("Accept", "application/json");
   /* myHeaders.append("Content-Type", "multipart/form-data"); */
-  myHeaders.append("x-api-key", "HzHtpZDCOLbfWYnRpIA0TO1gYgkl4ITqLpSSSPhCwdcAwcvnQoeTWDbGUQgO5FPHgFE=");
+  let x_api_key = process?.env?.x_api_key
+  if(!x_api_key){
+    return new NextResponse(JSON.stringify({ message: "x_api_key is required", data: null }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+  myHeaders.append("x-api-key", x_api_key);
 
   const formdata = new FormData();
   formdata.append("body", emailTemplate);

@@ -44,7 +44,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
 
   const submitForm = async () =>{
 
-    const response = await fetch('http://localhost:3000/api/email/register-for-cohort', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_Base_Url}/api/email/register-for-cohort`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
