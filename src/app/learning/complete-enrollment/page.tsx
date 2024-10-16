@@ -60,28 +60,47 @@ export default function Home() {
     }
   }
 
-  const handleClickPay = (e: any) =>{
-    e.preventDefault();
-    console.log(formData)
-    if(formData.programType === ""){
-      return;
-    }
-    if(formData.programType === "scrum-mastery"){
-      console.log(formData)
-      if( formData.plan !== "" && ["standard", "premium", "gold", "platinum"].includes(formData.plan)){
-        console.log("paying222!!!")
-        router.push(paymentLinks["scrum-mastery"][formData.plan])
-      }
-    } else if(formData.programType === "software-quality-assurance"){
-      if( formData.plan !== "" && ["basic", "standard", "premium"].includes(formData.plan)){
-        router.push(paymentLinks["software-quality-assurance"][formData.plan])
-      }
-    }
+  const sendEmail = async () =>{
+    const response = await fetch(`${process.env.NEXT_PUBLIC_Base_Url}/api/email/complete-enrollment`, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+    const content = await response.json();
+    console.log(content);
   }
+
+  const handleClickPay = (e: any) => {
+    e.preventDefault();
+    sendEmail().then(result => {
+      if (formData.programType === "") {
+        return;
+      }
+      if (formData.programType === "scrum-mastery") {
+        console.log(formData)
+        if (formData.plan !== "" && ["standard", "premium", "gold", "platinum"].includes(formData.plan)) {
+          console.log("paying222!!!")
+          router.push(paymentLinks["scrum-mastery"][formData.plan])
+        }
+      } else if (formData.programType === "software-quality-assurance") {
+        if (formData.plan !== "" && ["basic", "standard", "premium"].includes(formData.plan)) {
+          router.push(paymentLinks["software-quality-assurance"][formData.plan])
+        }
+      }
+    }).catch(error => {
+      console.log(error)
+    });
+    console.log(formData)
+  }
+
+  
+
   return (
     <main className="bg-white w-full overflow-x-hidden">
       <div className="w-screen z-50 absolute top-0 left-0"><NavBar /></div>
-
 
       <section className="grid grid-cols-1 xl:grid-cols-2 max-h-screen">
         <RegisterForCohortSlider />

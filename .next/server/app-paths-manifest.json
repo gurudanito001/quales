@@ -1,8 +1,8 @@
 {
-  "/about-us/page": "app/about-us/page.js",
   "/learning/page": "app/learning/page.js",
-  "/learning/testimonials/page": "app/learning/testimonials/page.js",
-  "/api/email/hire-talents/route": "app/api/email/hire-talents/route.js",
   "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
-  "/hire-talents/page": "app/hire-talents/page.js"
+  "/learning/testimonials/page": "app/learning/testimonials/page.js",
+  "/hire-talents/page": "app/hire-talents/page.js",
+  "/learning/complete-enrollment/page": "app/learning/complete-enrollment/page.js",
+  "/api/email/complete-enrollment/route": "app/api/email/complete-enrollment/route.js"
 }
