@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,minimum-scale=1">
-	<title>Hotel Reservation</title>
+	<title>Request to Hire Talents</title>
 </head>
 
 <body
