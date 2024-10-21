@@ -82,6 +82,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learning/testimonials/page.js"
+    ],
+    "/learning/howtoenroll/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/learning/howtoenroll/page.js"
+    ],
+    "/learning/learningplans/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/learning/learningplans/page.js"
     ]
   }
 }

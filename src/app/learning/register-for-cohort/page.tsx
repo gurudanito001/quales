@@ -37,6 +37,26 @@ export default function Home() {
     refererNameAndPhone: "",
   })
 
+  const clearForm = () =>{
+    setFormData({
+      firstname: "",
+      lastname: "",
+      email: "",
+      phone: "",
+      gender: "",
+      course: "",
+      university: "",
+      programType: "",
+      plan: "",
+      cohort: "",
+      currentlyWorking: "",
+      howDoYouIntendToPay: "",
+      whyTakeCourse: "",
+      howDidYouHearAboutUs: "",
+      refererNameAndPhone: "",
+    })
+  }
+
   const [currentScreen, setCurrentScreen] = useState("personalInfo")
   return (
     <main className="bg-white w-full overflow-x-hidden">
@@ -45,8 +65,8 @@ export default function Home() {
 
       <section className="grid grid-cols-1 xl:grid-cols-2 max-h-screen">
         <RegisterForCohortSlider />
-        { currentScreen === "personalInfo" && <PersonalInfoForm formData={formData} setFormData={setFormData} setCurrentScreen = {setCurrentScreen} />}
-        { currentScreen === "courseInfo" && <CourseInfoForm formData={formData} setFormData={setFormData} />}
+        { currentScreen === "personalInfo" && <PersonalInfoForm formData={formData} setFormData={setFormData} setCurrentScreen = {setCurrentScreen}  clearForm={clearForm} />}
+        { currentScreen === "courseInfo" && <CourseInfoForm formData={formData} setFormData={setFormData} clearForm={clearForm} />}
       </section>
     </main>
   );

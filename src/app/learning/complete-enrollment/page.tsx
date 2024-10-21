@@ -7,7 +7,8 @@ import RegisterForCohortSlider from "../register-for-cohort/registerForCohortSli
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
- 
+import { paymentLinks } from "@/app/lib/paymentlinks";
+
 /* export const metadata: Metadata = {
   title: 'Learning | Quales Consulting',
   description: 'Quales Consulting comprises an elite network of the finest freelance Software Developers, Designers, Business Analysts, Product Managers, and Scrum Masters, Data Analysts globally. Leading companies engage freelancers from Quales Consulting for their critical projects.',
@@ -26,8 +27,17 @@ export default function Home() {
     cohort: "",
   })
 
+  const clearForm = () =>{
+    setFormData({
+      email: "",
+      programType: "",
+      plan: "",
+      cohort: "",
+    })
+  }
 
-  const paymentLinks = {
+
+  /* const paymentLinks = {
     "scrum-mastery": {
       basic: "https://paystack.com/buy/basic-plan-software-quality-assurance-package-atabvi",
       standard: "https://paystack.com/buy/standard-plan-scrum-master-package-ycdkmh",
@@ -43,7 +53,7 @@ export default function Home() {
       gold: "https://paystack.com/buy/gold-plan-scrum-master-package-oshqjl",
       platinum: "https://paystack.com/buy/platinum-plan-scrum-master-package-oqkumz"
     }
-  }
+  } */
 
   const handleChangeFormData = (prop: string) => (event: any)=>{
     setFormData( (prevState: any) => ({
@@ -79,15 +89,15 @@ export default function Home() {
       if (formData.programType === "") {
         return;
       }
-      if (formData.programType === "scrum-mastery") {
-        console.log(formData)
-        if (formData.plan !== "" && ["standard", "premium", "gold", "platinum"].includes(formData.plan)) {
-          console.log("paying222!!!")
-          router.push(paymentLinks["scrum-mastery"][formData.plan])
+      let {plan, programType} = formData;
+      clearForm();
+      if(programType === "scrum-mastery"){
+        if(plan !== "" && ["standard", "premium", "gold", "platinum"].includes(plan)){
+          router.push(paymentLinks["scrum-mastery"][plan])
         }
-      } else if (formData.programType === "software-quality-assurance") {
-        if (formData.plan !== "" && ["basic", "standard", "premium"].includes(formData.plan)) {
-          router.push(paymentLinks["software-quality-assurance"][formData.plan])
+      } else if(programType === "software-quality-assurance"){
+        if( plan !== "" && ["basic", "standard", "premium"].includes(plan)){
+          router.push(paymentLinks["software-quality-assurance"][plan])
         }
       }
     }).catch(error => {
