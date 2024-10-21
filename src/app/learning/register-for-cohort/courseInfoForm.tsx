@@ -5,12 +5,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { data } from "./page";
 import { useRouter } from "next/navigation";
+import { paymentLinks } from "@/app/lib/paymentlinks";
 
 
-const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (state: any)=>void}) =>{
+const CourseInfoForm = ({formData, setFormData, clearForm}: {formData: data, setFormData: (state: any)=>void, clearForm: ()=>void}) =>{
   const router = useRouter();
   
-  const paymentLinks = {
+  /* const paymentLinks = {
     "scrum-mastery": {
       basic: "https://paystack.com/buy/basic-plan-software-quality-assurance-package-atabvi",
       standard: "https://paystack.com/buy/standard-plan-scrum-master-package-ycdkmh",
@@ -25,7 +26,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
       gold: "https://paystack.com/buy/gold-plan-scrum-master-package-oshqjl",
       platinum: "https://paystack.com/buy/platinum-plan-scrum-master-package-oqkumz"
     }
-  }
+  } */
 
   const handleChangeFormData = (prop: string) => (event: any)=>{
     setFormData( (prevState: any) => ({
@@ -35,7 +36,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
   }
 
   const disableSubmitButton = () =>{
-    if(formData?.currentlyWorking === "" || formData?.plan === "" || formData?.howDoYouIntendToPay === "" || formData?.whyTakeCourse === "" || formData?.howDidYouHearAboutUs === "" || formData?.refererNameAndPhone === "" ){
+    if(formData?.currentlyWorking === "" || formData?.plan === "" || formData?.howDoYouIntendToPay === "" || formData?.whyTakeCourse === "" || formData?.howDidYouHearAboutUs === ""){
       return true
     }else{
       return false
@@ -43,7 +44,6 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
   }
 
   const submitForm = async () =>{
-
     const response = await fetch(`${process.env.NEXT_PUBLIC_Base_Url}/api/email/register-for-cohort`, {
       method: 'POST',
       headers: {
@@ -61,14 +61,15 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
     if(formData.programType === ""){
       return;
     }
-    if(formData.programType === "scrum-mastery"){
-      console.log(formData)
-      if( formData.plan !== "" && ["standard", "premium", "gold", "platinum"].includes(formData.plan)){
-        router.push(paymentLinks["scrum-mastery"][formData.plan])
+    let {plan, programType} = formData;
+    clearForm();
+    if(programType === "scrum-mastery"){
+      if(plan !== "" && ["standard", "premium", "gold", "platinum"].includes(plan)){
+        router.push(paymentLinks["scrum-mastery"][plan])
       }
-    } else if(formData.programType === "software-quality-assurance"){
-      if( formData.plan !== "" && ["basic", "standard", "premium"].includes(formData.plan)){
-        router.push(paymentLinks["software-quality-assurance"][formData.plan])
+    } else if(programType === "software-quality-assurance"){
+      if( plan !== "" && ["basic", "standard", "premium"].includes(plan)){
+        router.push(paymentLinks["software-quality-assurance"][plan])
       }
     }
   }
@@ -137,7 +138,6 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
         e.preventDefault();
         let el: any = document?.getElementById('qa_modal');
         if (!el) { return; }
-
         try {
           submitForm()
         } catch (error) {
@@ -152,15 +152,7 @@ const CourseInfoForm = ({formData, setFormData}: {formData: data, setFormData: (
           <p className="py-4 text-primary text-center max-w-800 mx-auto">Thanks you for your interest in our classes, you have successfully registered for <span className=" capitalize">{formData?.cohort}</span>, would you like to proceed to make payment?</p>
           <div className="modal-action flex mb-auto">
             <form method="dialog" className="mx-auto">
-              <button className="btn bg-primary text-white rounded-full px-8"  onClick={()=>{
-                  setFormData({
-                    companyName: "",
-                    email: "",
-                    talentsRequired: [],
-                    durationOfContract: "",
-                    resumptionWindow: ""
-                  }) 
-              }}>Done</button>
+              <button className="btn bg-primary text-white rounded-full px-8"  onClick={clearForm}>Done</button>
               <button className="btn bg-gray-300 text-gray-700 rounded-full px-8 ml-4" onClick={handleClickPay}>Pay</button>
             </form>
           </div>

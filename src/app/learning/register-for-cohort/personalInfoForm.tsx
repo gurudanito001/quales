@@ -6,7 +6,7 @@ import Link from "next/link";
 import { data } from "./page";
 
 
-const PersonalInfoForm = ({formData, setFormData, setCurrentScreen}: {formData: data, setFormData: (state: any)=>void, setCurrentScreen: (screen: string)=>void}) =>{
+const PersonalInfoForm = ({formData, setFormData, setCurrentScreen, clearForm}: {formData: data, setFormData: (state: any)=>void, setCurrentScreen: (screen: string)=>void, clearForm: ()=>void}) =>{
 
   
 

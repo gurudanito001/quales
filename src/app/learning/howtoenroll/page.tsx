@@ -70,7 +70,7 @@ const HowToEnroll = ()=>{
       </div>
     </section>
 
-    <section className="bg-neutral text-primary px-5 lg:px-28 py-20 lg:py-36 flex flex-col md:flex-row mb-10">
+    <section className="text-primary px-5 lg:px-28 py-20 lg:py-36 flex flex-col md:flex-row mb-10">
       <article>
         <h2 className="font-550 text-2xl lg:text-4xl">In Need of More Assistance</h2>
         <p className="font-light text-sm md:text-lg mt-5 max-w-5xl">We&apos;re here to help! If you have any questions or need further assistance during the enrollment process, don&apos;t hesitate to reach out to our support team at bokafor@quales.tech. We&apos;re committed to ensuring you have all the support you need. </p>
@@ -78,13 +78,11 @@ const HowToEnroll = ()=>{
       <Link href="/learning/register-for-cohort" className="btn bg-primary text-white rounded-full px-8 mr-auto md:mr-0 md:ml-auto mt-8">Register for a Cohort</Link>
     </section>
 
-    <section className="flex my-10 lg:my-16 px-5">
-    <video controls poster="/images/video-banner.svg" className="md:max-w-96 mx-auto lg:max-w-600">
-        <source src="movie.mp4" type="video/mp4" />
-        <source src="movie.ogg" type="video/ogg" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
+      <section className="flex flex-col md:flex-row my-10 lg:my-16 px-5 bg-neutral py-14 lg:py-20 gap-10">
+
+        <iframe className="w-full md:max-w-80 mx-auto lg:max-w-550 xl:max-w-lg" width="560" height="315" src="https://www.youtube.com/embed/PyaIK2MceTM?si=-aM2pQ2OcsJs3qW-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        
+      </section>
 
       
     </main>

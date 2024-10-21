@@ -90,24 +90,15 @@ const AlumniTestimonials = () => {
 
         <section className="flex flex-col md:flex-row my-10 lg:my-16 px-5 bg-neutral py-14 lg:py-20 gap-10">
 
-          {/* <video controls poster="/images/video-banner.svg" className="md:max-w-80 mx-auto md:mx-0 md:ml-auto lg:max-w-md xl:max-w-lg">
-        <source src="https://youtu.be/LneTNLalyjM" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
 
           <iframe className="w-full md:max-w-80 mx-auto md:mx-0 md:ml-auto lg:max-w-550 xl:max-w-lg" height={300} src="https://www.youtube.com/embed/LneTNLalyjM?si=pYKUPjROuzozZ9BN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
           <iframe className="w-full md:max-w-80 mx-auto md:mx-0 md:mr-auto lg:max-w-550 xl:max-w-lg" height={300} src="https://www.youtube.com/embed/Um1jiJSdTRo?si=-Gu2G-X9PmfumwB3" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
-          {/* <video controls poster="/images/video-banner.svg" className="md:max-w-80 mx-auto md:mx-0 md:mr-auto lg:max-w-md xl:max-w-lg">
-        <source src="movie.mp4" type="video/mp4" />
-        <source src="movie.ogg" type="video/ogg" />
-        Your browser does not support the video tag.
-      </video> */}
 
         </section>
 
-        <div className="flex">
+        {/* <div className="flex">
           <div className="join items-center mx-auto mt-8 mb-12 gap-3">
             <button className=" btn btn-xs bg-white border border-primary text-primary shadow-none px-1 mr-5"> <ChevronLeftIcon className="w-4" /> </button>
             <button className="join-item btn btn-sm shadow-none bg-transparent border-white border-b-primary border-b-2 px-1">1</button>
@@ -119,7 +110,7 @@ const AlumniTestimonials = () => {
             <button className="join-item btn btn-sm shadow-none bg-transparent border-white px-1">10</button>
             <button className=" btn btn-xs bg-white border border-primary text-primary shadow-none px-1 ml-5"> <ChevronRightIcon className="w-4" /> </button>
           </div>
-        </div>
+        </div> */}
 
         <section className="bg-section-blue text-section-red px-5 lg:px-28 py-20 lg:py-36 flex flex-col md:flex-row mb-10">
           <article>
