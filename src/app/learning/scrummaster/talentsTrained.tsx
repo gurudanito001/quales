@@ -46,18 +46,18 @@ const TalentsTrained = () => {
           </div>
 
 
-          {/* <div className="mx-auto">
+          <div className="mx-auto">
             <div className="flex flex-col lg:flex-row lg:gap-8">
               <figure className="h-72 w-72 bg-[url('/images/Jemima.png')] bg-cover bg-center rounded-full mx-auto lg:mx-0 lg:ml-auto my-auto">
               </figure>
               <article className="flex flex-col w-full lg:max-w-550 my-auto mr-auto">
                 <h4 className="text-xl lg:text-3xl mx-auto lg:mx-0 lg:mr-auto font-550 bg-gradient-to-r max-w-550 from-slate-700 to-purple-400 text-transparent bg-clip-text">Jemima Abutu</h4>
                 <div className="text-lg text-primary font-light text-center lg:text-left w-full">
-                  <p className="w-full mt-8 md:text-lg">Jemima masters in Human Resource Management and I currently work with IKEA. She wanted a career diversion in Tech because I felt it would make me globally relevant. Then, coincidentally, I stumbled on “Quales consulting” on a friend&apos;s WhatsApp Status and it seemed like the best way to combine natural talent and a career. In Summary, Quales consulting is the best option for you. As the Tutors are well knowledgeable, experienced and of course, willing to follow you at your learning pace. It was an amazing experience for me. </p>
+                  <p className="w-full mt-8 md:text-lg">As a certified Scrum Master, Jemima successfully completed the Scrum Mastery program at Quales Academy, where she gained in-depth knowledge of agile methodologies and team collaboration techniques. With her Scrum Expertise, Jemima has transitioned into her current role at IKEA, where she works on delivering high-quality projects using agile principles. Her ability to foster a self-organizing, adaptable team environment has significantly contributed to the successful execution of sprints, while maintaining clear communication with product owners and stakeholders </p>
                 </div>
               </article>
             </div>
-          </div> */}
+          </div>
 
         </Slider>
       </div>
