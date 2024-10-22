@@ -1,11 +1,10 @@
 {
   "/(home)/page": "app/(home)/page.js",
-  "/learning/howtoenroll/page": "app/learning/howtoenroll/page.js",
   "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
   "/learning/testimonials/page": "app/learning/testimonials/page.js",
   "/thought-leadership/page": "app/thought-leadership/page.js",
-  "/api/email/register-for-cohort/route": "app/api/email/register-for-cohort/route.js",
-  "/learning/page": "app/learning/page.js",
   "/learning/complete-enrollment/page": "app/learning/complete-enrollment/page.js",
-  "/api/email/complete-enrollment/route": "app/api/email/complete-enrollment/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/learning/page": "app/learning/page.js",
+  "/learning/scrummaster/page": "app/learning/scrummaster/page.js"
 }
