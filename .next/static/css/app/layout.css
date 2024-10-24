@@ -3616,9 +3616,6 @@ html:has(.drawer-toggle:checked) {
 .to-purple-400 {
   --tw-gradient-to: #c084fc var(--tw-gradient-to-position);
 }
-.bg-contain {
-  background-size: contain;
-}
 .bg-cover {
   background-size: cover;
 }
@@ -4486,10 +4483,6 @@ body {
     max-width: 20rem;
   }
 
-  .md\:max-w-96 {
-    max-width: 24rem;
-  }
-
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -4799,16 +4792,8 @@ body {
     max-width: 550px;
   }
 
-  .lg\:max-w-600 {
-    max-width: 600px;
-  }
-
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:max-w-md {
-    max-width: 28rem;
   }
 
   .lg\:grid-cols-3 {
