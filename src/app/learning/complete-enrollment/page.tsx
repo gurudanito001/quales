@@ -18,6 +18,23 @@ export interface data {
   email: string, programType: "scrum-mastery" | "software-quality-assurance" | "", cohort: string,  plan: "basic" | "standard" | "premium" | "gold" | "platinum" | ""
 }
 
+const ScrumMasteryCohortOptions = () =>{
+  return (
+    <>
+      <option value="cohort-2">Cohort 2</option>
+    </>
+  )
+}
+
+
+const QACohortOptions = () =>{
+  return (
+    <>
+      <option value="cohort-18">Cohort 18</option>
+    </>
+  )
+}
+
 export default function Home() {
   const router = useRouter();
   const [formData, setFormData] = useState <data>({
@@ -148,9 +165,8 @@ export default function Home() {
       <label className="input input-bordered flex items-center gap-2 rounded-full bg-form-input-bg mb-5 w-full max-w-550">
         <select value={formData.cohort} onChange={handleChangeFormData("cohort")} className={`select bg-transparent focus:border-none w-full ${formData?.cohort === "" ? "text-red-900" : "text-black"}`}>
           <option disabled value="">Cohort</option>
-          <option value="cohort-19">Cohort 19</option>
-          <option value="cohort-20">Cohort 20</option>
-          <option value="cohort-21">Cohort 21</option>
+          {formData.programType === "scrum-mastery" && ScrumMasteryCohortOptions()}
+          {formData.programType === "software-quality-assurance" && QACohortOptions()}
         </select>
       </label>
 

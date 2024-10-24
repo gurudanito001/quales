@@ -23,6 +23,12 @@
       "static/chunks/main-app.js",
       "static/css/app/learning/register-for-cohort/page.css",
       "static/chunks/app/learning/register-for-cohort/page.js"
+    ],
+    "/learning/complete-enrollment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/learning/complete-enrollment/page.css",
+      "static/chunks/app/learning/complete-enrollment/page.js"
     ]
   }
 }
