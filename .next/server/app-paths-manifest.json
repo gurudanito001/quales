@@ -1,10 +1,5 @@
 {
-  "/(home)/page": "app/(home)/page.js",
   "/learning/register-for-cohort/page": "app/learning/register-for-cohort/page.js",
-  "/learning/testimonials/page": "app/learning/testimonials/page.js",
-  "/thought-leadership/page": "app/thought-leadership/page.js",
-  "/learning/complete-enrollment/page": "app/learning/complete-enrollment/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/learning/page": "app/learning/page.js",
-  "/learning/scrummaster/page": "app/learning/scrummaster/page.js"
+  "/(home)/page": "app/(home)/page.js",
+  "/learning/page": "app/learning/page.js"
 }
